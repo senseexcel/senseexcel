@@ -1,5 +1,10 @@
 # Sense Excel Detailed Installation Guide
 
+
+
+ ![Cover](https://github.com/senseexcel/blob/master/SE-Cover.PNG)
+
+
 ## Table of Contents 
 
 ## 1. Please Note
