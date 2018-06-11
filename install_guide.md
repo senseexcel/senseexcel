@@ -2,7 +2,7 @@
 
 
 
- ![Cover](https://github.com/senseexcel/blob/master/SE-Cover.PNG)
+ ![Cover](https://github.com/senseexcel/senseexcel/blob/master/SE-Cover.PNG)
 
 
 ## Table of Contents 
