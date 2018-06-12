@@ -333,9 +333,13 @@ To use the Sense Excel Executive Dashboard Report, please follow the following s
 
 1. Start Excel and make sure the Qlik Sense add-in is loaded and Toolbar is visible. 
 
+3. Open the ExecutiveDashboard.xlsx file.
+
+ ![Demo Report](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Demo-Report.png)
+
 2. Connect to the Qlik Sense Desktop or Server via the "Log-in" button.
 
-3. Open the ExecutiveDashboard.xlsx file. Once opened, go to the Qlik Sense toolbar >> Log in >> click on “Open Hub” >> click on the “Executive Dashboard” app.
+ Once opened, go to the Qlik Sense toolbar >> Log in >> click on “Open Hub” >> click on the “Executive Dashboard” app.
 
  ![Open Hub Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Open-Hub-Dialogue.png)
 
