@@ -43,6 +43,9 @@
 ## 10. Seven Steps to Your First Report in Sense Excel
 ## 11. Contact Information
 
+
+
+
 ## 1. Please Note 
 
 ### 1.1 Installation Notes 
@@ -56,15 +59,12 @@ If previous installations of Sense Excel exist on your system please read the fo
 
 ### 1.2 Disclaimer 
 
-This document will cover how to get Sense Excel up and running on your system, what to expect and how it can be used. This document was written in order to provide quick answers to the most pressing questions and as such will be updated as often as possible. Please keep in mind that not all options or possibilities of Sense Excel are mentioned within this document. 
+This document will cover how to get Sense Excel up and running on your system, what to expect and ways the product can be used. This document is written to provide quick answers and will be continuously updated. Not all options or possibilities of Sense Excel are covered within the scope of this document but will be complimented by best practices and use cases documented elsewhere in this repository. 
 
  AKQUINET SENSE EXCEL LICENSE AGREEMENT 
 
-IMPORTANT: BY ACCEPTING, DOWNLOADING OR USING THIS SOFTWARE, YOU ACCEPT AND AGREE TO THE TERMS OF THIS AKQUINET SENSE EXCEL LICENSE AGREEMENT (“DLA”) AS MAY BE UPDATED FROM 
-TIME TO TIME AND PUBLISHED AT WWW.AKQUINET.COM. BY ACCEPTING THESE TERMS, OR USING THE SOFTWARE AS AN EMPLOYEE, CONTRACTOR OR AGENT ON BEHALF OF A CORPORATE OR OTHER ENTITY, 
-YOU (“USER”) REPRESENT AND WARRANT THAT YOU HAVE AUTHORITY TO BIND SUCH ENTITY TO THESE TERMS. DIRECT COMPETITORS AND THEIR EMPLOYEES AND AGENTS MAY NOT ACCESS THE SOFTWARE 
-WITHOUT PRIOR WRITTEN CONSENT OF AKQUINET. THE SOFTWARE MAY NOT BE USED FOR PURPOSES OF BENCHMARKING, COLLECTING AND PUBLISHING SOFTWARE PERFORMANCE DATA OR ANALYSIS, OR 
-ANY OTHER COMPETITIVE PURPOSES. 
+IMPORTANT: BY ACCEPTING, DOWNLOADING OR USING THIS SOFTWARE, YOU ACCEPT AND AGREE TO THE TERMS OF THIS AKQUINET SENSE EXCEL LICENSE AGREEMENT (“DLA”) AS MAY BE UPDATED FROM TIME TO TIME AND PUBLISHED AT WWW.AKQUINET.COM. BY ACCEPTING THESE TERMS, OR USING THE SOFTWARE AS AN EMPLOYEE, CONTRACTOR OR AGENT ON BEHALF OF A CORPORATE OR OTHER ENTITY, YOU (“USER”) REPRESENT AND WARRANT THAT YOU HAVE AUTHORITY TO BIND SUCH ENTITY TO THESE TERMS. DIRECT COMPETITORS AND THEIR EMPLOYEES AND AGENTS MAY NOT ACCESS THE SOFTWARE 
+WITHOUT PRIOR WRITTEN CONSENT OF AKQUINET. THE SOFTWARE MAY NOT BE USED FOR PURPOSES OF BENCHMARKING, COLLECTING AND PUBLISHING SOFTWARE PERFORMANCE DATA OR ANALYSIS, OR ANY OTHER COMPETITIVE PURPOSES. 
  
 NOTICE: THE SOFTWARE CONTAINS FUNCTIONALITY INTENDED TO LIMIT THE DURATION OF ITS USE AND IS INTENDED TO COLLECT CERTAIN USAGE METRICS. THE INSTALLATION OF THIS SOFTWARE WILL INSTALL FILES NECESSARY TO OPERATE THE SOFTWARE ONTO THE USER’S COMPUTER AND OTHER SYSTEM FILES MAY BE INSTALLED OR UPDATED. AS WITH ALL INSTALLATIONS, BACK UP OF THE USER’S HARD DRIVE IS RECOMMENDED BEFORE INSTALLING THE SOFTWARE. 
 
@@ -74,88 +74,98 @@ The rest of the disclaimer can be read at Qlik2Go (https://support.qlik2go.net/p
 
 ### 2.1 Who We Are
 
-akquinet AG is a stock corporation with approximately 900 employees and headquarters in Hamburg, Germany. We offer a wide range of IT and BI services, including hosting services and Enterprise Resource Planning (ERP) implementations utilizing Microsoft and SAP software as well as custom ERP development using JAVA. akquinet's Business Intelligence team is located in Jena, Germany is and responsible for developing the Sense Excel product line. 
+akquinet AG is a stock corporation headquartered in Hamburg, Germany with approximately 900 employees. We offer a wide range of IT and BI implementation services including Enterprise Resource Planning (ERP) systems utilizing Microsoft and SAP, custom ERP development using JAVA as well as managed hosting services. akquinet's Business Intelligence team is located in Jena, Germany is and responsible for development of the Sense Excel product line. 
 
 
 ### 2.2 Why We Do What We Do
 
-We believe that all stakeholders should have easy access to business critical information when and where they need it. Enabling all users to access their data in a familiar interface while at the same time taking full advantage of the "single version of truth" as part of an Enterprise BI Platform is our primary goal.
+We believe that all stakeholders should have easy access to business critical information when and where they need it. Enabling all users to access their data in a familiar interface while, at the same time, fully reaping the benefits of the "single version of truth" aspect of an Enterprise BI Platform is our primary goal.
 
 
 ## 3. What You Can Expect from Sense Excel 
 
-In this chapter, we will explain what can be expected of Sense Excel and what can't. 
+In this chapter, we will explain what can be expected of Sense Excel and what cannot. 
  
 ### Sense Excel can/does not... 
 
-#### • …import a complete Qlik Sense Dashboard into Excel 
-#### • …import visualization objects from Qlik Sense into Excel 
-#### • …change Excel in any way other than extending its reporting capabilities 
+• …import a complete Qlik Sense Dashboard into Excel
+
+• …import visualization objects from Qlik Sense into Excel
+
+• …change Excel in any way other than extending its reporting capabilities 
 
 ### Sense Excel can/does.....
 
-#### • …provide the same UI (user interface) as Qlik Sense including filter selections and bookmarks for ease of use. 
-#### • …provide all Dimensions, Measures, Fields, Bookmarks etc. that are available in the connected Qlik Sense app.
-#### • …allow for creation of data tables in Excel utilizing the familiar workflow of Qlik Sense.
-#### • …allow for a one click download of underlying object data from Qlik Sense into an Excel table.
-#### • …allow editing and reloading of the Qlik Sense application script from directly inside of Excel.
-#### • …allow access to the complete Qlik Sense function libarary, including Set Analysis, directly from within an Excel formula.
-#### • …take full advantage of the best features of Excel such as fill down/across to rapdily increase your speed of developement.
-#### • …allow for population Qlik Sense set parameters and other functions utilizing embedded Excel cell references.
-#### • …allow you take full advantage of all Excel features including charting and pivot tables on data that comes directly from Qlik Sense. 
-#### • …allow for access to multiple apps (.qvf files) within a single Excel workbook.  
+• …provide the same UI (user interface) as Qlik Sense including filter selections and bookmarks for ease of use.
 
-To summarize, with Sense Excel you get all of the power and flexibility of Microsoft Excel combined with all of the speed, governance and navigation capabilities of Qlik Sense.
- 
- We are confident that Sense Excel will enhance both your Qlik Sense and Excel experience and provide you with consistent, reliable, real-time data for your reporting efforts.
+• …provide all Dimensions, Measures, Fields, Bookmarks etc. that are available in the connected Qlik Sense app.
+
+• …allow for creation of data tables in Excel utilizing the familiar workflow of Qlik Sense.
+
+• …allow for a one click download of underlying object data from Qlik Sense into an Excel table.
+
+• …allow editing and reloading of the Qlik Sense application script from directly inside of Excel.
+
+• …allow access to the complete Qlik Sense function libarary, including Set Analysis, directly within an Excel formula.
+
+• …take full advantage of the best features of Excel including copy/paste and fill down/across to rapidily increase your speed of development.
+
+• …allow for population of Qlik Sense formula and Set Analysis parameters utilizing embedded Excel cell references.
+
+• …allow you take full advantage of all Excel features including charting and pivot tables on data that comes directly from Qlik Sense.
+
+• …allow for access to multiple apps (.qvf files) within a single Excel workbook.  
+
+To summarize, with Sense Excel you get all of the power and flexibility of Microsoft Excel combined with all of the speed, governance and navigation capabilities of Qlik Sense. We are confident that Sense Excel will enhance both your Qlik Sense and Excel experience and provide you with consistent, reliable, real-time data for your reporting efforts.
 
 ## 4.  Requirements
 
 ### Please make sure the following system requirements are met: 
 
-#### • You have acccess to either Qlik Sense Desktop or Qlik Sense Server software. 
-#### • Microsoft Excel 2013, 2016 or Office 365 (client) (preferably 64-Bit, 32-Bit is supported as well) To find out which Microsoft Office edition you are running within Excel, by go to FILE >> ACCOUNT >> "About Microsoft Excel Preview".  Behind the MSO number, it will display 32-Bit or 64-Bit.
-#### • Confirm that you have a .NET Framework >= 4.5.1, otherwise please install it. 
+• You have acccess to either Qlik Sense Desktop or Qlik Sense Server software.
+
+• Confirm that you have a .NET Framework >= 4.5.1, otherwise please install it. 
+
+• You have Microsoft Excel 2013, 2016 or Office 365-Desktop (32 or 64 bit) installed.
+
+To find out which Microsoft Office edition you are running within Excel, go to FILE >> ACCOUNT >> "About Excel".  Behind the MSO number, it will display 32-Bit or 64-Bit.
+
+![Excel Version](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Excel-Version.PNG)
+
 
 ## 5. Installation Guide
 
 ### 5.1 Download Software
-You can download the Sense Excel software from the link below   https://m.sense2go.net/extension-package or from www.senseexcel.com.
+You can download the Sense Excel software from the following link https://m.sense2go.net/extension-package or from https://www.senseexcel.com. 
 
 ### 5.2 Unpack Files
 
-Unpack (unzip) the files in a location of your choosing. 
+Unpack (unzip) the files from the Sense Excel directory of your download package to a location of your choosing. 
 
 ###  5.3 Basic (Desktop) Installation 
 
-#### 1. Depending on whether you have a 32 or 64-Bit version of Excel choose the corresponding .xll-install file from the installation folder and double click it. 
+1. Choose the .xll-install file corresponding to your environment (32 or 64 bit) in the installation folder and double click it. 
 
-#### 2.  Excel should now start automatically and add the Qlik Sense tab to Excel. 
+2. Excel should start automatically and add the "Qlik Sense" tab and associated toolbar to Excel. 
 
-#### 3.  Close & restart MS Excel. 
-
-#### 4. Once the add-in is installed, it will activate a new formula tab called "Qlik Sense" as well as a new Toolbar.
-#### 5. Click "About" and click on "Auto load" if not checked already. This will start Sense Excel every time you open MS Excel. 
-
-#### 6.  Please take the time to read our terms of use (click on About) and confirm that the version you are using corresponds to the version listed in the Info window. 
+3. Click "About" and check the "Auto load" option if it isn't checked already. This will start Sense Excel every time you open MS Excel.  
+4.  Please take the time to read our terms of use (click on About) and confirm that the version you are using corresponds to the version listed in the Info window. 
 
 ### 5.4  Qlik Sense Server Configuration
 
-To connect Sense Excel to a Qlik Sense Server, additional configuration steps need to be performed in addition to those listed above. 
+To connect Sense Excel to a Qlik Sense Server, the additional configuration steps listed below need to be performed as well. 
 
-WARNING: Only paid versions of Sense Excel can be connected to a Qlik Sense Enterprise Site (server) installation. EXCEPTION: All installations with Qlik internal, trial or partner keys.
+Only paid versions of Sense Excel can be connected to a Qlik Sense Enterprise Site (server) installation. EXCEPTION: All installations utilizing Qlik internal license keys or current Qlik trial or partner keys.  
 
-INFO: 30-day server trial licenses are available for existing Qlik Sense customers.  Please contact an authorized reseller or the appropriate akquinet sales contact listed at the end of this document. 
-
+30-day server trial licenses are available for existing Qlik Sense customers.  Please contact an authorized reseller or the appropriate sales contact listed in Chapter 11 of this document. 
  
-#### 1. Open the Qlik Management Console (QMC) 
+1. Open the Qlik Management Console (QMC) 
 
 On the server/computer go to: Start >> Programs >> Qlik Sense >> Qlik Management Console or use any browser and type: https://”your_sense_server_ name”/qmc 
 
-#### 2. Add a Security rule to your Qlik Sense Server. 
+2. Add a Security rule to your Qlik Sense Server. 
 
-
-Within the QMC >> Security rules >> Create New >> Enter the following parameters; 
+Within the QMC >> Security rules >> Create New 
 
 Name: LicenseReadAll
 
@@ -167,19 +177,19 @@ Context: Only in QMC
 
 Actions: Read 
 
-Press Apply (if available) and confirm the rule has been added. 
+Press Apply and confirm the rule has been added. 
 
- #### 3.  Create a Content Library on the Qlik Sense Server. 
+3.  Create a Content Library on the Qlik Sense Server. 
 
-##### a. Within the QMC >> Content libraries >> Create New >> Enter the name “senseexcel” >> Apply.
+a. Within the QMC >> Content libraries >> Create New >> Enter the name “senseexcel” >> Apply.
 
-##### b. Copy the contents of your organzation's LEF file or trial key into a new text document. 
+b. Copy the contents of your organzation's LEF file or trial key into a new text document. 
 
-##### c. For token licensing strategies the LEF or trial key content alone will suffice.  
+c. For token licensing strategies, the contents of your LEF or trial key alone will suffice.  
 
 For named user licensing strategies please follow the additional steps below.
 
-#####  d. Append the LEF information with the domain and user name of the users which will access Sense Excel in the format below.  The FROM; TO information is optional if you choose to put time limits on the license duration of your named users.
+d. Append the LEF information with the domain and user name of the users which will access Sense Excel in the format below.  The FROM; TO information is optional if you choose to put time limits on the license duration of your named users.
 
  9999999999999999 
 
@@ -198,57 +208,118 @@ For named user licensing strategies please follow the additional steps below.
  EXCEL_NAME;DOMAIN\USER5;FROM;TO 
 
 
-##### e. Please confirm that there are no spaces at the end of each line.
-##### f.  Save this file with the name license.txt.
-##### g. .  Upload the license.txt file to the senseexcel content library. QMC >> Content Libararies >> Upload >> Select File “license.txt”. This file will be the tool for managing the licenses of all of your Sense Excel users going forward.  It can be updated and overwritten as necessary.
+e. Please confirm that there are no spaces at the end of each line.
+
+f. Save this file with the name license.txt.
+
+g. Upload the license.txt file to the senseexcel content library. 
+
+QMC >> Content Libararies >> Upload >> Select File “license.txt”. 
+
+This file will be the tool for managing the licenses of all of your Sense Excel users going forward.  It can be updated and overwritten as necessary.
 
 4.  “Qlik Sense Desktop” is the default connection string.  Once the security rule and content library have been added, you can connect to your Qlik Sense Server from the Connection section of the Qlik Sense toolbar.
 
-To connect to another Qlik Sense server, enter the (URL)
-without “/hub”. 
+To connect to a Qlik Sense server, enter the (URL) without “/hub”. 
 
-This should first be tried via a https://your.server.url/ -connection using HTTPS. If this does not work due to a browser certificate issue this means that your Qlik Sense server does not have a valid security certificate (these certificates can be purchased online). 
+You should first try to connect using a secured (HTTPS) connection https://your.server.url/. If your Qlik Sense server does not have a valid security certificate (these certificates can be purchased online), you might receive an error message.   
 
-• If that does not work, then try connecting through http://your.server.url/ this should work fine if allowed within the QMC (Proxies >> Central >> edit >> Ports >> check the “Allow HTTP” box) 
+If you do receive a certificate error, try using an unsecured connection (HTTP) http://your.server.url/. This configuration is supported if this option is enabled within the QMC.
 
+QMC> Proxies> Central> Edit> Ports> Check “Allow HTTP”.
+
+More on this topic is covered in Chapter 9 of this document.
 
 ## 6.  Explaining the User Interface 
 
 To get the most out of your Sense Excel experience it is necessary to understand the UI (User Interface) used in Sense Excel. The  picture below shows the “Qlik Sense” toolbar as well as the features that make up Sense Excel.
 
+ ![Toolbar](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar.PNG)
+
 ### 6.1. "Connections"
-This enables you to connect to your Qlik Sense Desktop or Server (URL). 
+This enables you to connect to your Qlik Sense Desktop or Server (URL).
+ 
+ ![Connection](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connecton.png)
+ 
 a. Sign In : Signing in will either start Qlik Sense Desktop in the background or connect to the Qlik Sense Hub on your server. 
-b. Sign Out will end your active connection to the server. 
+b. Sign Out: This will end your active connection to the server. 
  
 ### 6.2. "Open Hub"
-This button allows you to choose your application and access the  dimensions, measures and underlying object data associated with it.  
+
+ ![Open Hub](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Open-Hub.png)
+
+This button allows you to choose your application and access the dimensions, measures and underlying object data associated with it.  
+
+ ![Open Hub Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Open-Hub-Dialogue.png)
 
 ### 6.3. “Load data” and “Data load editor”
+ ![Load Data](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Load-Data.png)
+
 These buttons allow you, with proper credentials, to edit and execute the load script associated with your application. 
 
+ ![Data load editor](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Data-load-editor.png)
+
 ### 6.4. “Table” 
+
+ ![Table](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table.png)
+
 This button will activate the Table Property Panel which allows you to import underlying object data, such as from a chart, directly from your app into an Excel table or create a new table by selecting columns Data elements - Dimensions, Measures, Fields or Formulas and apply sorting and add-on properties.
 
+ ![Table Editor Onopen](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Table-Editor-Onopen.PNG)
+ 
+ 
 ### 6.5. "Bookmarks" 
+
+ ![Bookmarks](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Bookmarks.png)
+
 This option allows you to access existing Bookmarks in your Qlik Sense app or save your current filter selections as a new Bookmark that can be reused later.Bookmarks created in Sense Excel are not re-imported into the connected Qlik Sense app.
+
+ ![Bookmarks Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Bookmarks-Dialogue.png)
+
+
 ### 6.6. “Selections tool” 
+
+ ![Selection Tool Button](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Button.png)
+
 This button will show or hide the Sense Filter Bar where all filter selections will be displayed. 
 
-Once this toolbar is activated, you can use the square box on the right side to pull up all of your available dimensions as list boxes from which to select values for as filters.  
+![Selection Tool Sense Filter Bar](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Sense-Filter-Bar.PNG)
+
+Once this toolbar is activated, you can use the square box on the right side to pull up all of your available dimensions as list boxes from which to select values for as filters.
+
+ ![Selection Tool Activate](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Activate.PNG)
+
 
 Once inside of this interface, you can also use the Search function to reduce the dislayed elements to those relevant to your query.
 
+ ![Selection Tool Search](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Search.png)
+ 
+ ![Selection Tool Search Value](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Search-Value.png)
+ 
+  ![Selection Tool List Box Select](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-List-Box-Select.png)
+
 ### 6.7. "About" 
+
+ ![Toolbar About](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About.png)
+
 Clicking on the question mark brings up an additional window with the Sense Excel version and disclaimer information. 
 
 The “Support” option will open your default e-mail client and create a message with an attached log file addressed to our support-team. 
 
+ ![Toolbar About Support](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About-Support.PNG)
+
 Checking the “Auto load”-option will load the Qlik Sense toolbar automatically when starting Excel. 
 
-"Language" allows you to choose which language you would like to work in. 
+ ![Toolbar About Autoload](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About-Autoload.png)
 
-### 6.8. Sense Filter Toolbar
+"Language" allows you to choose which language you would like to work in.
+
+ ![Toolbar About Language](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About-Language.png)
+
+
+### 6.8. Sense Filter Toolbar Navigation
+
+![Selection Tool Sense Filter Bar](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Sense-Filter-Bar.PNG)
 
 The buttons here allow you to manipulate your selections e.g. “Step back”, “Step forward” and “Clear all selections. Furthermore, when a filter is set, you can change the values of your selection by clicking on it and using the Check and X buttons to select and deselect filter values respectively,
 
