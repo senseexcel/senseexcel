@@ -333,11 +333,11 @@ To use the Sense Excel Executive Dashboard Report, please follow the following s
 
 1. Start Excel and make sure the Qlik Sense add-in is loaded and Toolbar is visible. 
 
-3. Open the ExecutiveDashboard.xlsx file.
+2. Open the ExecutiveDashboard.xlsx file.
 
- ![Demo Report](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Demo-Report.png)
+ ![Demo Report](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Demo-Report.PNG)
 
-2. Connect to the Qlik Sense Desktop or Server via the "Log-in" button.
+3. Connect to the Qlik Sense Desktop or Server via the "Log-in" button.
 
  Once opened, go to the Qlik Sense toolbar >> Log in >> click on “Open Hub” >> click on the “Executive Dashboard” app.
 
@@ -353,11 +353,9 @@ Now that the Excel report is connected to the Qlik Sense app (.qvf-file) any cha
 
 6. To see an example of Qlik syntax being used within and in conjunction with an Excel formula, click on any “ACTUAL” field within the Excel Demo report. There are four seperate functions being utilized in the formula in this example.  These are explained in further detail in Chapter 8. 
 
- ![Formula Expanded](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Formula-Expanded.PNG)
+![Formula Only](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Formula-Only.png)
 
-
- ![Formula Only](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Formula-Only.png)
-
+![Formula Expanded](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Formula-Expanded.PNG)
 
 7. This report also features the existing Bookmarks included in the Executive Dashboard app definition. When applied, these will globally update all cell values in your report the same way as it would in Qlik Sense. New Bookmarks can also be named and saved based upon any other filter selections made by the user and reused later. 
 
