@@ -331,21 +331,33 @@ To enable the user of Sense Excel to understand, create and edit a report we hav
 
 To use the Sense Excel Executive Dashboard Report, please follow the following steps: 
 
-#### 1. Start Excel and make sure the Qlik Sense add-in is loaded and Toolbar is visible. 
+1. Start Excel and make sure the Qlik Sense add-in is loaded and Toolbar is visible. 
 
-#### 2. Connect to the Qlik Sense Desktop or Server via the "Log-in" button.
+2. Connect to the Qlik Sense Desktop or Server via the "Log-in" button.
 
-#### 3. Open the ExecutiveDashboard.xlsx file. Once opened, go to the Qlik Sense toolbar >> Log in >> click on “Open Hub” >> click on the “Executive Dashboard” app. 
+3. Open the ExecutiveDashboard.xlsx file. Once opened, go to the Qlik Sense toolbar >> Log in >> click on “Open Hub” >> click on the “Executive Dashboard” app.
+
+ ![Open Hub Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Open-Hub-Dialogue.png)
 
 Now that the Excel report is connected to the Qlik Sense app (.qvf-file) any changes made to the data in app in Qlik Sense will be automatically reflected in the corresponding data in your Excel report. 
 
-#### 4. Use the Global Selector, choose some filters and see how it automatically updates the figures in the Excel report in the background. Close the Global Selector by clicking above the black background. 
+4. Use the Global Selector, choose some filters and see how it automatically updates the figures in the Excel report in the background. Close the Global Selector by clicking above the black background. 
 
-#### 5. View the filters that were just set in the Sense Filter Toolbar and click to edit or remove them. 
+ ![Selection Tool Activate](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Activate.PNG)
 
-#### 6. To see an example of Qlik syntax being used within and in conjunction with an Excel formula, click on any “ACTUAL” field within the Excel Demo report. There are four  functions utilized in formula in this example which are explained in further detail in Chapter 6. 
+5. View the filters that were just set in the Sense Filter Toolbar and click to edit or remove them. 
 
-#### 7. This report also features the existing Bookmarks included in the Executive Dashboard app definition. When applied, these will globally update all cell values in your report the same way as it would in Qlik Sense. New Bookmarks can also be named and saved based upon any other filter selections made by the user and reused later. 
+6. To see an example of Qlik syntax being used within and in conjunction with an Excel formula, click on any “ACTUAL” field within the Excel Demo report. There are four seperate functions being utilized in the formula in this example.  These are explained in further detail in Chapter 8. 
+
+ ![Formula Expanded](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Formula-Expanded.PNG)
+
+
+ ![Formula Only](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Formula-Only.png)
+
+
+7. This report also features the existing Bookmarks included in the Executive Dashboard app definition. When applied, these will globally update all cell values in your report the same way as it would in Qlik Sense. New Bookmarks can also be named and saved based upon any other filter selections made by the user and reused later. 
+
+ ![Bookmarks Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Bookmarks-Dialogue.png)
 
 ## 8. Create Your Own Reports
 
@@ -476,24 +488,29 @@ If you are happy with Sense Excel, please tell others. If you’re not,… pleas
 
 #### Europe/German Speaking Countries:
 
-Juliane Tschierske 
+Juliane Tschierske
+
 Telephone: +49 40 881 73 26 21
+
 E-Mail:  juliane.tschierske@akquinet.de
 
 #### Americas:
 
 Lance Harris
+
 Master Agent, Sales & Alliances
+
 Telephone: +1 703 625 7738
+
 E-Mail:  lharris@strategypoint.com
 
 #### Rest of the World: 
 
 Michael Walther
-Telephone:  +49 40 88173 2617  
+
+Telephone:  +49 40 88173 2617
+
 E-Mail: [michael.walther@akquinet.de]
-
-
 
 #### Address: 
 
