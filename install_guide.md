@@ -121,19 +121,33 @@ On the server/computer go to: Start >> Programs >> Qlik Sense >> Qlik Management
 
 #### 5.4.2 Add a Security rule to your Qlik Sense Server. 
 
-Within the QMC >> Security rules >> Create New 
+QMC > MANAGE RESOURCES > Security Rules > + Create new > SER License
 
-Name: LicenseReadAll
+#### IDENTIFICATION
+|Setting |Value
+|------------------|------------------|
+|Name | SER License |
+|Create Rule from Template | Unspecified |
+|Disabled | Leave Unchecked |
+|Description | |
 
-Resource filter: License_* 
+#### BASIC
+|Setting |Value|
+|---|---|
+|Resource Filter | License_* |
+|Actions | Read |
 
-Condition: !user.IsAnonymous() 
+#### ADVANCED
+Add the below value manually into the Conditions table:
 
-Context: Only in QMC 
+|Setting    |Value             |
+|-----------|------------------|
+|Conditions | !user.IsAnononymous() |
+|Context    | Both in hub and QMC   |
 
-Actions: Read 
+Validate Rule > Add Rule
 
-Press Apply and confirm the rule has been added. 
+![SER License Security Rule](https://github.com/senseexcel/senseexcel-reporting/blob/master/docs/Security-Rule-SER-License.PNG)
 
 #### 5.4.3  Create a Content Library on the Qlik Sense Server. 
 
@@ -143,14 +157,16 @@ Press Apply and confirm the rule has been added.
      For named user licensing strategies please follow the additional steps below.
 4. Append the LEF information with the domain and user name of the users which will access Sense Excel in the format below. 
    The FROM; TO information is optional if you choose to put time limits on the license duration of your named users.
-
-   9999999999999999 
-   EXCEL_NAMED;5;;YYYY-MM-DD 
+ 
+ ```
+   9999999999999999   
+   EXCEL_NAMED;5;;YYYY-MM-DD    
    AAAA-BBBB-CCCC-DDDD-EEEE 
    EXCEL_NAME;DOMAIN\USER1 
    EXCEL_NAME;DOMAIN\USER2;;
    EXCEL_NAME;DOMAIN\USER3;FROM;TO 
    EXCEL_NAME;DOMAIN\USER4;FROM; 
+```
 
 5. Please confirm that there are no spaces at the end of each line.
 6. Save this file with the name license.txt.
