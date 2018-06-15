@@ -1,50 +1,6 @@
 # Sense Excel Detailed Installation Guide
 
-
-
- ![Cover](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Cover.PNG)
-
-
-## Table of Contents 
-
-## 1. Please Note
-### 1.1 Installation Notes
-### 1.2 Disclaimer 
-## 2. Introduction 
-### 2.1 Who We Are
-### 2.2 Why We Do What We Do
-## 3. What You Can Expect from Sense Excel
-## 4. Requirements 
-## 5. Installation Guide 
-### 5.1 Download Software  
-### 5.2 Unpack Files
-### 5.3 Basic (Desktop) Installation 
-### 5.4 Qlik Sense Server Configuration
-## 6.  Explaining the User Interface
-### 6.1. "Connections"
-### 6.2. "Open Hub"
-### 6.3. “Load data” and “Data load editor”
-### 6.4. “Table” 
-### 6.5. "Bookmarks" 
-### 6.6. “Selections tool” 
-### 6.7. "About" 
-### 6.8. Sense Filter Toolbar
-## 7. Using the Sense Excel Demo Report
-## 8. Create Your Own Reports
-### 8.1 Using the “Table” Import Button 
-### 8.2 Fixed Cell Report Definition 
-### 8.3 Sense Excel Formulas and Syntax
-#### 8.3.1 SenseConnected 
-#### 8.3.2 SenseFilter
-#### 8.3.3 SenseVariable 
-#### 8.3.4 SenseEV 
-### 8.4 Using “Load Data” and "Data Load Editor"  
-## 9. Connection Options
-## 10. Seven Steps to Your First Report in Sense Excel
-## 11. Contact Information
-
-
-
+![Cover](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Cover.PNG)
 
 ## 1. Please Note 
 
@@ -159,11 +115,11 @@ Only paid versions of Sense Excel can be connected to a Qlik Sense Enterprise Si
 
 30-day server trial licenses are available for existing Qlik Sense customers.  Please contact an authorized reseller or the appropriate sales contact listed in Chapter 11 of this document. 
  
-1. Open the Qlik Management Console (QMC) 
+#### 5.4.1 Open the Qlik Management Console (QMC) 
 
 On the server/computer go to: Start >> Programs >> Qlik Sense >> Qlik Management Console or use any browser and type: https://”your_sense_server_ name”/qmc 
 
-2. Add a Security rule to your Qlik Sense Server. 
+#### 5.4.2 Add a Security rule to your Qlik Sense Server. 
 
 Within the QMC >> Security rules >> Create New 
 
@@ -179,46 +135,32 @@ Actions: Read
 
 Press Apply and confirm the rule has been added. 
 
-3.  Create a Content Library on the Qlik Sense Server. 
+#### 5.4.3  Create a Content Library on the Qlik Sense Server. 
 
-a. Within the QMC >> Content libraries >> Create New >> Enter the name “senseexcel” >> Apply.
+1. Within the QMC >> Content libraries >> Create New >> Enter the name “senseexcel” >> Apply.
+2. Copy the contents of your organzation's LEF file or trial key into a new text document. 
+3. For token licensing strategies, the contents of your LEF or trial key alone will suffice.
+     For named user licensing strategies please follow the additional steps below.
+4. Append the LEF information with the domain and user name of the users which will access Sense Excel in the format below. 
+   The FROM; TO information is optional if you choose to put time limits on the license duration of your named users.
 
-b. Copy the contents of your organzation's LEF file or trial key into a new text document. 
+   9999999999999999 
+   EXCEL_NAMED;5;;YYYY-MM-DD 
+   AAAA-BBBB-CCCC-DDDD-EEEE 
+   EXCEL_NAME;DOMAIN\USER1 
+   EXCEL_NAME;DOMAIN\USER2;;
+   EXCEL_NAME;DOMAIN\USER3;FROM;TO 
+   EXCEL_NAME;DOMAIN\USER4;FROM; 
 
-c. For token licensing strategies, the contents of your LEF or trial key alone will suffice.  
+5. Please confirm that there are no spaces at the end of each line.
+6. Save this file with the name license.txt.
+7. Upload the license.txt file to the senseexcel content library. 
+   QMC >> Content Libararies >> Upload >> Select File “license.txt”. 
 
-For named user licensing strategies please follow the additional steps below.
+   This file will be the tool for managing the licenses of all of your Sense Excel users going forward.
+   It can be updated and     overwritten as necessary.
 
-d. Append the LEF information with the domain and user name of the users which will access Sense Excel in the format below.  The FROM; TO information is optional if you choose to put time limits on the license duration of your named users.
-
- 9999999999999999 
-
- EXCEL_NAMED;5;;YYYY-MM-DD 
-
- AAAA-BBBB-CCCC-DDDD-EEEE 
-
- EXCEL_NAME;DOMAIN\USER1 
-
- EXCEL_NAME;DOMAIN\USER2;FROM;TO 
-
- EXCEL_NAME;DOMAIN\USER3;FROM;TO 
-
- EXCEL_NAME;DOMAIN\USER4;FROM;TO 
-
- EXCEL_NAME;DOMAIN\USER5;FROM;TO 
-
-
-e. Please confirm that there are no spaces at the end of each line.
-
-f. Save this file with the name license.txt.
-
-g. Upload the license.txt file to the senseexcel content library. 
-
-QMC >> Content Libararies >> Upload >> Select File “license.txt”. 
-
-This file will be the tool for managing the licenses of all of your Sense Excel users going forward.  It can be updated and overwritten as necessary.
-
-4.  “Qlik Sense Desktop” is the default connection string.  Once the security rule and content library have been added, you can connect to your Qlik Sense Server from the Connection section of the Qlik Sense toolbar.
+#### 5.4.4  “Qlik Sense Desktop” is the default connection string.  Once the security rule and content library have been added, you can connect to your Qlik Sense Server from the Connection section of the Qlik Sense toolbar.
 
 To connect to a Qlik Sense server, enter the (URL) without “/hub”. 
 
