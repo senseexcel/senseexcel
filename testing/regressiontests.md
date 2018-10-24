@@ -83,8 +83,11 @@ Regression-Tests for Sense Excel
       * 7.4 additional tests
       
         * 7.4.1 Pivot mode off
-          * 7.4.1.1 select empty Cell in Excel, in the table panel add a dimension, click green tick button -> a Table with a single column should be inserted into Excel
+          * 7.4.1.1 select an empty Cell in Excel, in the table panel add a dimension, click green tick button -> a Table with a single column should be inserted into Excel
           * 7.4.1.2 select an empty cell in Excel, the tableeditor should be cleared and the importcomboboxgets visible. Select a cell of the created table, the previously created table should be loaded in the tableeditor, tamplimüport combobox should disapper.
           * 7.4.1.3 select an empty cell in Excel, insert two dimensions (dim1, dim2) and two measures (mea1, mea2) resulting in the following list (dim1,dim2,mea1,mea2). Now drag mea2 to the top of the list an dim 1 to the end (mea2,dim2,mea1,dim2) and accept the table, select a empty cell, select a cell of the table, validate if the tableditor matches the table, move all columns back in the original order (dim1,dim2,mea1,mea2) and acccept, check if the table is updated correct.
           In the section Sorting change some sortorder and check
+          
+        * 7.4.2 Pivot mode on
+          * 7.4.2.1 select an empty Cell in Excel, in the tableeditor switch to pivot mode, add a dimension for row and one for column an one measure accept with the green tick, table should be created, select en empty cell, tableeditor shoeuld be cleared. Now select a cell of the created table, check the ableeditor, add a dimension for rowand drag it to the top of the rows dimensions, then accept.  
           
