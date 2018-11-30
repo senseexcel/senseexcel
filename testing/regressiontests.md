@@ -91,3 +91,21 @@ Regression-Tests for Sense Excel
         * 7.4.2 Pivot mode on
           * 7.4.2.1 select an empty Cell in Excel, in the tableeditor switch to pivot mode, add a dimension for row and one for column an one measure accept with the green tick, table should be created, select en empty cell, tableeditor shoeuld be cleared. Now select a cell of the created table, check the ableeditor, add a dimension for rowand drag it to the top of the rows dimensions, then accept.  
           
+          * 7.4.2.2 A Warning message should be shown if one attempt to create/import a table with:
+            * more than one column-Dimensions
+            * no row dimension
+            * more than one measure         
+          
+      * 7.5 Table Misc.
+        * 7.5.1 Error in dimension formula 
+          * 7.5.1.1 create a table insert a dimension. Resolve dimension to filed via the chain-button next to the dimension-Name.          
+          * 7.5.1.2  change the formula so that it has errors (use a field that didn't exists in Qlik,...)
+          * 7.5.1.3  Table should collapse to one header row containing '-' and one empty data row. 
+        * 7.5.2 Error in Measure Formula 
+          * 7.5.2.1 create a table insert a measure. Resolve dimension to filed via the chain-button next to the measure-Name.
+          * 7.5.2.2  change the formula so that it has errors (use a field that didn't exists in Qlik,...)
+          * 7.5.2.3  The table should show normaly but in the measure-column witch contains errors, all rows should show a '-'
+        * 7.5.3 if a table is inserted an the Excel-format of a column of this table is set, this format should also be set after the table is changed via the tableeditor
+        * 7.5.4 If no foreground/backgroundcolor is set explicitly, the fore/back-color of a cell within a table should change according to the selected table-style. (light tablestyle uses black foreground color, dark tablestyle uses white foreground,...)
+        * 7.5.5 if a Excel-totalrow is attached to a table, it should not be overridden after a selection changes the number of rows of the table.  
+          
