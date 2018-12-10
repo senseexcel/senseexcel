@@ -107,5 +107,7 @@ Regression-Tests for Sense Excel
           * 7.5.2.3  The table should show normaly but in the measure-column witch contains errors, all rows should show a '-'
         * 7.5.3 if a table is inserted an the Excel-format of a column of this table is set, this format should also be set after the table is changed via the tableeditor
         * 7.5.4 If no foreground/backgroundcolor is set explicitly, the fore/back-color of a cell within a table should change according to the selected table-style. (light tablestyle uses black foreground color, dark tablestyle uses white foreground,...)
-        * 7.5.5 if a Excel-totalrow is attached to a table, it should not be overridden after a selection changes the number of rows of the table.  
+        * 7.5.5 if a Excel-totalrow is attached to a table, it should not be overridden after a selection changes the number of rows of the table.
+          * 7.5.5.1 Selected formulas(Sum,Avg,Min,Max,...) in the totalrow should be preserved after a table change/refresh.
+        * 7.5.6 A Selected Excel-tablestyle shouldn't be overriden after a table change/refresh.
           
