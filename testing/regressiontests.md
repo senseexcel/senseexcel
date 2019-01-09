@@ -110,4 +110,14 @@ Regression-Tests for Sense Excel
         * 7.5.5 if a Excel-totalrow is attached to a table, it should not be overridden after a selection changes the number of rows of the table.
           * 7.5.5.1 Selected formulas(Sum,Avg,Min,Max,...) in the totalrow should be preserved after a table change/refresh.
         * 7.5.6 A Selected Excel-tablestyle shouldn't be overriden after a table change/refresh.
-          
+  * 8 Bookmarks
+  * 9 Selection tool
+    * 9.1 undo/redo/clear selections     
+      * 9.1.1 Undo -  make a selection, change it and click back/undo, now the previous selection should be restored
+      * 9.1.2 Redo - make a selection, change it and click undo. Now click redo and the changed Selection should be set
+      * 9.1.3 clear - make a selection and click clear, now no selection should be set. 
+    * 9.2 Selection tool
+      
+      
+    
+    
