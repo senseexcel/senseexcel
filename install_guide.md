@@ -273,6 +273,28 @@ Executing the "Report Preview" button prompts the Sense Excel Reporting engine t
 
 ### 6.9 "Settings"
 
+Pressing the "Wheel" icon will activate the Sense Excel Property window on the right side of your screen.
+
+ ![Toolbar About Support](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About-Support.PNG)
+
+
+
+The “Support” option will open your default e-mail client and create a message with an attached log file addressed to our support-team. 
+
+ ![Toolbar Settings Open Info Tab](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Setttings-Open-Info-Tab.png)
+ 
+ ![Toolbar Settings Info Tab](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Setttings-Info-Tab.png)
+ 
+ 
+Checking the “Auto load”-option will load the Qlik Sense toolbar automatically when starting Excel. 
+
+ ![Toolbar About Autoload](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About-Autoload.png)
+
+"Language" allows you to choose which language you would like to work in.
+
+ ![Toolbar About Language](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About-Language.png)
+
+
 
 
 ### 6.10 "About" 
@@ -281,17 +303,6 @@ Executing the "Report Preview" button prompts the Sense Excel Reporting engine t
 
 Clicking on the question mark brings up an additional window with the Sense Excel version and disclaimer information. 
 
-The “Support” option will open your default e-mail client and create a message with an attached log file addressed to our support-team. 
-
- ![Toolbar About Support](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About-Support.PNG)
-
-Checking the “Auto load”-option will load the Qlik Sense toolbar automatically when starting Excel. 
-
- ![Toolbar About Autoload](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About-Autoload.png)
-
-"Language" allows you to choose which language you would like to work in.
-
- ![Toolbar About Language](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About-Language.png)
 
 
 ### 6.8. Sense Filter Toolbar Navigation
