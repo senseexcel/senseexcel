@@ -194,15 +194,15 @@ To get the most out of your Sense Excel experience it is necessary to understand
 
  ![Toolbar](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar.PNG)
 
-### 6.1. "Connections"
+### 6.1 "Connection"
 This enables you to connect to your Qlik Sense Desktop or Server (URL).
  
- ![Connection](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connecton.png)
+ ![Connection](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection.png)
  
 a. Sign In : Signing in will either start Qlik Sense Desktop in the background or connect to the Qlik Sense Hub on your server. 
 b. Sign Out: This will end your active connection to the server. 
  
-### 6.2. "Open Hub"
+### 6.2 "Hub"
 
  ![Open Hub](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Open-Hub.png)
 
@@ -210,14 +210,14 @@ This button allows you to choose your application and access the dimensions, mea
 
  ![Open Hub Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Open-Hub-Dialogue.png)
 
-### 6.3. “Load data” and “Data load editor”
+### 6.3 “Load data” and “Data Load Editor”
  ![Load Data](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Load-Data.png)
 
 These buttons allow you, with proper credentials, to edit and execute the load script associated with your application. 
 
  ![Data load editor](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Data-load-editor.png)
 
-### 6.4. “Table” 
+### 6.4 “Table” 
 
  ![Table](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table.png)
 
@@ -226,16 +226,26 @@ This button will activate the Table Property Panel which allows you to import un
  ![Table Editor Onopen](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Table-Editor-Onopen.PNG)
  
  
-### 6.5. "Bookmarks" 
+### 6.5 "Bookmarks" 
 
  ![Bookmarks](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Bookmarks.png)
 
-This option allows you to access existing Bookmarks in your Qlik Sense app or save your current filter selections as a new Bookmark that can be reused later.Bookmarks created in Sense Excel are not re-imported into the connected Qlik Sense app.
+This option allows you to access existing Bookmarks defined in your Qlik Sense app or save your current filter selections as a new Bookmark that can be reused later. Bookmarks created in Sense Excel are not re-imported into the connected Qlik Sense app.
 
- ![Bookmarks Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Bookmarks-Dialogue.png)
+The Bookmarks command will open a window in the Sense Excel info tab.  You can a create a new Bookmark by using the "Create New Bookmark" button as well as edit or delete any existing bookmarks by pressing the Pencil or Trash Can icons respectively. 
+
+![Bookmarks Info Tab](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Bookmarks-Info-Tab.png)
+
+### 6.6 "Default Bookmark"
+
+You can set a default Bookmark by checking the "App Default" box shown below.  Once a default Bookmark is defined, all Sense Excel users will have the default Bookmark and associated filter selections applied upon opening of the app.  
+
+Sense Excel brings all requeseted data into Excel on the client machine and this feature can be beneficial when connecting to large data sets and you want to minimize processing and network traffic, especially during report development.
+ 
+![Bookmarks Define](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Bookmarks-Define.png)
 
 
-### 6.6. “Selections tool” 
+### 6.7 “Selections tool” 
 
  ![Selection Tool Button](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Button.png)
 
@@ -247,7 +257,6 @@ Once this toolbar is activated, you can use the square box on the right side to 
 
  ![Selection Tool Activate](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Activate.PNG)
 
-
 Once inside of this interface, you can also use the Search function to reduce the dislayed elements to those relevant to your query.
 
  ![Selection Tool Search](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Search.png)
@@ -256,7 +265,17 @@ Once inside of this interface, you can also use the Search function to reduce th
  
   ![Selection Tool List Box Select](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-List-Box-Select.png)
 
-### 6.7. "About" 
+### 6.8 "Report Preview"
+
+The "Report Preview" button will only be enabled if Sense Excel Reporting is included in your Qlik Sense deloyment.  
+
+Executing the "Report Preview" button prompts the Sense Excel Reporting engine to execute your active Sense Excel report including all defined "Sheet Loops" (see section XXX for more information) then render and download a pdf version of the report to your client machine.
+
+### 6.9 "Settings"
+
+
+
+### 6.10 "About" 
 
  ![Toolbar About](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About.png)
 
