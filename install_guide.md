@@ -92,11 +92,11 @@ To find out which Microsoft Office edition you are running within Excel, go to F
 ## 5. Installation Guide
 
 ### 5.1 Download Software
-You can download the Sense Excel software from the following link https://m.sense2go.net/extension-package or from https://www.senseexcel.com. 
+You can download the Sense Excel software from the following link https://www.senseexcel.com. 
 
 ### 5.2 Unpack Files
 
-Unpack (unzip) the files from the Sense Excel directory of your download package to a location of your choosing. 
+Unpack (unzip) the files from the Sense Excel directory of your download package to a location of your choosing. Best practice is to create a new directory in your Documents folder called Sense Excel with a sub-folder referencing the version number like %User%\Documents\Sense Excel\x.x.x
 
 ###  5.3 Basic (Desktop) Installation 
 
@@ -104,8 +104,21 @@ Unpack (unzip) the files from the Sense Excel directory of your download package
 
 2. Excel should start automatically and add the "Qlik Sense" tab and associated toolbar to Excel. 
 
-3. Click "About" and check the "Auto load" option if it isn't checked already. This will start Sense Excel every time you open MS Excel.  
-4.  Please take the time to read our terms of use (click on About) and confirm that the version you are using corresponds to the version listed in the Info window. 
+3. Click "About" and check the "Auto load" option if it isn't checked already. This will start Sense Excel every time you open MS Excel.
+
+4. Close Excel and Re-open it.  The "Sense" entry should show up in your menu bar.
+
+5. In limited instances the "Sense" add-in might not register properly when using the double-cliek method. If this is the case, use the alternate installation technique.
+
+a. Open Excel and a blank workbook.
+
+b. Navigate to File > Options > Add-Ins.  Press the "Go" button then the "Browse" button. 
+
+c. Navigate to the file location of your Sense Excel software and select the approriate xll file. 
+
+d. Once the Add-in loads and registers go to Settings and check Auto-Load.  Exit and Restart Excel.
+
+6  Please take the time to read our terms of use (click on About) and confirm that the version you are using corresponds to the version listed in the Info window. 
 
 ### 5.4  Qlik Sense Server Configuration
 
