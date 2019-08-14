@@ -2,18 +2,7 @@
 
 ![Cover](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Cover.PNG)
 
-## 1. Please Note 
-
-### 1.1 Installation Notes 
-
-If previous installations of Sense Excel exist on your system please read the following installation advice. 
-
-1. Close MS Excel and make sure it is not running in the background. 
-2. Extract the new downloaded version of Sense Excel into the existing installation folder and overwrite (all) the old installation data. 
-3. Start MS Excel, go to the Qlik Sense tab and check the “Auto load” option (if not checked already) under the about menu. This will start Sense Excel when Microsoft® Excel is started. 
-4. Check to see that the version number equals the downloaded and installed version of Sense Excel. This can be confirmed by clicking on the question mark in the about section of the Qlik Sense tab. 
-
-### 1.2 Disclaimer 
+## 1. Disclaimer 
 
 This document will cover how to get Sense Excel up and running on your system, what to expect and ways the product can be used. This document is written to provide quick answers and will be continuously updated. Not all options or possibilities of Sense Excel are covered within the scope of this document but will be complimented by best practices and use cases documented elsewhere in this repository. 
 
@@ -40,7 +29,7 @@ We believe that all stakeholders should have easy access to business critical in
 
 ## 3. What You Can Expect from Sense Excel 
 
-In this chapter, we will explain what can be expected of Sense Excel and what cannot. 
+In this chapter, we will explain what can be expected of Sense Excel and what can't. 
  
 ### Sense Excel can/does not... 
 
@@ -58,7 +47,7 @@ In this chapter, we will explain what can be expected of Sense Excel and what ca
 
 • …allow for creation of data tables in Excel utilizing the familiar workflow of Qlik Sense.
 
-• …allow for a one click download of underlying object data from Qlik Sense into an Excel table.
+• …allow for a quick dowload of an existing Qlik Sense table object into Excel.
 
 • …allow editing and reloading of the Qlik Sense application script from directly inside of Excel.
 
@@ -92,35 +81,57 @@ To find out which Microsoft Office edition you are running within Excel, go to F
 ## 5. Installation Guide
 
 ### 5.1 Download Software
-You can download the Sense Excel software from the following link https://www.senseexcel.com. 
+You can download the most recent Sense Excel software from https://www.senseexcel.com. 
 
 ### 5.2 Unpack Files
 
-Unpack (unzip) the files from the Sense Excel directory of your download package to a location of your choosing. Best practice is to create a new directory in your Documents folder called Sense Excel with a sub-folder referencing the version number like %User%\Documents\Sense Excel\x.x.x
+Unpack (unzip) the files from the Sense Excel directory of your download package to a location of your choosing. 
 
-###  5.3 Basic (Desktop) Installation 
+Best practice is to create a new directory in your Documents folder called Sense Excel with a sub-folder referencing the version number like %User%\Documents\Sense Excel\x.x.x
+
+###  5.3 New Sense Excel Installation 
 
 1. Choose the .xll-install file corresponding to your environment (32 or 64 bit) in the installation folder and double click it. 
 
-2. Excel should start automatically and add the "Qlik Sense" tab and associated toolbar to Excel. 
+2. Excel should start automatically and add the "SENSE" tab and associated toolbar to Excel. 
 
-3. Click "About" and check the "Auto load" option if it isn't checked already. This will start Sense Excel every time you open MS Excel.
+3. Go to Settings in the Sense Excel toolbar, press the triangle to expand the meu and check "Auto Load". This will start Sense Excel every time you open Excel.
 
-4. Close Excel and Re-open it.  The "Sense" entry should show up in your menu bar.
+4. Close Excel and re-open it.  The "SENSE" entry should show up in your menu bar.
 
-5. In limited instances the "Sense" add-in might not register properly when using the double-cliek method. If this is the case, use the alternate installation technique.
+### 5.4 Alternate Installation Technique
 
-a. Open Excel and a blank workbook.
+In limited instances the "Sense" add-in might not register properly when using the double-cliek installation method. If this is the case, use the alternate installation technique described below.
 
-b. Navigate to File > Options > Add-Ins.  Press the "Go" button then the "Browse" button. 
+1. Open Excel and a blank workbook.
 
-c. Navigate to the file location of your Sense Excel software and select the approriate xll file. 
+2. Navigate to File > Options > Add-Ins.  Press the "Go" button then the "Browse" button. 
 
-d. Once the Add-in loads and registers go to Settings and check Auto-Load.  Exit and Restart Excel.
+3. Navigate to the file location of your Sense Excel software and double click on the approriate xll file. 
 
-6  Please take the time to read our terms of use (click on About) and confirm that the version you are using corresponds to the version listed in the Info window. 
+4. Once the Add-in loads and is registered go to Settings and check Auto-Load.  Exit and Restart Excel.
 
-### 5.4  Qlik Sense Server Configuration
+### 5.4  Upgrade Sense Excel Installation
+
+1. Open Excel and a blank workbook.
+
+2. Go to File > Options > Add-Ins > Press the "Go" button
+
+3. Uncheck all Sense Excel add-ins that are displayed.  Confirm that the "SENSE" entry is removed from your Menu bar.
+
+4. Press the "Browse" button.  This will take you to the %user%\Roaming\Microsoft\Addins directory.
+
+5. Type *.* or dropdown to show "all file types" and delete all Sense Excel (.xll and .xlldel) files in the directory.
+
+6. Press the Browse button again.  Navigate to the location of your updated Sense Excel software files.
+
+7. Click on the appropriate version and wait for the add-in to load and register.  The "SENSE" entry should re-appear in your Menu bar.
+
+8. Go to Settings in the Sense Excel toolbar, press the triangle to expand the meu and check "Auto Load".
+
+9. Close and Restart Excel.
+
+### 5.5  Qlik Sense Server Configuration
 
 To connect Sense Excel to a Qlik Sense Server, the additional configuration steps listed below need to be performed as well. 
 
@@ -128,11 +139,11 @@ Only paid versions of Sense Excel can be connected to a Qlik Sense Enterprise Si
 
 30-day server trial licenses are available for existing Qlik Sense customers.  Please contact an authorized reseller or the appropriate sales contact listed in Chapter 11 of this document. 
  
-#### 5.4.1 Open the Qlik Management Console (QMC) 
+#### 5.5.1 Open the Qlik Management Console (QMC) 
 
 On the server/computer go to: Start >> Programs >> Qlik Sense >> Qlik Management Console or use any browser and type: https://”your_sense_server_ name”/qmc 
 
-#### 5.4.2 Add a Security rule to your Qlik Sense Server. 
+#### 5.5.2 Add a Security rule to your Qlik Sense Server. 
 
 QMC > MANAGE RESOURCES > Security Rules > + Create new > SER License
 
@@ -162,7 +173,7 @@ Validate Rule > Add Rule
 
 ![SER License Security Rule](https://github.com/senseexcel/senseexcel-reporting/blob/master/docs/Security-Rule-SER-License.PNG)
 
-#### 5.4.3  Create a Content Library on the Qlik Sense Server. 
+#### 5.5.3  Create a Content Library on the Qlik Sense Server. 
 
 1. Within the QMC >> Content libraries >> Create New >> Enter the name “senseexcel” >> Apply.
 2. Copy the contents of your organzation's LEF file or trial key into a new text document. 
@@ -189,7 +200,7 @@ Validate Rule > Add Rule
    This file will be the tool for managing the licenses of all of your Sense Excel users going forward.
    It can be updated and     overwritten as necessary.
 
-#### 5.4.4  “Qlik Sense Desktop” is the default connection string.  Once the security rule and content library have been added, you can connect to your Qlik Sense Server from the Connection section of the Qlik Sense toolbar.
+#### 5.5.4  “Qlik Sense Desktop” is the default connection string.  Once the security rule and content library have been added, you can connect to your Qlik Sense Server from the Connection section of the Qlik Sense toolbar.
 
 To connect to a Qlik Sense server, enter the (URL) without “/hub”. 
 
@@ -203,7 +214,7 @@ More on this topic is covered in Chapter 9 of this document.
 
 ## 6.  Explaining the User Interface 
 
-To get the most out of your Sense Excel experience it is necessary to understand the UI (User Interface) used in Sense Excel. The  picture below shows the “Qlik Sense” toolbar as well as the features that make up Sense Excel.
+To get the most out of your Sense Excel experience, it is necessary to understand the UI (User Interface) used in Sense Excel. The  picture below shows the “SENSE” toolbar as well as the features that make up Sense Excel.
 
  ![Toolbar](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar.PNG)
 
@@ -280,7 +291,7 @@ Once inside of this interface, you can also use the Search function to reduce th
 
 ### 6.8 "Report Preview"
 
-The "Report Preview" button will only be enabled if Sense Excel Reporting is included in your Qlik Sense deloyment.  
+The "Report Preview" button will only be enabled if Sense Excel Reporting is installed and running in your Qlik Sense deloyment.  
 
 Executing the "Report Preview" button prompts the Sense Excel Reporting engine to execute your active Sense Excel report including all defined "Sheet Loops" (see section XXX for more information) then render and download a pdf version of the report to your client machine.
 
@@ -495,7 +506,7 @@ Juliane Tschierske
 
 Telephone: +49 40 881 73 26 21
 
-E-Mail:  juliane.tschierske@akquinet.de
+E-Mail:  [uliane.tschierske@akquinet.de]
 
 #### Americas:
 
@@ -505,7 +516,7 @@ Master Agent, Sales & Alliances
 
 Telephone: +1 703 625 7738
 
-E-Mail:  lharris@strategypoint.com
+E-Mail: [lance.harris@senseexcel.com]
 
 #### Rest of the World: 
 
