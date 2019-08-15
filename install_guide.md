@@ -245,9 +245,23 @@ These buttons allow you, with proper credentials, to edit and execute the load s
 
  ![Table](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table.png)
 
-This button will activate the Table Property Panel which allows you to import underlying object data, such as from a chart, directly from your app into an Excel table or create a new table by selecting columns Data elements - Dimensions, Measures, Fields or Formulas and apply sorting and add-on properties.
+This button will activate the Table Property Panel which allows you to import an existing Table from your app Qlik Sense app directly into an Excel table or create a new.
 
- ![Table Editor Onopen](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Table-Editor-Onopen.PNG)
+![Import Table](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table-Property-Panel-Import-Table.png)
+
+![Import Pivot Table](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table-Property-Panel-Import-Pivot-Table.png)
+
+![Pivot Table](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table-Property-Panel-Pivot-Table.png)
+ 
+ 
+![Column Edit](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table-Property-Panel-Column-Edit.png)
+
+
+
+
+table by selecting Dimensions, Measures, or Formulas along with the ability to apply sorting and add-on properties.
+
+
  
  
 ### 6.5 "Bookmarks" 
@@ -314,7 +328,7 @@ Checking the “Auto load”-option will load the Qlik Sense toolbar automatical
 
  ![Toolbar About Autoload](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About-Autoload.png)
 
-"Language" allows you to choose which language you would like to work in.
+"Language" allows you to choose your prefrred language.  If your preferred language is not included, please contact us to discuss adding it to the product.
 
  ![Toolbar About Language](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About-Language.png)
 
@@ -329,7 +343,7 @@ Clicking on the question mark brings up an additional window with the Sense Exce
 
 
 
-### 6.8. Sense Filter Toolbar Navigation
+### 6.11 Sense Filter Toolbar Navigation
 
 ![Selection Tool Sense Filter Bar](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Sense-Filter-Bar.PNG)
 
@@ -337,9 +351,18 @@ The buttons here allow you to manipulate your selections e.g. “Step back”, �
 
 This concludes the introduction of the Sense Excel User Interface. If there are any questions that have not been answered or should be described in more detail, please feel free to contact us with your feedback.
 
+### 6.12 Sheet Loop
+
+1. Lorem ipsum dolor sit amet, in sed dolor intellegam, has et dolorem platonem. Ut vix dictas corrumpit repudiandae, nusquam recusabo id duo. Te pro solet forensibus sadipscing, mundi exerci eam no. Vix minim soleat saperet ei, nibh omnium deseruisse at pro. Sea nobis quidam vidisse ex, discere erroribus accusamus ex nam.
+
+2. Eros expetenda in ius. Mei an brute consul, in per elitr discere dignissim, ut his posse malis velit. In quaeque tacimates mei, his id quis nibh. Lorem nihil quaestio in sea, ius eu saepe iracundia, ius te mutat delenit molestiae. Ne cum propriae mentitum, mel suas nemore doctus ea, ea veri semper albucius nec. Elit decore quidam id eos, eos viderer eloquentiam id, id appareat suavitate definitiones vis.
+
+3. Oblique utroque suavitate at mea, eum dicunt causae commune in, eum ea errem appareat. Cum an quis amet temporibus, at adhuc populo usu. Sea ea debet molestiae, at pro facilis appetere, ut esse movet definitionem sea. Ne duo quem nulla, no eligendi perfecto scripserit pro. Te vis debitis imperdiet philosophia, indoctum consulatu ne sed.
+
+
  ## 7. Using the Sense Excel Demo Report 
 
-To enable the user of Sense Excel to understand, create and edit a report we have included an example. This file, ExecutiveDashboard.xlsx, is located in the Examples folder within the Sense Excel Reporting directory of your download package. It is built using the Executive Dashboard example app that ships with Qlik Sense Desktop. If you do not have access to the app in your environment, it can also be found in the Examples directory of the Sense Excel section of your download package.  From there it can be uploaded into your Qlik Sense server via Apps section of the QMC.
+To enable the user of Sense Excel to understand, create and edit a report we have included an example. This file, ExecutiveDashboard.xlsx, is located in the Examples folder within the Sense Excel Reporting directory of your download package. It is built using the Executive Dashboard - Fileloop Demo example app that ships with Qlik Sense Desktop. If you do not have access to the app in your environment, it can also be found in the Examples directory of the Sense Excel Reporting section of your download package.  From there it can be copied to the %user\Documents\Qlik\Apps folder for use with Qlik Sense Desktop or uploaded into your Qlik Sense server via Apps section of the QMC.
 
 To use the Sense Excel Executive Dashboard Report, please follow the following steps: 
 
