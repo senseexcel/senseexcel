@@ -225,6 +225,28 @@ This enables you to connect to your Qlik Sense Desktop or Server (URL).
  
 a. Sign In : Signing in will either start Qlik Sense Desktop in the background or connect to the Qlik Sense Hub on your server. 
 b. Sign Out: This will end your active connection to the server. 
+
+
+![Connection Edit Property Panel Connection Type](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Edit-Proprty-Panel-Connection.png)
+ 
+ 
+ ![Connection Edit Property Panel Ignore Certificate Errors](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-Ignore-Certifcate-Errors.png)
+ 
+ 
+ ![Connection Edit New Connection Property Panel Wizard](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-New-Connection-Property-Panel-Wizard.png)
+  
+  
+  ![Connection Edit New Connection Property Panel Wizard Step 1 Connection Name](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-New-Connection-Property-Panel-Wizard-Step-1-Connection-Name.png)
+  
+    
+  ![Connection Edit New Connection Property Panel Wizard Step 2 Connection Url](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-New-Connection-Property-Panel-Wizard-Step-2-Connection-Url.png)
+  
+  
+  ![Connection Edit New Connection Property Panel Wizard Step 3 Custom Authentication](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-New-Connection-Property-Panel-Wizard-Step-3-Custom Authentication.png).png)
+  
+      
+  ![Connection Edit New Connection Property Panel Wizard Step 4 Success](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-New-Connection-Property-Panel-Wizard-Step-4-Success.png)
+
  
 ### 6.2 "Hub"
 
