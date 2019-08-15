@@ -325,25 +325,27 @@ Executing the "Report Preview" button prompts the Sense Excel Reporting engine t
 
 Pressing the "Wheel" icon will activate the Sense Excel Property window on the right side of your screen.
 
- ![Toolbar About Support](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About-Support.PNG)
+ ![Toolbar Settings Support](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Support.png)
 
 
 
 The “Support” option will open your default e-mail client and create a message with an attached log file addressed to our support-team. 
 
- ![Toolbar Settings Open Info Tab](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Setttings-Open-Info-Tab.png)
+ ![Toolbar Settings Property Panel](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Setttings-Open-Info-Tab.png)
  
- ![Toolbar Settings Info Tab](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Setttings-Info-Tab.png)
+ ![Toolbar Settings Property Panel](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Setttings-Property-Panel.png)
  
  
 Checking the “Auto load”-option will load the Qlik Sense toolbar automatically when starting Excel. 
 
- ![Toolbar About Autoload](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About-Autoload.png)
+ ![Toolbar Setting Auto Load](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Auto-Load.png)
 
-"Language" allows you to choose your prefrred language.  If your preferred language is not included, please contact us to discuss adding it to the product.
 
- ![Toolbar About Language](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About-Language.png)
+ ![Toolbar Settings Language](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Language.png)
+ 
+  ![Toolbar Settings Language Expanded](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Language-Expanded.png)
 
+"Language" allows you to choose your preferred language.  If your preferred language is not included, please contact us to discuss including it in the product.
 
 
 
@@ -351,9 +353,10 @@ Checking the “Auto load”-option will load the Qlik Sense toolbar automatical
 
  ![Toolbar About](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About.png)
 
-Clicking on the question mark brings up an additional window with the Sense Excel version and disclaimer information. 
+Clicking on the question mark brings up an additional window with the Sense Excel version, add-in location and disclaimer information. 
 
-
+ ![Toolbar About Version](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About-Version.png)
+ 
 
 ### 6.11 Sense Filter Toolbar Navigation
 
