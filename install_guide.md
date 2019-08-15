@@ -200,14 +200,6 @@ Validate Rule > Add Rule
    This file will be the tool for managing the licenses of all of your Sense Excel users going forward.
    It can be updated and     overwritten as necessary.
 
-#### 5.5.4  “Qlik Sense Desktop” is the default connection string.  Once the security rule and content library have been added, you can connect to your Qlik Sense Server from the Connection section of the Qlik Sense toolbar.
-
-To connect to a Qlik Sense server, enter the (URL) without “/hub”. 
-
-You should first try to connect using a secured (HTTPS) connection https://your.server.url/. If your Qlik Sense server does not have a valid security certificate (these certificates can be purchased online), you might receive an error message.   
-
-If you do receive a certificate error, try using an unsecured connection (HTTP) http://your.server.url/. This configuration is supported if this option is enabled within the QMC.
-
 QMC> Proxies> Central> Edit> Ports> Check “Allow HTTP”.
 
 More on this topic is covered in Chapter 9 of this document.
@@ -229,6 +221,15 @@ b. Sign Out: This will end your active connection to the server.
 
 ![Connection Edit Property Panel Connection Type](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Edit-Proprty-Panel-Connection.png)
  
+ 
+“Qlik Sense Desktop” is the default connection string.  Once the security rule and content library have been added, you can connect to your Qlik Sense Server from the Connection section of the Qlik Sense toolbar.
+
+To connect to a Qlik Sense server, enter the (URL) without “/hub”. 
+
+You should first try to connect using a secured (HTTPS) connection https://your.server.url/. If your Qlik Sense server does not have a valid security certificate (these certificates can be purchased online), you might receive an error message.   
+
+If you do receive a certificate error, try using an unsecured connection (HTTP) http://your.server.url/. This configuration is supported if this option is enabled within the QMC.
+
  
  ![Connection Edit Property Panel Ignore Certificate Errors](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-Ignore-Certifcate-Errors.png)
  
