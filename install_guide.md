@@ -242,7 +242,7 @@ b. Sign Out: This will end your active connection to the server.
   ![Connection Edit New Connection Property Panel Wizard Step 2 Connection Url](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-New-Connection-Property-Panel-Wizard-Step-2-Connection-Url.png)
   
   
-  ![Connection Edit New Connection Property Panel Wizard Step 3 Custom Authentication](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-New-Connection-Property-Panel-Wizard-Step-3-Custom Authentication.png).png)
+  ![Connection Edit New Connection Property Panel Wizard Step 3 Custom Authentication](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-New-Connection-Property-Panel-Wizard-Step-3-Custom-Authentication.png)
   
       
   ![Connection Edit New Connection Property Panel Wizard Step 4 Success](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-New-Connection-Property-Panel-Wizard-Step-4-Success.png)
