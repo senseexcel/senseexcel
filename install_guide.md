@@ -219,7 +219,7 @@ a. Sign In : Signing in will either start Qlik Sense Desktop in the background o
 b. Sign Out: This will end your active connection to the server. 
 
 
-![Connection Edit Property Panel Connection Type](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Edit-Proprty-Panel-Connection.png)
+![Connection Edit Property Panel Connection Type](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Edit-Proprty-Panel-Connection-Type.png)
  
  
 “Qlik Sense Desktop” is the default connection string.  Once the security rule and content library have been added, you can connect to your Qlik Sense Server from the Connection section of the Qlik Sense toolbar.
@@ -231,7 +231,7 @@ You should first try to connect using a secured (HTTPS) connection https://your.
 If you do receive a certificate error, try using an unsecured connection (HTTP) http://your.server.url/. This configuration is supported if this option is enabled within the QMC.
 
  
- ![Connection Edit Property Panel Ignore Certificate Errors](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-Ignore-Certifcate-Errors.png)
+ ![Connection Edit Property Panel Ignore Certificate Errors](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-Edit-Ignore-Certifcate-Errors.png)
  
  
  ![Connection Edit New Connection Property Panel Wizard](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-New-Connection-Property-Panel-Wizard.png)
