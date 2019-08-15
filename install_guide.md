@@ -219,7 +219,7 @@ a. Sign In : Signing in will either start Qlik Sense Desktop in the background o
 b. Sign Out: This will end your active connection to the server. 
 
 
-![Connection Edit Property Panel Connection Type](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-Edit-Proprty-Panel-Connection-Type.png)
+![Connection Edit Property Panel Connection Type](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-Edit-Property-Panel-Connection-Type.png)
  
  
 “Qlik Sense Desktop” is the default connection string.  Once the security rule and content library have been added, you can connect to your Qlik Sense Server from the Connection section of the Qlik Sense toolbar.
