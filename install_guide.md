@@ -230,7 +230,9 @@ b. Sign Out: This will end your active connection to the server.
 
  ![Open Hub](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Open-Hub.png)
 
-This button allows you to choose your application and access the dimensions, measures and underlying object data associated with it.  
+This button allows you to choose your a Qlik Sense App and access the dimensions, measures and underlying object data associated with it.  By default, a single workbook is associated with a single Qlik Sense App.  Just like within Qlik Sensee itself, all bookmarks, filter selections etc. will apply and act upon all Qlik Sense related data within the workbook. 
+
+It is possible to cause specific data elements to not respond to filters/bookmark selections. Utilizing an Altered State or formulas within a column definition or SenseEV() you can specify a different behavior or source App.  These topics will be covered later in document.
 
  ![Open Hub Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Open-Hub-Dialogue.png)
 
@@ -274,7 +276,7 @@ The Bookmarks command will open a window in the Sense Excel info tab.  You can a
 
 ![Bookmarks Info Tab](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Bookmarks-Info-Tab.png)
 
-### 6.6 "Default Bookmark"
+### 6.5.1 "Default Bookmark"
 
 You can set a default Bookmark by checking the "App Default" box shown below.  Once a default Bookmark is defined, all Sense Excel users will have the default Bookmark and associated filter selections applied upon opening of the app.  
 
@@ -283,7 +285,7 @@ Sense Excel brings all requeseted data into Excel on the client machine and this
 ![Bookmarks Define](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Bookmarks-Define.png)
 
 
-### 6.7 “Selections tool” 
+### 6.6 “Selections tool” 
 
  ![Selection Tool Button](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Button.png)
 
@@ -303,9 +305,19 @@ Once inside of this interface, you can also use the Search function to reduce th
  
   ![Selection Tool List Box Select](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-List-Box-Select.png)
 
-### 6.8 "Report Preview"
+### 6.7 "Report Preview"
 
-The "Report Preview" button will only be enabled if Sense Excel Reporting is installed and running in your Qlik Sense deloyment.  
+ ![Toolbar Report Preview Button](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Report-Preview.png)
+
+The "Report Preview" button will only be enabled if Sense Excel Reporting is installed and running in your Qlik Sense deloyment.
+
+![Toolbar Report Preview Show Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Report-Preview-Show-Dialogue.png)
+
+![Toolbar Report Preview Property Panel](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Report-Preview-Property-Panel.png)
+
+
+
+INSERT REPORT PREVIEW PICTURE
 
 Executing the "Report Preview" button prompts the Sense Excel Reporting engine to execute your active Sense Excel report including all defined "Sheet Loops" (see section XXX for more information) then render and download a pdf version of the report to your client machine.
 
