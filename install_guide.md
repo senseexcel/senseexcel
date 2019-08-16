@@ -176,10 +176,11 @@ Validate Rule > Add Rule
 #### 5.5.3  Create a Content Library on the Qlik Sense Server. 
 
 1. Within the QMC >> Content libraries >> Create New >> Enter the name “senseexcel” >> Apply.
-2. Copy the contents of your organzation's LEF file or trial key into a new text document. 
-3. For token licensing strategies, the contents of your LEF or trial key alone will suffice.
+2. When prompted for a Security Rule set it to User is Like * to make Sense Excel available to all licensed Qlik Sense users.
+3. Copy the contents of your organzation's LEF file or trial key into a new text document. 
+4. For token licensing strategies, the contents of your LEF or trial key alone will suffice.
      For named user licensing strategies please follow the additional steps below.
-4. Append the LEF information with the domain and user name of the users which will access Sense Excel in the format below. 
+5. Append the LEF information with the domain and user name of the users which will access Sense Excel in the format below. 
    The FROM; TO information is optional if you choose to put time limits on the license duration of your named users.
  
  ```
@@ -192,10 +193,11 @@ Validate Rule > Add Rule
    EXCEL_NAME;DOMAIN\USER4;FROM; 
 ```
 
-5. Please confirm that there are no spaces at the end of each line.
-6. Save this file with the name license.txt.
-7. Upload the license.txt file to the senseexcel content library. 
-   QMC >> Content Libararies >> Upload >> Select File “license.txt”. 
+6. Please confirm that there are no spaces at the end of each line.
+7. Save this file with the name license.txt.
+8. Upload the license.txt file to the senseexcel content library. 
+   
+   QMC >> Content Libararies >> senseexcel >> Contentst >> Upload >> Select File “license.txt”. 
 
    This file will be the tool for managing the licenses of all of your Sense Excel users going forward.
    It can be updated and overwritten as necessary.
@@ -207,27 +209,30 @@ To get the most out of your Sense Excel experience, it is necessary to understan
  ![Toolbar](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar.PNG)
 
 ### 6.1 "Connection"
-This enables you to connect to your Qlik Sense Desktop or Server (URL).
+This enables you to connect to your Qlik Sense Desktop or Server (URL)
+
+Connection Name - This can be changed to a user friendly name such as "Test Server".
+
+Connection Type - Depending on your Qlik Sense authorization strategy and which browser you are using, this parameter can be set to allow Sense Excel to work in your environment.  The Qlik Sense default is to use NTLM, also called Windows Authentication.  In this situation, if the credentials that you use to sign into your Qlik Sense Server do not match your Windows credentials, this value would be set to "Cookie" which would prompt for different credentials to access Qlik Sense.  There are other options avaialble to ensure that Sense Excel will support whichever approach is being used in your situation. 
+
+Connection uri:  The url used for connecting to your Qlik Sense Server.
+
+
+
  
  ![Connection](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection.png)
  
-a. Sign In : Signing in will either start Qlik Sense Desktop in the background or connect to the Qlik Sense Hub on your server. 
+a. Sign In : Pressing the sign in button will attempt to connect to the source shown in the drop down box.
 b. Sign Out: This will end your active connection to the server. 
 
 
 ![Connection Edit Property Panel Connection Type](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-Edit-Property-Panel-Connection-Type.png)
  
  
-“Qlik Sense Desktop” is the default connection string.  Once the security rule and content library have been added, you can connect to your Qlik Sense Server from the Connection section of the Qlik Sense toolbar.
-
-To connect to a Qlik Sense server, enter the (URL) without “/hub”. 
-
-You should first try to connect using a secured (HTTPS) connection https://your.server.url/. If your Qlik Sense server does not have a valid security certificate (these certificates can be purchased online), you might receive an error message.   
-
-If you do receive a certificate error, try using an unsecured connection (HTTP) http://your.server.url/. This configuration is supported if this option is enabled within the QMC.
-
+ ![Connection Edit Property Panel Ignore Certificate Errors](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-Edit-Property-Panel-Ignore-Certificate-Errors.png)
  
- ![Connection Edit Property Panel Ignore Certificate Errors](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-Edit-Property-Panel-Ignore-Certifcate-Errors.png)
+ Ignore Certificate Errors Checkbox. Sometimes https://sites have untrusted certificates and this setting defines how Sense Excel will behave in this scenario.  Checking the box will not stop connecting if https://certificate errors are encountered and ignore these errors.  Uncheking the box will allow the https:// chain to remain intact and provides the most security. 
+
  
  
  ![Connection Edit New Connection Property Panel Wizard](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-New-Connection-Property-Panel-Wizard.png)
@@ -256,8 +261,22 @@ It is possible to cause specific data elements to not respond to filters/bookmar
  ![Open Hub Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Open-Hub-Dialogue.png)
 
 ### 6.3 “Load data” and “Data Load Editor”
- ![Load Data](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Load-Data.png)
 
+ ![Load Data](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Load-Data.png)
+ 
+Sense Excel provides the ability to edit, save and reload Qlik Sense application scripts directly from Excel. This feature can be limited to administrators and certain report developers (power users) to maintain adequate security and consistency. 
+
+Click the "Data Load Editor" Button to edit your script, make your desired changes.
+
+Click the “Load data” button once to accept and save and changes to your App.
+
+Clicking the "Load data" button once will also reload and recalulate all connected elements of your report.
+
+Click the "Load Data" button a second time to execute script reload in the background. 
+
+Notes: You will not see a reload dialog, but the updated results will be automatically reflected in your report after reloading. 
+
+In order to use the "Data Load Editor" and the “Load Data” options, you need to be able to reload the application you wish to edit. The data included with the Qlik Sense example applications (e.g.Executive Dashboard) can't be reloaded and therefore can't be used for testing and understanding these features.
 These buttons allow you, with proper credentials, to edit and execute the load script associated with your application. 
 
  ![Data load editor](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Data-load-editor.png)
@@ -276,9 +295,6 @@ This button will activate the Table Property Panel which allows you to import an
  
  
 ![Column Edit](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table-Property-Panel-Column-Edit.png)
-
-
-
 
 table by selecting Dimensions, Measures, or Formulas along with the ability to apply sorting and add-on properties.
 
@@ -314,15 +330,15 @@ This button will show or hide the Sense Filter Bar where all filter selections w
 
 Once this toolbar is activated, you can use the square box on the right side to pull up all of your available dimensions as list boxes from which to select values for as filters.
 
- ![Selection Tool Activate](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Activate.PNG)
+![Selection Tool Activate](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Activate.PNG)
 
 Once inside of this interface, you can also use the Search function to reduce the dislayed elements to those relevant to your query.
 
- ![Selection Tool Search](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Search.png)
+![Selection Tool Search](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Search.png)
  
- ![Selection Tool Search Value](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Search-Value.png)
+![Selection Tool Search Value](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Search-Value.png)
  
-  ![Selection Tool List Box Select](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-List-Box-Select.png)
+![Selection Tool List Box Select](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-List-Box-Select.png)
   
   
 ### 6.6 Sense Filter Toolbar Navigation
@@ -331,26 +347,25 @@ Once inside of this interface, you can also use the Search function to reduce th
 
 The buttons here allow you to manipulate your selections e.g. “Step back”, “Step forward” and “Clear all selections. Furthermore, when a filter is set, you can change the values of your selection by clicking on it and using the Check and X buttons to select and deselect filter values respectively,
 
-  
 
 ### 6.7 "Report Preview"
 
- ![Toolbar Report Preview Button](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Report-Preview.png)
+ ![Toolbar Report Preview Button](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Report-Preview.png)
 
 The "Report Preview" button will only be enabled if Sense Excel Reporting is installed and running in your Qlik Sense deloyment.
 
-![Toolbar Report Preview Show Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Report-Preview-Show-Dialogue.png)
+![Toolbar Report Preview Show Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Report-Preview-Show-Dialogue.png)
 
-![Toolbar Report Preview Property Panel](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Report-Preview-Property-Panel.png)
+![Toolbar Report Preview Property Panel](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Report-Preview-Property-Panel.png)
 
 Executing the "Report Preview" button prompts the Sense Excel Reporting engine to execute your active Sense Excel report including all defined "Sheet Loops" (see section XXX for more information) then render and download a pdf version of the report to your client machine.
 
-### 6.9 "Settings"
+
+### 6.8 "Settings"
 
 Pressing the "Wheel" icon will activate the Sense Excel Property window on the right side of your screen.
 
  ![Toolbar Settings Support](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Support.png)
-
 
 
 The “Support” option will open your default e-mail client and create a message with an attached log file addressed to our support-team. 
@@ -373,7 +388,7 @@ Checking the “Auto load”-option will load the Qlik Sense toolbar automatical
 
 
 
-### 6.10 "About" 
+### 6.9 "About" 
 
  ![Toolbar About](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About.png)
 
@@ -385,7 +400,7 @@ Clicking on the question mark brings up an additional window with the Sense Exce
 
 This concludes the introduction of the Sense Excel User Interface. If there are any questions that have not been answered or should be described in more detail, please feel free to contact us with your feedback.
 
-### 6.12 Sheet Loop
+### 6.10 Sheet Loop
 
 1. Lorem ipsum dolor sit amet, in sed dolor intellegam, has et dolorem platonem. Ut vix dictas corrumpit repudiandae, nusquam recusabo id duo. Te pro solet forensibus sadipscing, mundi exerci eam no. Vix minim soleat saperet ei, nibh omnium deseruisse at pro. Sea nobis quidam vidisse ex, discere erroribus accusamus ex nam.
 
@@ -460,7 +475,7 @@ Note: All Dimensions and Measures defined as master items in the Qlik Sense App 
 
 ### 8.2 Fixed Cell Report Definition
 
-In order to take full advantage of the power of Sense Excel, it is very useful to understand  Qlik Sense formula syntax and  especially the Set Analysis features. This report creation strategy allows formulas to be entered into a specific cell on an Excel sheet and return a unique value to that cell. This feature is especially valuable when creating Financial reports similar to the example.  Once a single formula is created you can use the copy/paste and fill across/down features of Excel to rapidly expand the scope of your report. 
+In order to take full advantage of the power of Sense Excel, it is very useful to understand  Qlik Sense formula syntax and especially the Set Analysis features. This report creation strategy allows formulas to be entered into a specific cell on an Excel sheet and return a unique value to that cell. This feature is especially valuable when creating Financial reports similar to the example.  Once a single formula is created you can use the copy/paste and fill across/down features of Excel to rapidly expand the scope of your report. 
 
 ### 8.3 Sense Excel Formulas and Syntax
 
@@ -498,44 +513,30 @@ SenseEV stands for "Sense EValuate" and enables Excel to call any Qlik Sense fun
 
  ") 
 
-
-### 8.4 Using “Load Data” and "Data Load Editor"  
-
-Sense Excel provides the ability to edit, save and reload Qlik Sense application scripts directly from Excel. This feature can be limited to administrators and cetain report developers (power users) to maintain adequate security and consistency. 
-
-Click the "Data Load Editor" Button to edit your script, make your desired changes then click the “Load data” button once to accept and save them. Click the "Load Data" button a second time to run the script in the background. 
-
-Notes: You will not see a reload dialog, but the updated results will be automatically reflected in your report after reloading. 
-
-In order to use the "Data Load Editor" and the “Load Data” options, you need to be able to reload the application you wish to edit. The data included with the Qlik Sense example applications (e.g.Executive Dashboard) can't be reloaded and therefore can't be used for testing and understanding these features.
-
-## 9. Connection Options 
-
-As mentioned above you can use the “Connection String” option to connect Sense Excel to either the Qlik Sense Desktop or Qlik Sense server via a http:// or https:// server address (without “/hub”!). 
-
-Connections can be further managed by clicking on the small rectangle at the bottom right corner of the Connection section of the Qlik Sense toolbar. Here you can define the following parameters:
-
-Connection Name - This can be changed to a user friendly name such as "Test Server".
-
-Connection Type - Depending on your Qlik Sense authorization strategy and which browser you are using, this parameter can be set to allow Sense Excel to work in your environment.  The Qlik Sense default is to use NTLM, also called Windows Authentication.  In this situation, if the credentials that you use to sign into your Qlik Sense Server do not match your Windows credentials, this value would be set to "Cookie" which would prompt for different credentials to access Qlik Sense.  There are other options avaialble to ensure that Sense Excel will support whichever approach is being used in your situation. 
-
-Connection uri:  The url used for connecting to your Qlik Sense Server.
-
-Ignore Certificate Errors Checkbox. Sometimes https://sites have untrusted certificates and this setting defines how Sense Excel will behave in this scenario.  Checking the box will not stop connecting if https://certificate errors are encountered and ignore these errors.  Uncheking the box (which is usually the default) will allow the https:// chain to remain intact and provides the most security. 
-
-
-## 10. Seven Steps to Your First Report in Sense Excel 
+## 9. Seven Steps to Your First Report in Sense Excel 
 
 ### Step 1: Connect to Qlik Sense & select an App  
-Enter your connection string, press the Sign In Button.  Once the "Open Hub" button is active, press it and select the app you would like to connect to.
+
+Create your connection, press the Sign In Button.  Once the "Hub" button is active (turns black), press it and select the app you would like to connect to.
 
 ### Step 2: Press the "Table" button 
-From the Table Property panel on the right side of the screen, choose your desired Dimensions, Measures or Formulas.
+
+From the Table Property panel on the right side of the screen:
+
+Dropdown the "Choose Select Table Object to Import" box to choose an existing table defined in your Qlik Sense App
+
+OR 
+
+Dropdown "Add Column" to individually select your desired Dimensions, Measures or Formulas 
+
+OR
+
+Use the "Fast Add" button to select multiple objects from your data model
 
 ### Step 3: Press the Check button to create the table in your Excel workbook.
 
 ### Step 4. Edit Table Definition
-You can add columns, change column display order, change your sort order or change your number formats returned prior to importing your table or afterward by right mouse clicking over the table would like to update and choosing "Edit Table". This will re-open the Table Property window and allow you to make any desired changes. 
+You can add columns, change column display order, change your sort order or change your number formats returned prior to importing your table or afterward by right mouse clicking over the table would like to update and choosing "Edit Table". This will re-open the Table Property window and allow you to make any desired changes. You can also reopen the Table Property Panel by selecting a cell within your table and pressing the "Table" button again.
 
 ### Step 5: Open the Selections tool 
 Press the Selection button and find the field and value your would like to filter on and select it.  Alternatively, use the Search function to limit your choices to those related to your search term.
@@ -547,7 +548,7 @@ Use the Bookmark button to use any of the existing bookmarks in your app or use 
 Once your table is created, you can use the Insert Chart or Insert Pivot table commands from the Insert tab of Excel and your first report is done. 
 
 
-## 11. Contact Information 
+## 10. Contact Information 
 
 ### Contact Support: 
 
