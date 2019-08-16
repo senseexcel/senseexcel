@@ -2,81 +2,82 @@
 
 ![Cover](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Cover.PNG)
 
-1. Disclaimer
+# 1. Disclaimer
+# 2. Introduction
 
-2. Introduction
+## 2.1 Who We Are
 
-2.1 Who We Are
+## 2.2 Why We Do What We Do
 
-2.2 Why We Do What We Do
+# 3. What You Can Expect from Sense Excel
 
-3. What You Can Expect from Sense Excel
+# 4. Requirements
 
-4. Requirements
+# 5. Installation Guide
 
-5. Installation Guide
+## 5.1 Download Software
 
-5.1 Download Software
+## 5.2 Unpack Files
 
-5.2 Unpack Files
+## 5.3 New Sense Excel Installation
 
-5.3 New Sense Excel Installation
+## 5.4 Alternate Installation Technique
 
-5.4 Alternate Installation Technique
+## 5.5 Upgrade Sense Excel Installation
 
-5.5 Upgrade Sense Excel Installation
+## 5.6 Qlik Sense Server Configuration
 
-5.6 Qlik Sense Server Configuration
+### 5.6.1 Open the Qlik Management Console (QMC)
 
-5.6.1 Open the Qlik Management Console (QMC)
+## 5.6.2 Add a Security rule to your Qlik Sense Server
 
-5.6.2 Add a Security rule to your Qlik Sense Server
+## 5.6.3 Create a Content Library on the Qlik Sense Server
 
-5.6.3 Create a Content Library on the Qlik Sense Server
+# 6. Using the Sense Excel Ribbon
 
-6.1 "Connection"
+## 6.1 "Connection"
 
-6.2 "Hub"
+## 6.2 "Hub"
 
-6.3 “Load data” and “Data Load Editor”
+## 6.3 “Load data” and “Data Load Editor”
 
-6.4 “Table”
+## 6.4 “Table”
 
-6.5 "Bookmarks"
+## 6.5 "Bookmarks"
 
-6.5.1 "Default Bookmark"
+### 6.5.1 "Default Bookmark"
 
-6.6 “Selections tool”
+## 6.6 “Selections tool”
 
-6.6 Sense Filter Toolbar Navigation
+## 6.6 Sense Filter Toolbar Navigation
 
-6.7 "Report Preview"
+## 6.7 "Report Preview"
 
-6.8 "Settings"
+## 6.8 "Settings"
 
-6.9 "About"
+## 6.9 "About"
 
-6.10 Sheet Loop
+## 6.10 Sheet Loop
 
-7. Using the Sense Excel Demo Report
+# 7. Using the Sense Excel Demo Report
 
-8. Create Your Own Reports
+# 8. Create Your Own Reports
 
-8.1 Using the “Table” import button
+## 8.1 Using the “Table” import button
 
-8.2 Fixed Cell Report Definition
+## 8.2 Fixed Cell Report Definition
 
-8.3 Sense Excel Formulas and Syntax
+## 8.3 Sense Excel Formulas and Syntax
 
-8.3.1 SenseConnected
+### 8.3.1 SenseConnected
 
-8.3.2 SenseFilter
+### 8.3.2 SenseFilter
 
-8.3.3 SenseVariable
+### 8.3.3 SenseVariable
 
-8.3.4 SenseEV
+### 8.3.4 SenseEV
 
-9. Contact Information
+# 9. Contact Information
 
 
 ## 1. Disclaimer 
