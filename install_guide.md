@@ -3,8 +3,11 @@
 ![Cover](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Cover.PNG)
 
 [Disclaimer](https://github.com/senseexcel/senseexcel/blob/master/install_guide.md#1-disclaimer)
+
 [Introduction](https://github.com/senseexcel/senseexcel/blob/master/install_guide.md#2-introduction)
+
 [Who We Are](https://github.com/senseexcel/senseexcel/blob/master/install_guide.md#21-who-we-are)
+
 [Why We Do What We Do](https://github.com/senseexcel/senseexcel/blob/master/install_guide.md#22-why-we-do-what-we-do)
 
 ## 1. Disclaimer 
