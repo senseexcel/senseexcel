@@ -198,11 +198,7 @@ Validate Rule > Add Rule
    QMC >> Content Libararies >> Upload >> Select File “license.txt”. 
 
    This file will be the tool for managing the licenses of all of your Sense Excel users going forward.
-   It can be updated and     overwritten as necessary.
-
-QMC> Proxies> Central> Edit> Ports> Check “Allow HTTP”.
-
-More on this topic is covered in Chapter 9 of this document.
+   It can be updated and overwritten as necessary.
 
 ## 6.  Explaining the User Interface 
 
@@ -286,8 +282,6 @@ This button will activate the Table Property Panel which allows you to import an
 
 table by selecting Dimensions, Measures, or Formulas along with the ability to apply sorting and add-on properties.
 
-
- 
  
 ### 6.5 "Bookmarks" 
 
@@ -299,7 +293,9 @@ The Bookmarks command will open a window in the Sense Excel info tab.  You can a
 
 ![Bookmarks Info Tab](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Bookmarks-Info-Tab.png)
 
-### 6.5.1 "Default Bookmark"
+
+
+#### 6.5.1 "Default Bookmark"
 
 You can set a default Bookmark by checking the "App Default" box shown below.  Once a default Bookmark is defined, all Sense Excel users will have the default Bookmark and associated filter selections applied upon opening of the app.  
 
@@ -327,6 +323,15 @@ Once inside of this interface, you can also use the Search function to reduce th
  ![Selection Tool Search Value](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Search-Value.png)
  
   ![Selection Tool List Box Select](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-List-Box-Select.png)
+  
+  
+### 6.6 Sense Filter Toolbar Navigation
+
+![Selection Tool Sense Filter Bar](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Sense-Filter-Bar.PNG)
+
+The buttons here allow you to manipulate your selections e.g. “Step back”, “Step forward” and “Clear all selections. Furthermore, when a filter is set, you can change the values of your selection by clicking on it and using the Check and X buttons to select and deselect filter values respectively,
+
+  
 
 ### 6.7 "Report Preview"
 
@@ -337,10 +342,6 @@ The "Report Preview" button will only be enabled if Sense Excel Reporting is ins
 ![Toolbar Report Preview Show Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Report-Preview-Show-Dialogue.png)
 
 ![Toolbar Report Preview Property Panel](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Report-Preview-Property-Panel.png)
-
-
-
-INSERT REPORT PREVIEW PICTURE
 
 Executing the "Report Preview" button prompts the Sense Excel Reporting engine to execute your active Sense Excel report including all defined "Sheet Loops" (see section XXX for more information) then render and download a pdf version of the report to your client machine.
 
@@ -381,11 +382,6 @@ Clicking on the question mark brings up an additional window with the Sense Exce
  ![Toolbar About Version](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About-Version.png)
  
 
-### 6.11 Sense Filter Toolbar Navigation
-
-![Selection Tool Sense Filter Bar](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Sense-Filter-Bar.PNG)
-
-The buttons here allow you to manipulate your selections e.g. “Step back”, “Step forward” and “Clear all selections. Furthermore, when a filter is set, you can change the values of your selection by clicking on it and using the Check and X buttons to select and deselect filter values respectively,
 
 This concludes the introduction of the Sense Excel User Interface. If there are any questions that have not been answered or should be described in more detail, please feel free to contact us with your feedback.
 
