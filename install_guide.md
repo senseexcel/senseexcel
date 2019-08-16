@@ -350,7 +350,7 @@ The buttons here allow you to manipulate your selections e.g. “Step back”, �
 
 ### 6.7 "Report Preview"
 
- ![Toolbar Report Preview Button](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Report-Preview.png)
+ ![Toolbar Report Preview Button](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Report-Preview.PNG)
 
 The "Report Preview" button will only be enabled if Sense Excel Reporting is installed and running in your Qlik Sense deloyment.
 
@@ -370,9 +370,7 @@ Pressing the "Wheel" icon will activate the Sense Excel Property window on the r
 
 The “Support” option will open your default e-mail client and create a message with an attached log file addressed to our support-team. 
 
- ![Toolbar Settings Property Panel](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Setttings-Open-Info-Tab.png)
- 
- ![Toolbar Settings Property Panel](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Setttings-Property-Panel.png)
+ ![Toolbar Settings Property Panel](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Property-Panel.png)
  
  
 Checking the “Auto load”-option will load the Qlik Sense toolbar automatically when starting Excel. 
