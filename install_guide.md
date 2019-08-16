@@ -1,15 +1,5 @@
 # Sense Excel Detailed Installation Guide
 
-![Cover](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Cover.PNG)
-
-[Disclaimer](https://github.com/senseexcel/senseexcel/blob/master/install_guide.md#1-disclaimer)
-
-[Introduction](https://github.com/senseexcel/senseexcel/blob/master/install_guide.md#2-introduction)
-
-[Who We Are](https://github.com/senseexcel/senseexcel/blob/master/install_guide.md#21-who-we-are)
-
-[Why We Do What We Do](https://github.com/senseexcel/senseexcel/blob/master/install_guide.md#22-why-we-do-what-we-do)
-
 ## 1. Disclaimer 
 
 This document will cover how to get Sense Excel up and running on your system, what to expect and ways the product can be used. This document is written to provide quick answers and will be continuously updated. Not all options or possibilities of Sense Excel are covered within the scope of this document but will be complimented by best practices and use cases documented elsewhere in this repository. 
