@@ -2,10 +2,10 @@
 
 ![Cover](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Cover.PNG)
 
-[1. Disclaimer](https://github.com/senseexcel/senseexcel/blob/master/install_guide.md#1-disclaimer)
-[2. Introduction](https://github.com/senseexcel/senseexcel/blob/master/install_guide.md#2-introduction)
-[2.1 Who We Are](https://github.com/senseexcel/senseexcel/blob/master/install_guide.md#21-who-we-are)
-[2.2 Why We Do What We Do](https://github.com/senseexcel/senseexcel/blob/master/install_guide.md#22-why-we-do-what-we-do)
+[Disclaimer](https://github.com/senseexcel/senseexcel/blob/master/install_guide.md#1-disclaimer)
+[Introduction](https://github.com/senseexcel/senseexcel/blob/master/install_guide.md#2-introduction)
+[Who We Are](https://github.com/senseexcel/senseexcel/blob/master/install_guide.md#21-who-we-are)
+[Why We Do What We Do](https://github.com/senseexcel/senseexcel/blob/master/install_guide.md#22-why-we-do-what-we-do)
 
 ## 1. Disclaimer 
 
