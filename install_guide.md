@@ -330,7 +330,7 @@ This button will show or hide the Sense Filter Bar where all filter selections w
 
 Once this toolbar is activated, you can use the square box on the right side to pull up all of your available dimensions as list boxes from which to select values for as filters.
 
-![Selection Tool Activate](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Activate.PNG)
+![Selection Tool Activate](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Activate.png)
 
 Once inside of this interface, you can also use the Search function to reduce the dislayed elements to those relevant to your query.
 
@@ -343,7 +343,7 @@ Once inside of this interface, you can also use the Search function to reduce th
   
 ### 6.6 Sense Filter Toolbar Navigation
 
-![Selection Tool Sense Filter Bar](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Sense-Filter-Bar.PNG)
+![Selection Tool Activate](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Activate.PNG)
 
 The buttons here allow you to manipulate your selections e.g. “Step back”, “Step forward” and “Clear all selections. Furthermore, when a filter is set, you can change the values of your selection by clicking on it and using the Check and X buttons to select and deselect filter values respectively,
 
