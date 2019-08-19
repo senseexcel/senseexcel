@@ -136,17 +136,15 @@ To upgrade an existing version of Sense Excel please perform the following steps
 
 ### 5.5  Qlik Sense Server Configuration
 
-To connect Sense Excel to a Qlik Sense Server, the additional configuration steps listed below need to be performed as well. 
+To use Sense Excel with a Qlik Sense Enterprise installation, the configuration steps listed below need to be performed prior to attempting to connect. 
 
-Only paid versions of Sense Excel can be connected to a Qlik Sense Enterprise Site (server) installation. EXCEPTION: All installations utilizing Qlik internal license keys or current Qlik trial or partner keys.  
+IMPORTANT: Sense Excel license keys are required to use Sense Excel with a Qlik Sense Enterprise installation. 
+
+EXCEPTIONS: All installations utilizing Qlik internal license keys or current Qlik trial or partner keys.  
 
 30-day server trial licenses are available for existing Qlik Sense customers.  Please contact an authorized reseller or the appropriate sales contact listed at the end of this document. 
  
-#### 5.5.1 Open the Qlik Management Console (QMC) 
-
-On the server/computer go to: Start >> Programs >> Qlik Sense >> Qlik Management Console or use any browser and type: https://”your_sense_server_ name”/qmc 
-
-#### 5.5.2 Add a Security rule to your Qlik Sense Server. 
+#### 5.5.1 Add a Security rule to your Qlik Sense Server. 
 
 QMC > MANAGE RESOURCES > Security Rules > + Create new > SER License
 
@@ -176,17 +174,17 @@ Validate Rule > Add Rule
 
 ![SER License Security Rule](https://github.com/senseexcel/senseexcel-reporting/blob/master/docs/Security-Rule-SER-License.PNG)
 
-#### 5.5.3  Create a Content Library on the Qlik Sense Server. 
+#### 5.5.2  Create a Content Library on the Qlik Sense Server. 
 
-1. Within the QMC >> Content libraries >> Create New >> Enter the name “senseexcel” >> Apply.
-2. When prompted for a Security Rule set it to User is Like * to make Sense Excel available to all licensed Qlik Sense users upon assignment of a Sense Excel license.
+1. Go to QMC >> Content libraries >> Create New >> Enter the name “senseexcel” >> Apply.
+2. When prompted for a Security Rule set it to User is Like * to make Sense Excel available to all licensed Qlik Sense users upon assignment of a Sense Excel license as shown below.
 
-#### 5.5.4  Create and Upload "license.txt" File. 
+#### 5.5.3  Create and Upload "license.txt" File. 
 
 1. Copy the contents of your organzation's LEF file or trial key into a new text document. 
 2. For token licensing strategies, only the contents of your LEF or trial key are required. For Named User licensing strategies please follow the additional steps below.
 3. Append the LEF information with EXCEL_NAME; followed by the Qlik Sense "User directory" and "User ID" of the designated Sense Excel users like shown in the example below. 
-4. The FROM; TO information is optional if you choose to put time limits on the license duration of your named users. The example below shows a time limited license assignment followed by a reassignment to another user.
+4. The FROM; TO information is optional.  This allows time limits for the license assignment duration of your named users. The example below shows a time limited license assignment followed by a reassignment to another user.
 
 99999999999999999
 PRODUCTLEVEL;50;;2020-01-31
@@ -213,10 +211,11 @@ EXCEL_NAME;EXAMPLE-PC\krogers; 2019-10-01; 2020-01-31
    
    QMC >> Content Libararies >> senseexcel >> Contents >> Upload >> Select File “license.txt”. 
 
-   This file will be the tool for managing the licenses of all of your Sense Excel users going forward.
-   It can be updated and overwritten as necessary.
+
    
-   #### 5.5.5  View / Update an Existing "license.txt" File. 
+#### 5.5.5  View / Update an Existing "license.txt" File. 
+
+Once installed, the "license.txt" in the "senseexcel" Content library is used to manage the assigment of Sense Excel named user licenses. It can be viewed, updated and overwritten by following the steps below.  
 
 1. Go to QMC >> Start >> Content libaries >> senseexcel >> Associated Items >> Contents
 2. Copy the contents of the "URL path" and and paste it immediately after your Qlik Sense Server Url in a new browser tab/window like the below example
@@ -225,10 +224,9 @@ https://your.qlikserver.com/content/sensexcel/license.txt
 
 ![SE Check Existing License](https://github.com/senseexcel/senseexcel/blob/master/images/SE-License-Check-Existing-License.png)
 
+3.  Entering this Url will display the contents of an existing license.txt file. to make changes, copy the contents from the screen into a new text file, make your desired changes, save the document as "license.txt" and upload/overwrite the existing license.txt file in the senseexcel content library.
 
-https://your.qlikserver.com/content/sensexcel/license.txt
-
-3.  This will display the contents of an existing license.txt file.  If you need to make changes, copy the contents from the screen into a new text file, make your desired changes, save the document and upload/overwrite the existing license.txt file in the senseexcel content library. 
+IMPORTANT: The names of the "senseexcel" Content library and "license.txt" file need match EXACTLY and ARE case sensitive. 
 
 
 ## 6.  Explaining the User Interface 
