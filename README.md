@@ -14,7 +14,7 @@ WITHOUT PRIOR WRITTEN CONSENT OF AKQUINET. THE SOFTWARE MAY NOT BE USED FOR PURP
  
 NOTICE: THE SOFTWARE CONTAINS FUNCTIONALITY INTENDED TO LIMIT THE DURATION OF ITS USE AND IS INTENDED TO COLLECT CERTAIN USAGE METRICS. THE INSTALLATION OF THIS SOFTWARE WILL INSTALL FILES NECESSARY TO OPERATE THE SOFTWARE ONTO THE USER’S COMPUTER AND OTHER SYSTEM FILES MAY BE INSTALLED OR UPDATED. AS WITH ALL INSTALLATIONS, BACK UP OF THE USER’S HARD DRIVE IS RECOMMENDED BEFORE INSTALLING THE SOFTWARE. 
 
-The rest of the disclaimer can be read at Qlik2Go (https://support.qlik2go.net/projects/sense-excel/wiki) under "Terms of use". 
+The rest of the disclaimer can be read by pressing the "About" button in the Qlik Sense Ribbon. 
 
 ## 2. Introduction 
 
@@ -82,13 +82,13 @@ To find out which Microsoft Office edition you are running within Excel, go to F
 ## 5. Installation Guide
 
 ### 5.1 Download Software
-You can download the most recent Sense Excel software from https://www.senseexcel.com. 
+You can download the current version Sense Excel software from https://www.senseexcel.com/downloads.html. 
 
 ### 5.2 Unpack Files
 
 Unpack (unzip) the files from the Sense Excel directory of your download package to a location of your choosing. 
 
-Best practice: Create a new directory in your Documents folder called Sense Excel with a sub-folder referencing the version number like %User%\Documents\Sense Excel\x.x.x
+BEST PRACTICE: Create a new directory in your Documents folder called Sense Excel with a sub-folder referencing the version number like %User%\Documents\Sense Excel\x.x.x
 
 ###  5.3 New Sense Excel Installation 
 
@@ -233,17 +233,17 @@ To use the manual workflow perform the following steps:
 1. Press the "..." next to the drop down box.
 2. Press the New Connection button
 3. "Connection Name" field.  Enter a unique name for the connection - preferably a name that will be easy to identify in a drop down list. 
-3. Ignore Certifate Errors Checkbox
+3. Ignore Certifate Errors Checkbox.  Default setting is enabled.
 
 
 
 4. Connection Type
 
-There are 4 different connection types available:
+There are 4 different Connection types available:
 
 1. "Qlik Sense Desktop".  This setting in included in the default Sense Excel installation and points to the local machine using 127.0.0.1 as the ip address.
 
-If do not use Qlik Sense Desktop as a data source this connection can be deleted.  It can be re-created at a later point by creating a new connection using the following parameters:  Type: Qlik Snse Desktop and Url ws://127.0.0.1:4848.
+If do not use Qlik Sense Desktop as a data source this connection can be deleted.  It can be re-created at a later point by creating a new connection using the following parameters:  Type: Qlik Sense Desktop and Url ws://127.0.0.1:4848.
 
 2. "Sense Server - Current Windows User"
 
@@ -257,14 +257,21 @@ This approach is used when you have different credentials for Qlik Sense than yo
 
 This technique will open a new browser window, prompt for credentials and pass them to Qlik Sense via a session cookie to log into Qlik Sense. Use this approach when logging into a server on different domain or using a third party single sign on system such as OKTA.
 
+5. "Url" 
 
-5. Url
-Enter the url of your target server. https://your.qlikserver.com.  You can copy this from a the address bar of a browser used to connect to your Qlik Sense environment.
+Enter the url of your target server. https://your.qlikserver.com.  You can copy this from a the address bar of a browser used to connect to your Qlik Sense environment. Do not include /hub in this address.
 
-Do not include /hub in this address.  If using OKTA or similar append that to the end of the url as follows:  https://your.qlikserver.com/okta.
+6. 3rd Party Sigle Sign On
 
+If using OKTA or similar, append that to the end of the url as follows:  https://your.qlikserver.com/okta.
 
-6. Alternate Proxy Server
+6. "Session cookie header name" - Alternate Proxy Server
+
+Sense Excel supports defining connections to different virtual proxy servers in a distributed Qlik Sense environment.  
+
+A virtual proxy name that begins with -qlik can be used by appending the name of the virtual proxy directly to the url as follows: https://your.qlikserver.com/development.
+
+If your virtual proxy has a name that begins with anything other than "-qlik" us enter it in the "Session cookie header name" field.
 
 
 
@@ -538,7 +545,7 @@ Option 1 allows you to import the underlying data from any existing object withi
 
 Option 2 allows you to choose your own columns using the Add Column button, identfying your column type by Dimension, Measure or Formula then scrolling or using the Search function to find and select your desired columns. 
 
-Note: All Dimensions and Measures defined as master items in the Qlik Sense App cannot be used with the “Formula” function. However, for Fields not idenfied as Master Elements in your data model, you can use the Formula selection and aggregating functions such as sum(), count() etc. on the fly to behave as if they were.
+Note: Master Items - Dimensions and Measures - defined in the Qlik Sense App cannot be used with the “Formula” function. Fields not idenfied as Master Elements in your data model, you can use the Formula selection and aggregating functions such as sum(), count() etc. on the fly to behave as if they were.
 
  When imported tables are too large (which is often the case), further filtering is necessary to reduce the amount of data returned to a manageable amount.  In this situation, the use of the Global Selector is advised. The Global Selector gives you access to all of the Dimensions and Fields in the app and their associated values and offers a search function to return relevant options for you to filter on. Upon clicking on any value using the Global Selector, it will be added to the “Current selections” toolbar as a filter. The Global Selector can be closed via a click above the dark grey area. Once closed, the filters persist in the Sense Filter Toolbar and, once there, additional selections can be made to adjust your result set(s). 
 
