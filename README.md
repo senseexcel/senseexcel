@@ -446,14 +446,44 @@ The buttons here allow you to manipulate your selections e.g. “Step back”, �
 
 ### 6.7 Altered States
 
+Sense Excel can support the creation and use of the Altered States functionality in Qlik Sense.  Altered States can be applied to Sense Excel tables causing them to respond only to the filters and filter selections within an Altered State definition an not to changes in filter selections or bookmark application
+
+To Apply an Existing Altered State:
+
+1. Open the Sense Excel Selection tool by pressing the Selection Tool button in the "SENSE" Ribbon and pressing the Universal Selector button.
+2. Drop down the Altered States box on the top right of the screen.
+3. Select the existing Altered State you desire.  The filters and filter selections will be applied and displayed immediately.
+
 ![Toolbar Selection Tool Altered States](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Altered-States-New.png)
 
+To Define a new Altered State:
+
+1. Open the Sense Excel Selection tool by pressing the Selection Tool button in the "SENSE" Ribbon and pressing the Universal Selector button.  The icon is a Squre with an arrow thru it on the right side of the "SENSE" selection tool.
+2. Choose the Dimension and Field Values you want to filter and make your filter selections within them.
+3. Drop Down the Altered States box on the top right of the screen.
+4. Press the "..." icon
+5. Give a name to your new Altered State
+6. Press the Green Check to save.
+7. Drop down and choose the Altered State you would like to apply.
+
 ![Toolbar Selection Tool Altered States New](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Altered-States-New.png)
+
+An Altered State can be applied to any table defined or imported into Sense Excel.
+
+![Toolbar Selection Tool Altered States Table](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Altered-States-Table.png)
+
+1. Edit an existing table definition by selecting the table and pressing the "Table" button in the "SENSE" Ribon or Right Mouse Click within the Table and select "Edit Table" to enter the Sense Excel Table Property Panel.
+2. If creating a new table, use Table Import, Add Coulmn or Fast Add to place the desired Columns into the Sense Table Property Panel.
+3. Expand the "Apperance" section within the Sense Excel Property panel.
+4. Choose the Altered State you would like to apply.
+5. Press the Green Check to save your table definition and import your data.
+
+Once an Altered State is applied, the included filters and filter selections will be applied to the table alone and this table will not respond to bookmarks or filter selections made with the Global Selectore. 
 
 
 ### 6.8 "Report Preview"
 
-![Toolbar Report Preview Button](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Report-Preview.PNG)
+![Toolbar Report Preview Button](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Report-Preview.png)
 
 The "Report Preview" button will only be enabled if Sense Excel Reporting is installed and running in your Qlik Sense deloyment.
 
