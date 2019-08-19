@@ -1,5 +1,8 @@
 # Sense Excel Detailed Installation Guide
 
+
+![SE Cover](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Cover.PNG)
+
 ## 1. Disclaimer 
 
 This document will cover how to get Sense Excel up and running on your system, what to expect and ways the product can be used. This document is written to provide quick answers and will be continuously updated. Not all options or possibilities of Sense Excel are covered within the scope of this document but will be complimented by best practices and use cases documented elsewhere in this repository. 
@@ -17,7 +20,7 @@ The rest of the disclaimer can be read at Qlik2Go (https://support.qlik2go.net/p
 
 ### 2.1 Who We Are
 
-akquinet AG is a stock corporation headquartered in Hamburg, Germany with approximately 900 employees. We offer a wide range of IT and BI implementation services including Enterprise Resource Planning (ERP) systems utilizing Microsoft and SAP, custom ERP development using JAVA as well as managed hosting services. akquinet's Business Intelligence team is located in Jena, Germany is and responsible for development of the Sense Excel product line. 
+akquinet AG is a stock corporation headquartered in Hamburg, Germany with over 1000 employees. We offer a wide range of IT and BI implementation services including Enterprise Resource Planning (ERP) systems utilizing Microsoft and SAP, custom ERP development using JAVA as well as managed hosting services. akquinet's Business Intelligence team is located in Jena, Germany is and responsible for development of the Sense Excel product line. 
 
 
 ### 2.2 Why We Do What We Do
@@ -85,7 +88,7 @@ You can download the most recent Sense Excel software from https://www.senseexce
 
 Unpack (unzip) the files from the Sense Excel directory of your download package to a location of your choosing. 
 
-Best practice is to create a new directory in your Documents folder called Sense Excel with a sub-folder referencing the version number like %User%\Documents\Sense Excel\x.x.x
+Best practice: Create a new directory in your Documents folder called Sense Excel with a sub-folder referencing the version number like %User%\Documents\Sense Excel\x.x.x
 
 ###  5.3 New Sense Excel Installation 
 
@@ -93,21 +96,21 @@ Best practice is to create a new directory in your Documents folder called Sense
 
 2. Excel should start automatically and add the "SENSE" tab and associated toolbar to Excel. 
 
-3. Go to Settings in the Sense Excel toolbar, press the triangle to expand the meu and check "Auto Load". This will start Sense Excel every time you open Excel.
+3. Go to the "Settings" button the Sense Excel ribbon, press the triangle to expand the menu and check "Auto Load". This will start Sense Excel every time you open Excel.
 
 4. Close Excel and re-open it.  The "SENSE" entry should show up in your menu bar.
 
 ### 5.4 Alternate Installation Technique
 
-In limited instances the "Sense" add-in might not register properly when using the double-cliek installation method. If this is the case, use the alternate installation technique described below.
+In limited instances the Sense Excel add-in might not register properly when using the double-click installation method. If this is the case, please use the alternate installation technique described below.
 
 1. Open Excel and a blank workbook.
 
 2. Navigate to File > Options > Add-Ins.  Press the "Go" button then the "Browse" button. 
 
-3. Navigate to the file location of your Sense Excel software and double click on the approriate xll file. 
+3. Navigate to the location of your Sense Excel software and double click on the approriate .xll file. 
 
-4. Once the Add-in loads and is registered go to Settings and check Auto-Load.  Exit and Restart Excel.
+4. Once the Add-in loads and is registered, go to "Settings" in the "SENSE" ribbon, press the triangle below the button and check Auto-Load.  Exit and Restart Excel.
 
 ### 5.4  Upgrade Your Sense Excel Installation
 
@@ -117,17 +120,17 @@ To upgrade an existing version of Sense Excel please perform the following steps
 
 2. Go to File > Options > Add-Ins > Press the "Go" button
 
-3. Uncheck all Sense Excel add-ins that are displayed.  Confirm that the "SENSE" entry is removed from your Menu bar.
+3. Uncheck all Sense Excel add-ins that are displayed.  Confirm that the "SENSE" entry is removed from the Excel Menu bar.
 
 4. Press the "Browse" button.  This will take you to the %user%\Roaming\Microsoft\Addins directory.
 
-5. Type *.* or dropdown to show "all file types" and delete all Sense Excel (.xll and .xlldel) files in the directory.
+5. Type "*.*" or dropdown to select "all file types" and delete all Sense Excel (.xll and .xlldel) files in the directory.
 
-6. Press the Browse button again.  Navigate to the location of your updated Sense Excel software files.
+6. Go to File > Options > Add-Ins > "Go" button > Browse.  Navigate to the location of your updated Sense Excel software files.
 
-7. Click on the appropriate version and wait for the add-in to load and register.  The "SENSE" entry should re-appear in your Menu bar.
+7. Double-click the appropriate .xll file and wait for the add-in to load and register.  The "SENSE" entry should re-appear in the Excel Menu bar.
 
-8. Go to Settings in the Sense Excel toolbar, press the triangle to expand the meu and check "Auto Load".
+8. Go to Settings in the Sense Excel toolbar, press the triangle to expand the menu and check "Auto Load".
 
 9. Close and Restart Excel.
 
@@ -137,7 +140,7 @@ To connect Sense Excel to a Qlik Sense Server, the additional configuration step
 
 Only paid versions of Sense Excel can be connected to a Qlik Sense Enterprise Site (server) installation. EXCEPTION: All installations utilizing Qlik internal license keys or current Qlik trial or partner keys.  
 
-30-day server trial licenses are available for existing Qlik Sense customers.  Please contact an authorized reseller or the appropriate sales contact listed in Chapter 11 of this document. 
+30-day server trial licenses are available for existing Qlik Sense customers.  Please contact an authorized reseller or the appropriate sales contact listed at the end of this document. 
  
 #### 5.5.1 Open the Qlik Management Console (QMC) 
 
@@ -176,31 +179,57 @@ Validate Rule > Add Rule
 #### 5.5.3  Create a Content Library on the Qlik Sense Server. 
 
 1. Within the QMC >> Content libraries >> Create New >> Enter the name “senseexcel” >> Apply.
-2. When prompted for a Security Rule set it to User is Like * to make Sense Excel available to all licensed Qlik Sense users.
-3. Copy the contents of your organzation's LEF file or trial key into a new text document. 
-4. For token licensing strategies, the contents of your LEF or trial key alone will suffice.
-     For named user licensing strategies please follow the additional steps below.
-5. Append the LEF information with the domain and user name of the users which will access Sense Excel in the format below. 
-   The FROM; TO information is optional if you choose to put time limits on the license duration of your named users.
- 
- ```
-   9999999999999999   
-   EXCEL_NAMED;5;;YYYY-MM-DD    
-   AAAA-BBBB-CCCC-DDDD-EEEE 
-   EXCEL_NAME;DOMAIN\USER1 
-   EXCEL_NAME;DOMAIN\USER2;;
-   EXCEL_NAME;DOMAIN\USER3;FROM;TO 
-   EXCEL_NAME;DOMAIN\USER4;FROM; 
-```
+2. When prompted for a Security Rule set it to User is Like * to make Sense Excel available to all licensed Qlik Sense users upon assignment of a Sense Excel license.
+
+#### 5.5.4  Create and Upload "license.txt" File. 
+
+1. Copy the contents of your organzation's LEF file or trial key into a new text document. 
+2. For token licensing strategies, only the contents of your LEF or trial key are required. For Named User licensing strategies please follow the additional steps below.
+3. Append the LEF information with EXCEL_NAME; followed by the Qlik Sense "User directory" and "User ID" of the designated Sense Excel users like shown in the example below. 
+4. The FROM; TO information is optional if you choose to put time limits on the license duration of your named users. The example below shows a time limited license assignment followed by a reassignment to another user.
+
+99999999999999999
+PRODUCTLEVEL;50;;2020-01-31
+OVERAGE;NO;;
+TIMELIMIT;VALUE;;2020-01-30
+GEOANALYTICS;YES;;
+GEOPLUS;YES;;
+WEBCONNECTORS;YES;;
+QDM_ESSENTIALS;YES;;
+IGNORE_TOKENS;YES;;
+SPECIAL_EDITION;NFR;;
+PROFESSIONAL;20;;
+ANALYZER;10;;
+ABCD-EFGH-HIJK-LMNO-PQRS
+EXCEL_NAME;EXAMPLE-PC\jsmith
+EXCEL_NAME;EXAMPLE-PC\bjohnson
+EXCEL_NAME;EXAMPLE-PC\rwilliams; 2019-09-01; 2019-09-30
+EXCEL_NAME;EXAMPLE-PC\krogers; 2019-10-01; 2020-01-31
+
 
 6. Please confirm that there are no spaces at the end of each line.
-7. Save this file with the name license.txt.
-8. Upload the license.txt file to the senseexcel content library. 
+7. Save this file with the exact file name "license.txt".
+8. Upload the "license.txt" file to the senseexcel content library. 
    
-   QMC >> Content Libararies >> senseexcel >> Contentst >> Upload >> Select File “license.txt”. 
+   QMC >> Content Libararies >> senseexcel >> Contents >> Upload >> Select File “license.txt”. 
 
    This file will be the tool for managing the licenses of all of your Sense Excel users going forward.
    It can be updated and overwritten as necessary.
+   
+   #### 5.5.5  View / Update an Existing "license.txt" File. 
+
+1. Go to QMC >> Start >> Content libaries >> senseexcel >> Associated Items >> Contents
+2. Copy the contents of the "URL path" and and paste it immediately after your Qlik Sense Server Url in a new browser tab/window like the below example
+
+https://your.qlikserver.com/content/sensexcel/license.txt
+
+![SE Check Existing License](https://github.com/senseexcel/senseexcel/blob/master/images/SE-License-Check-Existing-License.png)
+
+
+https://your.qlikserver.com/content/sensexcel/license.txt
+
+3.  This will display the contents of an existing license.txt file.  If you need to make changes, copy the contents from the screen into a new text file, make your desired changes, save the document and upload/overwrite the existing license.txt file in the senseexcel content library. 
+
 
 ## 6.  Explaining the User Interface 
 
@@ -405,6 +434,12 @@ This concludes the introduction of the Sense Excel User Interface. If there are 
 ### 6.10 Sheet Loop
 
 1. Lorem ipsum dolor sit amet, in sed dolor intellegam, has et dolorem platonem. Ut vix dictas corrumpit repudiandae, nusquam recusabo id duo. Te pro solet forensibus sadipscing, mundi exerci eam no. Vix minim soleat saperet ei, nibh omnium deseruisse at pro. Sea nobis quidam vidisse ex, discere erroribus accusamus ex nam.
+
+ ![Sheet Loop Open](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Shootloop-Open.png)
+ 
+ ![Sheet Choose Dimension-1](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Sheetloop-Choose-Dimension-1.png) 
+ 
+ ![Sheet Choose Dimension-2](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Sheetloop-Choose-Dimension-2.png) 
 
 2. Eros expetenda in ius. Mei an brute consul, in per elitr discere dignissim, ut his posse malis velit. In quaeque tacimates mei, his id quis nibh. Lorem nihil quaestio in sea, ius eu saepe iracundia, ius te mutat delenit molestiae. Ne cum propriae mentitum, mel suas nemore doctus ea, ea veri semper albucius nec. Elit decore quidam id eos, eos viderer eloquentiam id, id appareat suavitate definitiones vis.
 
