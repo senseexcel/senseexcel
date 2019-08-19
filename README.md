@@ -440,14 +440,20 @@ Once inside of this interface, you can also use the Search function to reduce th
   
 ### 6.6 Sense Filter Toolbar Navigation
 
-![Selection Tool Activate](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Activate.PNG)
+![Selection Tool Activate](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Activate.png)
 
-The buttons here allow you to manipulate your selections e.g. “Step back”, “Step forward” and “Clear all selections. Furthermore, when a filter is set, you can change the values of your selection by clicking on it and using the Check and X buttons to select and deselect filter values respectively,
+The buttons here allow you to manipulate your selections e.g. “Step back”, “Step forward” and “Clear all selections. Furthermore, when a filter is set, you can change the values of your selection by clicking on it and using the Check and X buttons to select and deselect filter values respectively.
+
+### 6.7 Altered States
+
+![Toolbar Selection Tool Altered States](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Altered-States-New.png)
+
+![Toolbar Selection Tool Altered States New](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Altered-States-New.png)
 
 
-### 6.7 "Report Preview"
+### 6.8 "Report Preview"
 
- ![Toolbar Report Preview Button](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Report-Preview.PNG)
+![Toolbar Report Preview Button](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Report-Preview.PNG)
 
 The "Report Preview" button will only be enabled if Sense Excel Reporting is installed and running in your Qlik Sense deloyment.
 
@@ -458,7 +464,7 @@ The "Report Preview" button will only be enabled if Sense Excel Reporting is ins
 Executing the "Report Preview" button prompts the Sense Excel Reporting engine to execute your active Sense Excel report including all defined "Sheet Loops" (see section XXX for more information) then render and download a pdf version of the report to your client machine.
 
 
-### 6.8 "Settings"
+### 6.9 "Settings"
 
 Pressing the "Wheel" icon will activate the Sense Excel Property window on the right side of your screen.
 
@@ -483,7 +489,7 @@ Checking the “Auto load”-option will load the Qlik Sense toolbar automatical
 
 
 
-### 6.9 "About" 
+### 6.10 "About" 
 
  ![Toolbar About](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About.png)
 
@@ -495,7 +501,7 @@ Clicking on the question mark brings up an additional window with the Sense Exce
 
 This concludes the introduction of the Sense Excel User Interface. If there are any questions that have not been answered or should be described in more detail, please feel free to contact us with your feedback.
 
-### 6.10 Sheet Loop
+### 6.11 Sheet Loop
 
 1. Lorem ipsum dolor sit amet, in sed dolor intellegam, has et dolorem platonem. Ut vix dictas corrumpit repudiandae, nusquam recusabo id duo. Te pro solet forensibus sadipscing, mundi exerci eam no. Vix minim soleat saperet ei, nibh omnium deseruisse at pro. Sea nobis quidam vidisse ex, discere erroribus accusamus ex nam.
 
