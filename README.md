@@ -140,7 +140,7 @@ To use Sense Excel with a Qlik Sense Enterprise installation, the configuration 
 
 IMPORTANT: Sense Excel license keys are required to use Sense Excel with a Qlik Sense Enterprise installation. 
 
-EXCEPTIONS: All installations utilizing Qlik internal license keys or current Qlik trial or partner keys.  
+EXCEPTIONS: Qlik Sense Desktop and all installations utilizing valid Qlik Sense Trial, Internal or Partner keys DO NOT require a seperate Sense Excel license key.  
 
 30-day server trial licenses are available for existing Qlik Sense customers.  Please contact an authorized reseller or the appropriate sales contact listed at the end of this document. 
  
@@ -186,23 +186,8 @@ Validate Rule > Add Rule
 3. Append the LEF information with EXCEL_NAME; followed by the Qlik Sense "User directory" and "User ID" of the designated Sense Excel users like shown in the example below. 
 4. The FROM; TO information is optional.  This allows time limits for the license assignment duration of your named users. The example below shows a time limited license assignment followed by a reassignment to another user.
 
-99999999999999999
-PRODUCTLEVEL;50;;2020-01-31
-OVERAGE;NO;;
-TIMELIMIT;VALUE;;2020-01-30
-GEOANALYTICS;YES;;
-GEOPLUS;YES;;
-WEBCONNECTORS;YES;;
-QDM_ESSENTIALS;YES;;
-IGNORE_TOKENS;YES;;
-SPECIAL_EDITION;NFR;;
-PROFESSIONAL;20;;
-ANALYZER;10;;
-ABCD-EFGH-HIJK-LMNO-PQRS
-EXCEL_NAME;EXAMPLE-PC\jsmith
-EXCEL_NAME;EXAMPLE-PC\bjohnson
-EXCEL_NAME;EXAMPLE-PC\rwilliams; 2019-09-01; 2019-09-30
-EXCEL_NAME;EXAMPLE-PC\krogers; 2019-10-01; 2020-01-31
+![SE License Example LEF](https://github.com/senseexcel/senseexcel/blob/master/images/SE-License-Example-LEF.png)
+
 
 
 6. Please confirm that there are no spaces at the end of each line.
