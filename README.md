@@ -209,19 +209,68 @@ https://your.qlikserver.com/content/sensexcel/license.txt
 
 ![SE Check Existing License](https://github.com/senseexcel/senseexcel/blob/master/images/SE-License-Check-Existing-License.png)
 
-3.  Entering this Url will display the contents of an existing license.txt file. to make changes, copy the contents from the screen into a new text file, make your desired changes, save the document as "license.txt" and upload/overwrite the existing license.txt file in the senseexcel content library.
+3.  Entering this Url will display the contents of an existing "license.txt" file. to make changes, copy the contents from the screen into a new text file, make your desired changes, save the document as "license.txt" and upload/overwrite the existing license.txt file in the "senseexcel" content library.
 
 IMPORTANT: The names of the "senseexcel" Content library and "license.txt" file need match EXACTLY and ARE case sensitive. 
 
 
 ## 6.  Explaining the User Interface 
 
-To get the most out of your Sense Excel experience, it is necessary to understand the UI (User Interface) used in Sense Excel. The  picture below shows the “SENSE” toolbar as well as the features that make up Sense Excel.
+To get the most out of your Sense Excel experience, it is necessary to understand the Sense Excel UI (User Interface). 
 
- ![Toolbar](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar.PNG)
+The picture below shows the “SENSE” Ribbon as well as the features that make up Sense Excel.
+
+![Toolbar](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar.PNG)
 
 ### 6.1 "Connection"
-This enables you to connect to your Qlik Sense Desktop or Server (URL)
+
+The "Connection" portion of the "Sense" ribbon allows you to create and manage the connections Sense Excel makes to your Qlik Sense environment(s).
+
+There are two different Connection creation techniques available, a manual process as well as a step-by-step Installation Wizard:
+
+To use the manual workflow perform the following steps:
+
+1. Press the "..." next to the drop down box.
+2. Press the New Connection button
+3. "Connection Name" field.  Enter a unique name for the connection - preferably a name that will be easy to identify in a drop down list. 
+3. Ignore Certifate Errors Checkbox
+
+
+
+4. Connection Type
+
+There are 4 different connection types available:
+
+1. "Qlik Sense Desktop".  This setting in included in the default Sense Excel installation and points to the local machine using 127.0.0.1 as the ip address.
+
+If do not use Qlik Sense Desktop as a data source this connection can be deleted.  It can be re-created at a later point by creating a new connection using the following parameters:  Type: Qlik Snse Desktop and Url ws://127.0.0.1:4848.
+
+2. "Sense Server - Current Windows User"
+
+Like Qlik Sense, the default behavior of Sense Excel uses Windows authentication and passes the credentials of current user to Qlik Sense.  This works with Qlik Sense Server implementations on a local machine as well as when Active Directory is used for single sign-on.
+
+3. "Sense Server - Enter username/password"
+
+This approach is used when you have different credentials for Qlik Sense than your local windows machine.  Signing in using this approach will prompt for Qlik Sense credentials.
+
+4. "Sense Server - Custom authentication (via embedded Browser)"
+
+This technique will open a new browser window, prompt for credentials and pass them to Qlik Sense via a session cookie to log into Qlik Sense. Use this approach when logging into a server on different domain or using a third party single sign on system such as OKTA.
+
+
+5. Url
+Enter the url of your target server. https://your.qlikserver.com.  You can copy this from a the address bar of a browser used to connect to your Qlik Sense environment.
+
+Do not include /hub in this address.  If using OKTA or similar append that to the end of the url as follows:  https://your.qlikserver.com/okta.
+
+
+6. Alternate Proxy Server
+
+
+
+Enter a Connection Name.  This must be unique.
+
+Enter 
 
 Connection Name - This can be changed to a user friendly name such as "Test Server".
 
