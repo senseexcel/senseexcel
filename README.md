@@ -224,36 +224,50 @@ The picture below shows the “SENSE” Ribbon as well as the features that make
 
 ### 6.1 "Connection"
 
-The "Connection" portion of the "Sense" ribbon allows you to create and manage the connections Sense Excel makes to your Qlik Sense environment(s).
+The "Connection" portion of the "Sense" ribbon allows you to create and manage the connections Sense Excel makes to your Qlik Sense environment(s).  Once a connection is configured, use the Sign In and Sign Out buttons as described below.
+
+a. Sign In : Pressing the sign in button will attempt to connect to the Connection shown in the drop down box.
+b. Sign Out: This will end your active connection to the server. 
 
 There are two different Connection creation techniques available, a manual process as well as a step-by-step Installation Wizard:
 
-To use the manual workflow perform the following steps:
+#### 6.1.1 Manual Connection Creation
 
 1. Press the "..." next to the drop down box.
 2. Press the New Connection button
-3. "Connection Name" field.  Enter a unique name for the connection - preferably a name that will be easy to identify in a drop down list. 
-3. Ignore Certifate Errors Checkbox.  Default setting is enabled.
+3. Fill in the form with the appropriate values.
 
+a. "Connection Name" field.  Enter a unique name for the connection 
 
+BEST PRACTICE: Choose a Connection name that will be easy to identify in a drop down list. 
 
-4. Connection Type
+b. Ignore Certifate Errors Checkbox. 
+
+Sometimes Qlik Sense is running on a server without a valid secuirty certificate.  Checking this box will ignore https://certificate errors are that are encountered and proceed with the connection.  Uncheking the box will allow the https:// chain to remain intact and provides the most security. The default setting is "checked".
+
+![Connection Edit Property Panel Ignore Certificate Errors](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-Edit-Property-Panel-Ignore-Certificate-Errors.png)
+
+c. Connection Type
+
+Depending on your Qlik Sense authorization strategy and which browser you are using, this parameter can be set to allow Sense Excel to work in any environment.  
+
+![Connection Edit Property Panel Connection Type](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-Edit-Property-Panel-Connection-Type.png)
 
 There are 4 different Connection types available:
 
-1. "Qlik Sense Desktop".  This setting in included in the default Sense Excel installation and points to the local machine using 127.0.0.1 as the ip address.
+a. "Qlik Sense Desktop".  This setting in included in the default Sense Excel installation and points to the local machine using 127.0.0.1 as the ip address.
 
 If do not use Qlik Sense Desktop as a data source this connection can be deleted.  It can be re-created at a later point by creating a new connection using the following parameters:  Type: Qlik Sense Desktop and Url ws://127.0.0.1:4848.
 
-2. "Sense Server - Current Windows User"
+b. "Sense Server - Current Windows User"
 
 Like Qlik Sense, the default behavior of Sense Excel uses Windows authentication and passes the credentials of current user to Qlik Sense.  This works with Qlik Sense Server implementations on a local machine as well as when Active Directory is used for single sign-on.
 
-3. "Sense Server - Enter username/password"
+c. "Sense Server - Enter username/password"
 
 This approach is used when you have different credentials for Qlik Sense than your local windows machine.  Signing in using this approach will prompt for Qlik Sense credentials.
 
-4. "Sense Server - Custom authentication (via embedded Browser)"
+d. "Sense Server - Custom authentication (via embedded Browser)"
 
 This technique will open a new browser window, prompt for credentials and pass them to Qlik Sense via a session cookie to log into Qlik Sense. Use this approach when logging into a server on different domain or using a third party single sign on system such as OKTA.
 
@@ -263,61 +277,72 @@ Enter the url of your target server. https://your.qlikserver.com.  You can copy 
 
 6. 3rd Party Sigle Sign On
 
-If using OKTA or similar, append that to the end of the url as follows:  https://your.qlikserver.com/okta.
+If using OKTA or similar, choose "Sense Server - Custom authentication (via embedded Browser)" as your "Type" and append your url as follows:  https://your.qlikserver.com/okta
 
-6. "Session cookie header name" - Alternate Proxy Server
+7. "Session cookie header name" - Alternate Proxy Server
 
-Sense Excel supports defining connections to different virtual proxy servers in a distributed Qlik Sense environment.  
+Sense Excel supports defining connections that point to different virtual proxy servers in a distributed Qlik Sense environment.  
 
-A virtual proxy name that begins with -qlik can be used by appending the name of the virtual proxy directly to the url as follows: https://your.qlikserver.com/development.
+A virtual proxy name that begins with -qlik can be used by appending the name of the virtual proxy directly to the url as follows: 
 
-If your virtual proxy has a name that begins with anything other than "-qlik" us enter it in the "Session cookie header name" field.
+https://your.qlikserver.com/development
 
+If your virtual proxy has a header name that begins with anything other than "-qlik" enter it in the "Session cookie header name" field like follows: "-otherheader"
 
+![Connection](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection.png)
 
-Enter a Connection Name.  This must be unique.
-
-Enter 
-
-Connection Name - This can be changed to a user friendly name such as "Test Server".
-
-Connection Type - Depending on your Qlik Sense authorization strategy and which browser you are using, this parameter can be set to allow Sense Excel to work in your environment.  The Qlik Sense default is to use NTLM, also called Windows Authentication.  In this situation, if the credentials that you use to sign into your Qlik Sense Server do not match your Windows credentials, this value would be set to "Cookie" which would prompt for different credentials to access Qlik Sense.  There are other options avaialble to ensure that Sense Excel will support whichever approach is being used in your situation. 
-
-Connection uri:  The url used for connecting to your Qlik Sense Server.
-
-
-
+8. Save your connetion by pressing the Green Check Box.
  
- ![Connection](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection.png)
- 
-a. Sign In : Pressing the sign in button will attempt to connect to the source shown in the drop down box.
-b. Sign Out: This will end your active connection to the server. 
 
+#### 6.1.2 Create a Connection Using a Wizard
 
-![Connection Edit Property Panel Connection Type](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-Edit-Property-Panel-Connection-Type.png)
- 
- 
- ![Connection Edit Property Panel Ignore Certificate Errors](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-Edit-Property-Panel-Ignore-Certificate-Errors.png)
- 
- Ignore Certificate Errors Checkbox. Sometimes https://sites have untrusted certificates and this setting defines how Sense Excel will behave in this scenario.  Checking the box will not stop connecting if https://certificate errors are encountered and ignore these errors.  Uncheking the box will allow the https:// chain to remain intact and provides the most security. 
+You can use use a step by step Wizard process to create a connection by following the steps below.
 
- 
+In the "SENSE" ribbon, use the Connections dropdown box and select "Create new connection to server" at the bottom of the list.
  
  ![Connection Edit New Connection Property Panel Wizard](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-New-Connection-Property-Panel-Wizard.png)
+ 
+ This will open the wizard process in the Sense Excel Propery Panel on the right side of your screen and prompt you for the necessary value with instructions.
+ 
+1. Connection Name:  
+
+Please enter a unique name for the connection you would like to create.  
+
+BEST PRACTICE: Choose a Connection name that will be easy to identify in a drop down list. 
   
-  
-  ![Connection Edit New Connection Property Panel Wizard Step 1 Connection Name](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-New-Connection-Property-Panel-Wizard-Step-1-Connection-Name.png)
-  
+![Connection Edit New Connection Property Panel Wizard Step 1 Connection Name](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-New-Connection-Property-Panel-Wizard-Step-1-Connection-Name.png)
+
+2. Enter Url.  Type this entry in or copy if from the address bar of a browser connected to Qlik Sense.
     
   ![Connection Edit New Connection Property Panel Wizard Step 2 Connection Url](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-New-Connection-Property-Panel-Wizard-Step-2-Connection-Url.png)
   
+Hitting the "Next" button will attempt to authenticate using default Windows authentication with the credentials of the current user.  If this approach is supported you will see the "Success" messsage.   
   
-  ![Connection Edit New Connection Property Panel Wizard Step 3 Custom Authentication](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-New-Connection-Property-Panel-Wizard-Step-3-Custom-Authentication.png)
-  
-      
-  ![Connection Edit New Connection Property Panel Wizard Step 4 Success](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-New-Connection-Property-Panel-Wizard-Step-4-Success.png)
+3. If your current Windows credentials do not connect you will be prompted for Step 3.  The underlying Connection type will be changed to "Sense Server - Custom authentication (via embedded Browser)" and prompt your for the appropriate crentials.
 
- 
+![Connection Edit New Connection Property Panel Wizard Step 3 Custom Authentication](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-New-Connection-Property-Panel-Wizard-Step-3-Custom-Authentication.png)
+
+Upon successful connection to the Qlik server you will see the message below:
+
+![Connection Edit New Connection Property Panel Wizard Step 4 Success](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-New-Connection-Property-Panel-Wizard-Step-4-Success.png)
+
+If your Connection attempt is unsuccessful, you will need to begin the Wizard process again with different parameter values.  Check that your url is correct as well with your Qlik administrator for any settings such as virtual proxies or headers that have been customized in your environment.
+
+To exit the Sense Excel Propery Panel press the grey "X" at the top right of the window.
+
+
+#### 6.1.1 Edit An Existing Connection
+
+Once you have created Connections using either technique you can edit or delete them by doing the following:
+
+1. Press "Sign Out" to close any active connections.
+2. Press the "..." next to the Connections drop down box.
+2. To Delete, select the desired connection and press the "Trash" icon.
+3. To Edit, select the desired connection, press the "Pencil" icon and make your edits. 
+4. Press the Green Check button to save your changes.
+5. Press the Grey "X" to exit the Sense Excel property panel.
+
+
 ### 6.2 "Hub"
 
  ![Open Hub](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Open-Hub.png)
