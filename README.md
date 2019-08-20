@@ -601,22 +601,58 @@ Clicking on the question mark brings up an additional window with the Sense Exce
  ![Toolbar About Version](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-About-Version.png)
  
 
-
-This concludes the introduction of the Sense Excel User Interface. If there are any questions that have not been answered or should be described in more detail, please feel free to contact us with your feedback.
-
 ### 6.11 Sheet Loop
 
-1. Lorem ipsum dolor sit amet, in sed dolor intellegam, has et dolorem platonem. Ut vix dictas corrumpit repudiandae, nusquam recusabo id duo. Te pro solet forensibus sadipscing, mundi exerci eam no. Vix minim soleat saperet ei, nibh omnium deseruisse at pro. Sea nobis quidam vidisse ex, discere erroribus accusamus ex nam.
-
+Sense Excel offers a function called "Sheet Loop" for use with reporting content authored for the On-Demand and Distribution capabilities of Sense Excel Reporting.  
+ 
+When a Sheet Loop is applied, the Sense Excel Reporting Engine will create a discreet Excel worksheet tab filtered for each member of the field/dimension specified.
+ 
+To apply a sheet loop, right mouse click on the worksheet you would like to include it within.
+ 
  ![Sheet Loop Open](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Shootloop-Open.png)
+ 
+Use the dropdown box to choose the Field/Dimension you would like the loop applied to. Once the dimension/field is selected, a diaglogue box will show the syntax created by the selection.
+
+ ![Sheet Choose Dimension-1](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Sheetloop-Choose-Dimension-1.png) 
+
+You also need to specify whether or not you would like to export the root node and if you would like a dynamic name applied to the worksheets other than the dimension values themselves.
+ 
+Export Root Node:
+
+If you were to specifcy a Sheet Loop for a field/dimension called "Year" which includes values "2017" "2018" and "2019", your output workbook would have the below worksheets included:
+
+With Export Root Node Checked/True:
+ 
+Worksheet1:2017 Worksheet2: 2018 Worksheet3: 2019
+ 
+With Export Root Node Unchecked/False:
+ 
+Worksheet1:2018 Worksheet2:2019
+
+The default value of Export Root Node is Checked/true.
  
  ![Sheet Choose Dimension-1](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Sheetloop-Choose-Dimension-1.png) 
  
+Sheet Name:
+
+The default setting is to name the individual worksheets with the values of the field/dimension specified in the Sheetloop.  
+
+Having "Sheet Name" unchecked or the "Sheet Name" formula empty would name the worksheets 2017, 2018 amd 2019 respectively.
+
+You can also use a formula to dynamically name the worksheet by having "Sheet Name" checked and where the formula output meets the following criteria:
+
+1. The formula output values do not exceed 30 characters. This is an Excel limitation and will be truncate all characters above the max of 30.
+
+2. The formula output value do not include any special characters that are not allowed in an Excel worksheet name such as  ? / [ ] etc. 
+
+ Example: The formula =only([Fiscal Year])&'|'&'Report' would create and name a worksheet for each possible value of [Fiscal Year] as the engine makes its dynamic selections for [Fiscal Year] like below:
+ 
+ 2017|Report 2018|Report and 2019|Report.
+ 
  ![Sheet Choose Dimension-2](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Sheetloop-Choose-Dimension-2.png) 
 
-2. Eros expetenda in ius. Mei an brute consul, in per elitr discere dignissim, ut his posse malis velit. In quaeque tacimates mei, his id quis nibh. Lorem nihil quaestio in sea, ius eu saepe iracundia, ius te mutat delenit molestiae. Ne cum propriae mentitum, mel suas nemore doctus ea, ea veri semper albucius nec. Elit decore quidam id eos, eos viderer eloquentiam id, id appareat suavitate definitiones vis.
 
-3. Oblique utroque suavitate at mea, eum dicunt causae commune in, eum ea errem appareat. Cum an quis amet temporibus, at adhuc populo usu. Sea ea debet molestiae, at pro facilis appetere, ut esse movet definitionem sea. Ne duo quem nulla, no eligendi perfecto scripserit pro. Te vis debitis imperdiet philosophia, indoctum consulatu ne sed.
+This concludes the introduction of the Sense Excel User Interface. If there are any questions that have not been answered or should be described in more detail, please feel free to contact us with your feedback.
 
 
  ## 7. Using the Sense Excel Demo Report 
