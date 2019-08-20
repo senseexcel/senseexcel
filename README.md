@@ -33,7 +33,7 @@
     - [6.1 "Connection"](#61-connection)
       - [6.1.1 Manual Connection Creation](#611-manual-connection-creation)
       - [6.1.2 Create a Connection Using a Wizard](#612-create-a-connection-using-a-wizard)
-      - [6.1.1 Edit An Existing Connection](#611-edit-an-existing-connection)
+      - [6.1.3 Edit An Existing Connection](#611-edit-an-existing-connection)
     - [6.2 "Hub"](#62-hub)
     - [6.3 “Load data” and “Data Load Editor”](#63-load-data-and-data-load-editor)
     - [6.4 “Table”](#64-table)
