@@ -4,52 +4,6 @@
 ![SE Cover](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Cover.PNG)
 
 ## 1. Disclaimer 
-## 2. Introduction 
-### 2.1 Who We Are
-### 2.2 Why We Do What We Do
-## 3. What You Can Expect from Sense Excel 
-## 4. Requirements
-## 5. Installation Guide
-### 5.1 Download Software
-### 5.2 Unpack Files
-### 5.3 New Sense Excel Installation 
-### 5.4 Alternate Installation Technique
-### 5.4 Upgrade Your Sense Excel Installation
-### 5.5 Qlik Sense Server Configuration
-#### 5.5.1 Add a Security rule to your Qlik Sense Server. 
-#### 5.5.2 Create a Content Library on the Qlik Sense Server. 
-#### 5.5.3 Create and Upload "license.txt" File. 
-#### 5.5.4 View / Update an Existing "license.txt" File. 
-## 6.  Explaining the User Interface 
-### 6.1 "Connection"
-#### 6.1.1 Manual Connection Creation
-#### 6.1.2 Create a Connection Using a Wizard
-#### 6.1.3 Edit An Existing Connection
-### 6.2 "Hub"
-### 6.3 “Load data” and “Data Load Editor”
-### 6.4 “Table” 
-### 6.5 "Bookmarks" 
-#### 6.5.1 "Default Bookmark"
-### 6.6 “Selections tool” 
-### 6.6 Sense Filter Toolbar Navigation
-### 6.7 Altered States
-### 6.8 "Report Preview"
-### 6.9 "Settings"
-### 6.10 "About" 
-### 6.11 Sheet Loop
-## 7. Using the Sense Excel Demo Report 
-## 8. Create Your Own Reports
-### 8.1 Using the “Table” import button 
-### 8.2 Fixed Cell Report Definition
-### 8.3 Sense Excel Formulas and Syntax
-#### 8.3.1 SenseConnected 
-#### 8.3.2 SenseFilter 
-#### 8.3.3 SenseVariable 
-#### 8.3.4 SenseEV 
-## 9. Seven Steps to Your First Report in Sense Excel 
-## 10. Contact Information 
-
-## 1. Disclaimer 
 
 This document will cover how to get Sense Excel up and running on your system, what to expect and ways the product can be used. This document is written to provide quick answers and will be continuously updated. Not all options or possibilities of Sense Excel are covered within the scope of this document but will be complimented by best practices and use cases documented elsewhere in this repository. 
 
