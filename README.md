@@ -18,15 +18,15 @@
     - [5.2 Unpack Files](#52-unpack-files)
     - [5.3 New Sense Excel Installation](#53-new-sense-excel-installation)
     - [5.4 Alternate Installation Technique](#54-alternate-installation-technique)
-    - [5.4  Upgrade Your Sense Excel Installation](#54-upgrade-your-sense-excel-installation)
-    - [5.5  Qlik Sense Server Configuration](#55-qlik-sense-server-configuration)
-      - [5.5.1 Add a Security rule to your Qlik Sense Server.](#551-add-a-security-rule-to-your-qlik-sense-server)
+    - [5.5  Upgrade Your Sense Excel Installation](#54-upgrade-your-sense-excel-installation)
+    - [5.6  Qlik Sense Server Configuration](#55-qlik-sense-server-configuration)
+      - [5.6.1 Add a Security rule to your Qlik Sense Server.](#551-add-a-security-rule-to-your-qlik-sense-server)
       - [IDENTIFICATION](#identification)
       - [BASIC](#basic)
       - [ADVANCED](#advanced)
-      - [5.5.2  Create a Content Library on the Qlik Sense Server.](#552-create-a-content-library-on-the-qlik-sense-server)
-      - [5.5.3  Create and Upload "license.txt" File.](#553-create-and-upload-licensetxt-file)
-      - [5.5.5  View / Update an Existing "license.txt" File.](#555-view-update-an-existing-licensetxt-file)
+      - [5.6.2  Create a Content Library on the Qlik Sense Server.](#552-create-a-content-library-on-the-qlik-sense-server)
+      - [5.6.3  Create and Upload "license.txt" File.](#553-create-and-upload-licensetxt-file)
+      - [5.6.4  View / Update an Existing "license.txt" File.](#555-view-update-an-existing-licensetxt-file)
   - [6.  Explaining the User Interface](#6-explaining-the-user-interface)
     - [6.1 "Connection"](#61-connection)
       - [6.1.1 Manual Connection Creation](#611-manual-connection-creation)
@@ -185,7 +185,7 @@ In limited instances the Sense Excel add-in might not register properly when usi
 
 4. Once the Add-in loads and is registered, go to "Settings" in the "SENSE" ribbon, press the triangle below the button and check Auto-Load.  Exit and Restart Excel.
 
-### 5.4  Upgrade Your Sense Excel Installation
+### 5.5  Upgrade Your Sense Excel Installation
 
 To upgrade an existing version of Sense Excel please perform the following steps:
 
@@ -207,7 +207,7 @@ To upgrade an existing version of Sense Excel please perform the following steps
 
 9. Close and Restart Excel.
 
-### 5.5  Qlik Sense Server Configuration
+### 5.6  Qlik Sense Server Configuration
 
 To use Sense Excel with a Qlik Sense Enterprise installation, the configuration steps listed below need to be performed prior to attempting to connect. 
 
@@ -217,7 +217,7 @@ EXCEPTIONS: Qlik Sense Desktop and all installations utilizing valid Qlik Sense 
 
 30-day server trial licenses are available for existing Qlik Sense customers.  Please contact an authorized reseller or the appropriate sales contact listed at the end of this document. 
  
-#### 5.5.1 Add a Security rule to your Qlik Sense Server. 
+#### 5.6.1 Add a Security rule to your Qlik Sense Server. 
 
 QMC > MANAGE RESOURCES > Security Rules > + Create new > SER License
 
@@ -247,12 +247,12 @@ Validate Rule > Add Rule
 
 ![SER License Security Rule](https://github.com/senseexcel/senseexcel-reporting/blob/master/docs/Security-Rule-SER-License.PNG)
 
-#### 5.5.2  Create a Content Library on the Qlik Sense Server. 
+#### 5.6.2  Create a Content Library on the Qlik Sense Server. 
 
 1. Go to QMC >> Content libraries >> Create New >> Enter the name “senseexcel” >> Apply.
 2. When prompted for a Security Rule set it to User is Like * to make Sense Excel available to all licensed Qlik Sense users upon assignment of a Sense Excel license as shown below.
 
-#### 5.5.3  Create and Upload "license.txt" File. 
+#### 5.6.3  Create and Upload "license.txt" File. 
 
 1. Copy the contents of your organzation's LEF file or trial key into a new text document. 
 2. For token licensing strategies, only the contents of your LEF or trial key are required. For Named User licensing strategies please follow the additional steps below.
@@ -271,7 +271,7 @@ Validate Rule > Add Rule
 
 
    
-#### 5.5.5  View / Update an Existing "license.txt" File. 
+#### 5.6.4  View / Update an Existing "license.txt" File. 
 
 Once installed, the "license.txt" in the "senseexcel" Content library is used to manage the assigment of Sense Excel named user licenses. It can be viewed, updated and overwritten by following the steps below.  
 
