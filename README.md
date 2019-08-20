@@ -573,11 +573,11 @@ Pressing the "Wheel" icon will activate the Sense Excel Property window on the r
 
  ![Toolbar Settings Support](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Support.png)
 
-
 The “Support” option will open your default e-mail client and create a message with an attached log file addressed to our support-team. 
 
- ![Toolbar Settings Property Panel](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Property-Panel.png)
+ ![Toolbar Settings Support Email](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Support-Email.png)
  
+ ![Toolbar Settings Support Email Message](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Support-Email-Message.png)
  
 Checking the “Auto load”-option will load the Qlik Sense toolbar automatically when starting Excel. 
 
@@ -586,9 +586,11 @@ Checking the “Auto load”-option will load the Qlik Sense toolbar automatical
 
  ![Toolbar Settings Language](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Language.png)
  
-  ![Toolbar Settings Language Expanded](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Language-Expanded.png)
+ "Language" allows you to choose your preferred language.  If your preferred language is not included, please contact us to discuss including it in the product.
+ 
+ ![Toolbar Settings Language Expanded](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Language-Expanded.png)
 
-"Language" allows you to choose your preferred language.  If your preferred language is not included, please contact us to discuss including it in the product.
+
 
 
 
@@ -810,7 +812,7 @@ Juliane Tschierske
 
 Telephone: +49 40 881 73 26 21
 
-E-Mail:  [uliane.tschierske@akquinet.de]
+E-Mail:  [juliane.tschierske@akquinet.de]
 
 #### Americas:
 
