@@ -104,7 +104,7 @@ We believe that all stakeholders should have easy access to business critical in
 
 ## 3. What You Can Expect from Sense Excel 
 
-In this chapter we will explain what can be expected of Sense Excel and what can't. 
+In this chapter we will explain what you can and can't expect from Sense Excel. 
  
 ### Sense Excel can/does not... 
 
@@ -122,7 +122,7 @@ In this chapter we will explain what can be expected of Sense Excel and what can
 
 • …allow for creation of data tables in Excel utilizing the familiar workflow of Qlik Sense.
 
-• …allow for a quick dowload of an existing Qlik Sense table object into Excel.
+• …allow for a quick download of existing Qlik Sense table objects into Excel.
 
 • …allow editing and reloading of the Qlik Sense application script from directly inside of Excel.
 
@@ -146,7 +146,7 @@ To summarize, with Sense Excel you get all of the power and flexibility of Micro
 
 • Confirm that you have a .NET Framework >= 4.5.1, otherwise please install it. 
 
-• You have Microsoft Excel 2013, 2016 or Office 365-Desktop (32 or 64 bit) installed.
+• You have Microsoft Excel 2013, 2016, 2019 or Office 365-Desktop (32 or 64 bit) installed.
 
 To find out which Microsoft Office edition you are running within Excel, go to FILE >> ACCOUNT >> "About Excel".  Behind the MSO number, it will display 32-Bit or 64-Bit.
 
@@ -161,13 +161,16 @@ You can download the current version Sense Excel software from https://www.sense
 
 ### 5.2 Unpack Files
 
-Unpack (unzip) the files from the Sense Excel directory of your download package to a location of your choosing. Do NOT load Sense Excel from inside of a compressed (Zip) file archive.
+Unpack (unzip) the files from the Sense Excel directory of your download package to a location of your choosing. 
 
 BEST PRACTICE: Create a new directory in your Documents folder called Sense Excel with a sub-folder referencing the version number like %User%\Documents\Sense Excel\x.x.x and extract your software here.  
 
+Do NOT load Sense Excel from inside of a compressed (Zip) file archive.
+
+
 ###  5.3 New Sense Excel Installation 
 
-1. Choose the .xll-install file corresponding to your environment (32 or 64 bit) in the installation folder and double click it. 
+1  Open the location of your Sense Excel software files. Double Click the .xll file corresponding to your environment (32 or 64 bit).
 
 2. Excel should start automatically and add "SENSE" to the Excel Menu bar and show the Sense Excel Ribbon when "SENSE" is selected. 
 
@@ -185,7 +188,9 @@ In limited instances, the Sense Excel Add-in might not register properly using t
 
 3. Navigate to the location of your Sense Excel software and double click on the approriate .xll file. 
 
-4. Once the Add-in loads and is registered, go to "Settings" in the "SENSE" ribbon, press the triangle below the button and check Auto-Load.  Exit and Restart Excel.
+4. Once the Add-in loads and is registered, go to "Settings" in the "SENSE" ribbon, press the triangle below the button and check Auto-Load.  
+
+5. Exit and Restart Excel.
 
 ### 5.5  Upgrade Your Sense Excel Installation
 
@@ -193,7 +198,7 @@ To upgrade an existing version of Sense Excel please perform the following steps
 
 1. Open Excel and a blank workbook.
 
-2. Go to File > Options > Add-Ins > Press the "Go" button
+2. Go to File > Options > Add-Ins > Press the "Go" button.
 
 3. Uncheck all "akquinet-sense-excel" Add-ins that are displayed.  Press OK.  Confirm that the "SENSE" entry is removed from the Excel Menu bar.
 
@@ -213,7 +218,7 @@ To upgrade an existing version of Sense Excel please perform the following steps
 
 ### 5.6  Qlik Sense Server Configuration
 
-To use Sense Excel with a Qlik Sense Enterprise installation you must perform the configuration steps in this section prior to attempting to connect. 
+To use Sense Excel with a Qlik Sense Enterprise installation, you must perform the below configuration steps prior to attempting to connect. 
 
 If you are only using Sense Excel with Qlik Sense Desktop you DO NOT need to perform the steps below .
 
@@ -255,26 +260,24 @@ Validate Rule > Add Rule
 
 #### 5.6.2  Create a Content Library on the Qlik Sense Server. 
 
-1. Go to QMC >> Content libraries >> Create New >> Enter the name “senseexcel” >> Apply.
-2. When prompted for a Security Rule set it to User is Like * to make Sense Excel available to all licensed Qlik Sense users upon assignment of a Sense Excel license as shown below.
+1. Go to QMC >> Content libraries >> Create New >> Enter the EXACT name “senseexcel” >> Apply.
+2. When prompted to create an associated Security Rule select "User" is "Like" * to make Sense Excel available to all licensed Qlik Sense users upon assignment of a Sense Excel license as shown below.
 
 #### 5.6.3  Create and Upload "license.txt" File. 
 
 1. Copy the contents of your organzation's LEF file or trial key into a new text document. 
 2. For token licensing strategies, only the contents of your LEF or trial key are required. For Named User licensing strategies please follow the additional steps below.
 3. Append the LEF information with EXCEL_NAME; followed by the Qlik Sense "User directory" and "User ID" of the designated Sense Excel users like shown in the example below. 
-4. The FROM; TO information is optional.  This allows time limits for the license assignment duration of your named users. The example below shows a time limited license assignment followed by a reassignment to another user.
+4. The FROM; TO information is optional.  This allows time limits for the duration of license assignments for your named users. The example below shows a time limited license assignment followed by a reassignment to another user.
 
 ![SE License Example LEF](https://github.com/senseexcel/senseexcel/blob/master/images/SE-License-Example-LEF.png)
 
 
-
 6. Please confirm that there are no spaces at the end of each line.
-7. Save this file with the exact file name "license.txt".
+7. Save this file with the EXACT file name "license.txt".
 8. Upload the "license.txt" file to the senseexcel content library. 
    
    QMC >> Content Libararies >> senseexcel >> Contents >> Upload >> Select File “license.txt”. 
-
 
    
 #### 5.6.4  View / Update an Existing "license.txt" File. 
@@ -290,6 +293,8 @@ https://your.qlikserver.com/content/sensexcel/license.txt
 
 3.  Entering this Url will display the contents of an existing "license.txt" file. to make changes, copy the contents from the screen into a new text file, make your desired changes, save the document as "license.txt" and upload/overwrite the existing license.txt file in the "senseexcel" content library.
 
+4. You also can use the Sense Excel Web Management Console to manage your Sense Excel licenses.  Please go to www.senseexcel.com to learn more.
+
 IMPORTANT: The names of the "senseexcel" Content library and "license.txt" file need match EXACTLY and ARE case sensitive. 
 
 
@@ -303,7 +308,7 @@ The picture below shows the “SENSE” Ribbon as well as the features that make
 
 ### 6.1 "Connection"
 
-The "Connection" portion of the "Sense" ribbon allows you to create and manage the connections Sense Excel makes to your Qlik Sense environment(s).  Once a connection is configured, use the Sign In and Sign Out buttons as described below.
+The "Connection" portion of the Sense Excel Ribbon allows you to create and manage the connections Sense Excel makes to your Qlik Sense environment(s).  Once a connection is configured, use the Sign In and Sign Out buttons as described below.
 
 a. Sign In : Pressing the sign in button will attempt to connect to the Connection shown in the drop down box.
 b. Sign Out: This will end your active connection to the server. 
@@ -314,15 +319,15 @@ There are two different Connection creation techniques available, a manual proce
 
 1. Press the "..." next to the drop down box.
 2. Press the New Connection button
-3. Fill in the form with the appropriate values.
+3. Fill the fields in the form with the appropriate values as described below.
 
 a. "Connection Name" field.  Enter a unique name for the connection 
 
-BEST PRACTICE: Choose a Connection name that will be easy to identify in a drop down list. 
+BEST PRACTICE: Choose a Connection name that will be easy to identify the source and in a drop down list. 
 
 b. Ignore Certifate Errors Checkbox. 
 
-Sometimes Qlik Sense is running on a server without a valid secuirty certificate.  Checking this box will ignore https://certificate errors are that are encountered and proceed with the connection.  Uncheking the box will allow the https:// chain to remain intact and provides the most security. The default setting is "checked".
+Sometimes Qlik Sense will run on a server without a valid secuirty certificate.  Checking this box will ignore https://certificate errors are that are encountered and proceed with the connection.  Uncheking the box will allow the https:// chain to remain intact and provides the most security. The default setting is "checked".
 
 ![Connection Edit Property Panel Ignore Certificate Errors](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-Edit-Property-Panel-Ignore-Certificate-Errors.png)
 
@@ -336,11 +341,11 @@ There are 4 different Connection types available:
 
 a. "Qlik Sense Desktop".  This setting in included in the default Sense Excel installation and points to the local machine using 127.0.0.1 as the ip address.
 
-If do not use Qlik Sense Desktop as a data source this connection can be deleted.  It can be re-created at a later point by creating a new connection using the following parameters:  Type: Qlik Sense Desktop and Url ws://127.0.0.1:4848.
+If do not require use of Qlik Sense Desktop as a data source, this connection can be deleted.  It can be re-created if needed by creating a new connection using the following parameters:  Type: Qlik Sense Desktop and Url: ws://127.0.0.1:4848.
 
 b. "Sense Server - Current Windows User"
 
-Like Qlik Sense, the default behavior of Sense Excel uses Windows authentication and passes the credentials of current user to Qlik Sense.  This works with Qlik Sense Server implementations on a local machine as well as when Active Directory is used for single sign-on.
+Like Qlik Sense, the default behavior of Sense Excel uses Windows authentication and passes the credentials of current user to Qlik Sense.  This works with Qlik Sense Server implementations on a local machine as well as with Windows based single sign on strategies.
 
 c. "Sense Server - Enter username/password"
 
@@ -348,7 +353,7 @@ This approach is used when you have different credentials for Qlik Sense than yo
 
 d. "Sense Server - Custom authentication (via embedded Browser)"
 
-This technique will open a new browser window, prompt for credentials and pass them to Qlik Sense via a session cookie to log into Qlik Sense. Use this approach when logging into a server on different domain or using a third party single sign on system such as OKTA.
+This technique will open a new, embedded browser window, prompt for credentials and pass them to Qlik Sense via the browser session cookie to log in. Use this approach when logging into a server on different domain or using a third party single sign on system such as OKTA.
 
 5. "Url" 
 
@@ -366,46 +371,48 @@ A virtual proxy name that begins with -qlik can be used by appending the name of
 
 https://your.qlikserver.com/development
 
-If your virtual proxy has a header name that begins with anything other than "-qlik" enter it in the "Session cookie header name" field like follows: "-otherheader"
+If your virtual proxy has a header name that begins with anything other than "X-Qlik" enter it in the "Session cookie header name" field like follows: "-otherheader"
 
 ![Connection](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection.png)
 
-8. Save your connetion by pressing the Green Check Box.
+8. Save your new Connection by pressing the Green Check Button.
  
 
 #### 6.1.2 Create a Connection Using a Wizard
 
-You can use use a step by step Wizard process to create a connection by following the steps below.
+You can also use use a step by step Wizard process to create a new Connection by following the steps below.
 
 In the "SENSE" ribbon, use the Connections dropdown box and select "Create new connection to server" at the bottom of the list.
  
  ![Connection Edit New Connection Property Panel Wizard](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-New-Connection-Property-Panel-Wizard.png)
  
- This will open the wizard process in the Sense Excel Propery Panel on the right side of your screen and prompt you for the necessary value with instructions.
+ This will open the Wizard process in the Sense Excel Propery Panel on the right side of your screen and prompt you for necessary values with instructions.
  
 1. Connection Name:  
 
 Please enter a unique name for the connection you would like to create.  
 
-BEST PRACTICE: Choose a Connection name that will be easy to identify in a drop down list. 
+BEST PRACTICE: Choose a Connection name that will clearly identify the underlying source and be easy to identify in a drop down list. 
   
 ![Connection Edit New Connection Property Panel Wizard Step 1 Connection Name](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-New-Connection-Property-Panel-Wizard-Step-1-Connection-Name.png)
 
-2. Enter Url.  Type this entry in or copy if from the address bar of a browser connected to Qlik Sense.
+2. Enter Url.  Type this entry in manually or copy it from the address bar of a browser connected to Qlik Sense.
+
+https://qlik.yourcompany.com
     
   ![Connection Edit New Connection Property Panel Wizard Step 2 Connection Url](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-New-Connection-Property-Panel-Wizard-Step-2-Connection-Url.png)
   
-Hitting the "Next" button will attempt to authenticate using default Windows authentication with the credentials of the current user.  If this approach is supported you will see the "Success" messsage.   
+Hitting the "Next" button will first attempt the default strategy of authenticating using the Windows credentials of the current user.  If this approach works, you will be connected and displayed a "Success" message.   
   
-3. If your current Windows credentials do not connect you will be prompted for Step 3.  The underlying Connection type will be changed to "Sense Server - Custom authentication (via embedded Browser)" and prompt your for the appropriate crentials.
+3. If your current Windows credentials can not connect, you will be prompted for Step 3.  The underlying Connection type will be changed to "Sense Server - Custom authentication (via embedded Browser)" and prompt you for the appropriate credentials.
 
 ![Connection Edit New Connection Property Panel Wizard Step 3 Custom Authentication](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-New-Connection-Property-Panel-Wizard-Step-3-Custom-Authentication.png)
 
-Upon successful connection to the Qlik server you will see the message below:
+Upon successful connection to the Qlik server the "Success" message shown below will be displayed.
 
 ![Connection Edit New Connection Property Panel Wizard Step 4 Success](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-New-Connection-Property-Panel-Wizard-Step-4-Success.png)
 
-If your Connection attempt is unsuccessful, you will need to begin the Wizard process again with different parameter values.  Check that your url is correct as well with your Qlik administrator for any settings such as virtual proxies or headers that have been customized in your environment.
+If complete all steps of the Wizard and your Connection attempt is unsuccessful, you will need to begin the Wizard process again with different parameter values.  Confirm that your url, user name and password are correct and check with your Qlik Sense administrator for any Virtual Proxy or Header settings that may have been customized in your environment.
 
 To exit the Sense Excel Propery Panel press the grey "X" at the top right of the window.
 
