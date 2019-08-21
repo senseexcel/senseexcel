@@ -104,7 +104,7 @@ We believe that all stakeholders should have easy access to business critical in
 
 ## 3. What You Can Expect from Sense Excel 
 
-In this chapter, we will explain what can be expected of Sense Excel and what can't. 
+In this chapter we will explain what can be expected of Sense Excel and what can't. 
  
 ### Sense Excel can/does not... 
 
@@ -156,27 +156,28 @@ To find out which Microsoft Office edition you are running within Excel, go to F
 ## 5. Installation Guide
 
 ### 5.1 Download Software
+
 You can download the current version Sense Excel software from https://www.senseexcel.com/downloads.html. 
 
 ### 5.2 Unpack Files
 
-Unpack (unzip) the files from the Sense Excel directory of your download package to a location of your choosing. 
+Unpack (unzip) the files from the Sense Excel directory of your download package to a location of your choosing. Do NOT load Sense Excel from inside of a compressed (Zip) file archive.
 
-BEST PRACTICE: Create a new directory in your Documents folder called Sense Excel with a sub-folder referencing the version number like %User%\Documents\Sense Excel\x.x.x
+BEST PRACTICE: Create a new directory in your Documents folder called Sense Excel with a sub-folder referencing the version number like %User%\Documents\Sense Excel\x.x.x and extract your software here.  
 
 ###  5.3 New Sense Excel Installation 
 
 1. Choose the .xll-install file corresponding to your environment (32 or 64 bit) in the installation folder and double click it. 
 
-2. Excel should start automatically and add the "SENSE" tab and associated toolbar to Excel. 
+2. Excel should start automatically and add "SENSE" to the Excel Menu bar and show the Sense Excel Ribbon when "SENSE" is selected. 
 
-3. Go to the "Settings" button the Sense Excel ribbon, press the triangle to expand the menu and check "Auto Load". This will start Sense Excel every time you open Excel.
+3. Go to the "Settings" section of the "SENSE" Ribbon, press the triangle to expand the menu and check "Auto Load". This will automatically start Sense Excel every subsequent time you open Excel.
 
-4. Close Excel and re-open it.  The "SENSE" entry should show up in your menu bar.
+4. Close Excel and re-open it.  "SENSE" should appear in the Excel Menu Bar.
 
 ### 5.4 Alternate Installation Technique
 
-In limited instances the Sense Excel add-in might not register properly when using the double-click installation method. If this is the case, please use the alternate installation technique described below.
+In limited instances, the Sense Excel Add-in might not register properly using the double-click installation method. If this is the case, please use the alternate installation technique described below.
 
 1. Open Excel and a blank workbook.
 
@@ -194,29 +195,33 @@ To upgrade an existing version of Sense Excel please perform the following steps
 
 2. Go to File > Options > Add-Ins > Press the "Go" button
 
-3. Uncheck all Sense Excel add-ins that are displayed.  Confirm that the "SENSE" entry is removed from the Excel Menu bar.
+3. Uncheck all "akquinet-sense-excel" Add-ins that are displayed.  Press OK.  Confirm that the "SENSE" entry is removed from the Excel Menu bar.
 
-4. Press the "Browse" button.  This will take you to the %user%\Roaming\Microsoft\Addins directory.
+4.  Go to File > Options > Add-Ins > Press the "Browse" button.  This will take you to the %user%\Roaming\Microsoft\Addins directory.
 
-5. Type "*.*" or dropdown to select "all file types" and delete all Sense Excel (.xll and .xlldel) files in the directory.
+5. Dropdown the File Type Drop Down Box to select "All Files (*.*)". Delete all "akquinet-sense-excel" (.xll and .xlldel) files in the directory.  Press OK.
 
 6. Go to File > Options > Add-Ins > "Go" button > Browse.  Navigate to the location of your updated Sense Excel software files.
 
 7. Double-click the appropriate .xll file and wait for the add-in to load and register.  The "SENSE" entry should re-appear in the Excel Menu bar.
 
-8. Go to Settings in the Sense Excel toolbar, press the triangle to expand the menu and check "Auto Load".
+8. Go to Settings on the Sense Excel Ribbon, press the triangle to expand the menu and check "Auto Load".
 
 9. Close and Restart Excel.
 
+10. Confirm that the "SENSE" entry appears in the Excel Menu Bar.
+
 ### 5.6  Qlik Sense Server Configuration
 
-To use Sense Excel with a Qlik Sense Enterprise installation, the configuration steps listed below need to be performed prior to attempting to connect. 
+To use Sense Excel with a Qlik Sense Enterprise installation you must perform the configuration steps in this section prior to attempting to connect. 
+
+If you are only using Sense Excel with Qlik Sense Desktop you DO NOT need to perform the steps below .
 
 IMPORTANT: Sense Excel license keys are required to use Sense Excel with a Qlik Sense Enterprise installation. 
 
 EXCEPTIONS: Qlik Sense Desktop and all installations utilizing valid Qlik Sense Trial, Internal or Partner keys DO NOT require a seperate Sense Excel license key.  
 
-30-day server trial licenses are available for existing Qlik Sense customers.  Please contact an authorized reseller or the appropriate sales contact listed at the end of this document. 
+30-day Sense Excel trial licenses are available for existing Qlik Sense customers.  Please contact an authorized reseller or your appropriate sales contact listed at the end of this document. 
  
 #### 5.6.1 Add a Security rule to your Qlik Sense Server. 
 
