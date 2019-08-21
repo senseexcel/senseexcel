@@ -159,22 +159,22 @@ To find out which Microsoft Office edition you are running within Excel, go to F
 
 You can download the current version Sense Excel software from https://www.senseexcel.com/downloads.html. 
 
-### 5.2 Unpack Files
+### 5.2 Extract Download Package
 
-Unpack (unzip) the files from the Sense Excel directory of your download package to a location of your choosing. 
+Extract (Unzip) the files of the Sense Excel download package to a location of your choosing. 
 
 BEST PRACTICE: Create a new directory in your Documents folder called Sense Excel with a sub-folder referencing the version number like %User%\Documents\Sense Excel\x.x.x and extract your software here.  
 
-Do NOT load Sense Excel from inside of a compressed (Zip) file archive.
+DO NOT load Sense Excel from the inside of a compressed (Zip) file archive.
 
 
 ###  5.3 New Sense Excel Installation 
 
-1  Open the location of your Sense Excel software files. Double Click the .xll file corresponding to your environment (32 or 64 bit).
+1  Open the location of your Sense Excel software files. Double-click on the .xll file corresponding to your environment (32 or 64 bit).
 
-2. Excel should start automatically and add "SENSE" to the Excel Menu bar and show the Sense Excel Ribbon when "SENSE" is selected. 
+2. Excel should start automatically, include "SENSE" in the Excel Menu bar and display the Sense Excel Ribbon when "SENSE" is selected. 
 
-3. Go to the "Settings" section of the "SENSE" Ribbon, press the triangle to expand the menu and check "Auto Load". This will automatically start Sense Excel every subsequent time you open Excel.
+3. Go to the "Settings" section of the Sense Excel Ribbon, press the triangle to expand the menu and check "Auto Load". This will automatically start Sense Excel every subsequent time you open Excel.
 
 4. Close Excel and re-open it.  "SENSE" should appear in the Excel Menu Bar.
 
@@ -186,9 +186,9 @@ In limited instances, the Sense Excel Add-in might not register properly using t
 
 2. Navigate to File > Options > Add-Ins.  Press the "Go" button then the "Browse" button. 
 
-3. Navigate to the location of your Sense Excel software and double click on the approriate .xll file. 
+3. Navigate to the location of your Sense Excel software and double-click on the approriate .xll file. 
 
-4. Once the Add-in loads and is registered, go to "Settings" in the "SENSE" ribbon, press the triangle below the button and check Auto-Load.  
+4. Once the Add-in loads and is registered, go to the "Settings" section of the Sense Excel Ribbon, press the triangle below the "Settings" button and check Auto-Load.  
 
 5. Exit and Restart Excel.
 
@@ -265,8 +265,8 @@ Validate Rule > Add Rule
 
 #### 5.6.3  Create and Upload "license.txt" File. 
 
-1. Copy the contents of your organzation's LEF file or trial key into a new text document. 
-2. For token licensing strategies, only the contents of your LEF or trial key are required. For Named User licensing strategies please follow the additional steps below.
+1. Copy the contents of your organzation's Qlik Sense LEF file or trial key into a new text document. 
+2. If your organzation uses Token licensing, only the contents of your LEF or trial key are required. For Named User licensing strategies please follow the additional steps below.
 3. Append the LEF information with EXCEL_NAME; followed by the Qlik Sense "User directory" and "User ID" of the designated Sense Excel users like shown in the example below. 
 4. The FROM; TO information is optional.  This allows time limits for the duration of license assignments for your named users. The example below shows a time limited license assignment followed by a reassignment to another user.
 
