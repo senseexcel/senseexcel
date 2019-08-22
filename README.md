@@ -498,7 +498,7 @@ The Bookmarks command will open a window in the Sense Excel info tab.  You can a
 
 #### 6.5.1 "Default Bookmark"
 
-Sense Excel brings all requested data into Excel on the client machine. Setting a Default Bookmark can be beneficial when connecting to large source data sets and to reduce minimize processing and network traffic, especially during initial development efforts.  
+Sense Excel brings all requested data into Excel on the client machine. Setting a Default Bookmark can be beneficial when connecting to large source data sets and to minimize processing and network traffic.  
 
 You can set a default Bookmark by checking the "App Default" box shown below.  Once a default Bookmark is defined, all Sense Excel users will have the default Bookmark and associated filter selections automatically applied upon app opening.  
  
@@ -546,7 +546,7 @@ To Apply an Existing Altered State:
 
 To Define a new Altered State:
 
-1. Open the Sense Excel Selection tool by pressing the Selection Tool button in the "SENSE" Ribbon and pressing the Universal Selector button.  The icon is a Squre with an arrow thru it on the right side of the "SENSE" selection tool.
+1. Open the Sense Excel Selection tool by pressing the Selection Tool button in the Sense Excel Ribbon and pressing the Global Selector button (a Square icon with an arrow thru it on the right side of the Sense Excel Selection tool).
 2. Choose the Dimension and Field Values you want to filter and make your filter selections within them.
 3. Drop Down the Altered States box on the top right of the screen.
 4. Press the "..." icon
@@ -560,13 +560,13 @@ An Altered State can be applied to any table defined or imported into Sense Exce
 
 ![Toolbar Selection Tool Altered States Table](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Altered-States-Table.png)
 
-1. Edit an existing table definition by selecting the table and pressing the "Table" button in the "SENSE" Ribon or Right Mouse Click within the Table and select "Edit Table" to enter the Sense Excel Table Property Panel.
+1. Edit an existing table definition by selecting the table and pressing the "Table" button in the Sense Excel Ribbon or Right Mouse Click within the Table and select "Edit Table" to enter the Sense Excel Table Property Panel.
 2. If creating a new table, use Table Import, Add Coulmn or Fast Add to place the desired Columns into the Sense Table Property Panel.
 3. Expand the "Apperance" section within the Sense Excel Property panel.
 4. Choose the Altered State you would like to apply.
 5. Press the Green Check to save your table definition and import your data.
 
-Once an Altered State is applied, the included filters and filter selections will be applied to the table alone and this table will not respond to bookmarks or filter selections made with the Global Selectore. 
+Once an Altered State is applied to a table definition, the specified filters and filter selections will apply to that table alone and the table will not respond to bookmarks or filter selections made with the Sense Selection tool or Global Selector. 
 
 
 ### 6.8 "Report Preview"
