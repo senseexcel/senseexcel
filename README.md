@@ -183,15 +183,28 @@ The Sense Excel Install-Updater is also available within a Sense-Excel-All-In-On
 
 ### 5.2 Installer Program
 
-1. Double click on the SE-Install-Updater.exe file to run it.  Windows might give you a warning message.  Instruct Windows to Ignore this warning and run the program anyway.
+1. Double click on the SE-Install-Updater.exe file to run it.  IF you receive and error message, instruct Windows to Ignore the warning and run the program anyway.
+
+2. The first window will prompt you to save any open Excel processe.  Clicking "Next" will terminate all Excel processes and unsaved data will be lost.
 
 ![SER Installer Close Windows](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Installer-Close-Windows.png)
 
+3. The next window will bring you into "Normal" mode. This will show you only the most up to data version of Sense Excel available.  
+
+
 ![SER Installer Normal Mode](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Installer-Normal-Mode.png)
+
+Pressing the "Update" button will download that most current version and install it in the Plugin installation path designated.  
+
+The default location is the Microsoft/Addins folder in the Roaming profile of the current user. IF you need to navigate to that location you can do so by typing %appdata% into your Windows Seach box or the address bar in File Manager.
 
 ![SER Installer Updating](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Installer-Updating.png)
 
+4. Choose Expert Mode by switching the expert mode swith to "On".  Expert mode allows you to access and download addins for different versions of Excel other than the one you are currently running as well as access all available Sense Excel versions prior to the most current.
+
 ![SER Installer Expert Mode](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Installer-Expert-Mode.png)
+
+To access older versions type "old' in the Room ID field and use the "Online Versions" dropdown to make your selection.
 
 ![SER Installer Expert Mode Old Versions](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Installer-Expert-Mode-Old-Versions.png)
 
