@@ -205,6 +205,8 @@ The picture below shows the “SENSE” Ribbon as well as the features that make
 
 ### 6.1 "Connection"
 
+![Toolbar Connection](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection.png)
+
 The "Connection" portion of the Sense Excel Ribbon allows you to create and manage the connections Sense Excel makes to your Qlik Sense environment(s).  Once a connection is configured, use the Sign In and Sign Out buttons as described below.
 
 a. Sign In : Pressing the sign in button will attempt to connect to the Connection shown in the drop down box.
@@ -264,13 +266,11 @@ If using OKTA or similar, choose "Sense Server - Custom authentication (via embe
 
 Sense Excel supports defining connections that point to different virtual proxy servers in a distributed Qlik Sense environment.  
 
-A virtual proxy name that begins with -qlik can be used by appending the name of the virtual proxy directly to the url as follows: 
+A virtual proxy name that begins with X-Qlik-Session can be used by appending the name of the virtual proxy directly to the url as follows: 
 
 https://your.qlikserver.com/development
 
-If your virtual proxy has a header name that begins with anything other than "X-Qlik" enter it in the "Session cookie header name" field like follows: "-otherheader"
-
-![Connection](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection.png)
+If your virtual proxy has a header name that begins with anything other than "X-Qlik-Session" enter it in the "Session cookie header name" field as follows: "Otherheadername"
 
 8. Save your new Connection by pressing the Green Check Button.
  
