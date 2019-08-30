@@ -392,6 +392,8 @@ This button will activate the Table Property Panel which allows you to import an
 
 table by selecting Dimensions, Measures, or Formulas along with the ability to apply sorting and add-on properties.
 
+For more on this topic, see section 8.3 below.
+
  
 ### 6.5 "Bookmarks" 
 
@@ -493,23 +495,23 @@ Executing the "Report Preview" button prompts the Sense Excel Reporting engine t
 
 ### 6.9 "Settings"
 
+![Toolbar Settings](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings.png)
+
 Pressing the "Wheel" icon will activate the Sense Excel Property window on the right side of your screen.
 
- ![Toolbar Settings Support](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Support.png)
+![Toolbar Settings Support](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Support.png)
 
-The “Support” option will open your default e-mail client and create a message with an attached log file addressed to our support-team. 
+The “Support” option will open your default e-mail client and create a message with an attached log file addressed to our support-team.  Sometimes this process might be hidden behind other active windows. Minimize your active window to find the dialogue box seen below.  
 
- ![Toolbar Settings Support Email](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Support-Email.png)
+![Toolbar Settings Support Email](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Support-Email.png)
+
+Press the "Allow" button to allow Sense Excel to open your default email client and automactically generate a message to Sense Excel support with the information needed to identify you and your configuration.
  
- ![Toolbar Settings Support Email Message](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Support-Email-Message.png)
+![Toolbar Settings Support Email Message](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Support-Email-Message.png)
  
-Checking the “Auto load”-option will load the Qlik Sense toolbar automatically when starting Excel. 
-
- ![Toolbar Setting Auto Load](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Auto-Load.png)
-
 "Language" allows you to choose your preferred language. 
 
- ![Toolbar Settings Language](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Language.png)
+![Toolbar Settings Language](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Language.png)
  
 If your preferred language is not available, please send an email to support@qlik2go.net to request including it in the product.
  
@@ -575,7 +577,11 @@ You can also use a Qlik Sense formula to dynamically name the worksheet by check
 
 2. The formula output values do not include any special characters not allowed in an Excel worksheet name such as  ?, /, (, ), ]  etc. 
 
-Example: The formula =only([Fiscal Year])&'|'&'Report' would create and name a worksheet for each possible value of [Fiscal Year] concatenated with "|Report" as the engine makes its dynamic selections for [Fiscal Year] like below:
+Example: The formula below;
+
+=only([Fiscal Year])&'|'&'Report'
+
+would create and name a worksheet for each possible value of [Fiscal Year] concatenated with "|Report" as the engine makes its dynamic selections for [Fiscal Year] like below:
  
  2017|Report 
  
@@ -583,35 +589,38 @@ Example: The formula =only([Fiscal Year])&'|'&'Report' would create and name a w
  
  2019|Report
  
- ![Sheet Choose Dimension-2](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Sheetloop-Choose-Dimension-2.png) 
-
+![Sheet Choose Dimension-2](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Sheetloop-Choose-Dimension-2.png) 
 
 This concludes the introduction of the Sense Excel User Interface. If there are any questions that have not been answered or should be described in more detail, please feel free to contact us with your feedback.
 
 
  ## 7. Using the Sense Excel Demo Report 
 
-To enable the user of Sense Excel to understand, create and edit a report we have included an example. This file, ExecutiveDashboard.xlsx, is located in the Examples folder within the Sense Excel Reporting directory of your download package. It is built using the Executive Dashboard - Fileloop Demo example app that ships with Qlik Sense Desktop. If you do not have access to the app in your environment, it can also be found in the Examples directory of the Sense Excel Reporting section of your download package.  From there it can be copied to the %user\Documents\Qlik\Apps folder for use with Qlik Sense Desktop or uploaded into your Qlik Sense server via Apps section of the QMC.
+To help enable Sense Excel users to understand, create and edit a report we have created an example Excel workbook and App. These files, 5_Executive_Dashboard_Template.xlsx and 5_Executive_Dashboard_App are located within the Examples folder of a Sense Excel All in One download package or can be downloaded by clicking the link below.
 
-To use the Sense Excel Executive Dashboard Report, please follow the following steps: 
+https://www.senseexcel.com/downloads.html#Examples
+
+Once you have the App copy it to the %user%\Documents\Qlik\Apps folder for use with Qlik Sense Desktop or upload it into your Qlik Sense server via Apps section of the QMC.
+
+To use the Sense Excel 5_Executive_Dashboard_Template.xlsx report, please follow the following steps: 
 
 1. Start Excel and make sure the Qlik Sense add-in is loaded and Toolbar is visible. 
 
-2. Open the ExecutiveDashboard.xlsx file.
+2. Open the 5_Executive_Dashboard_Templte.xlsx file.
 
- ![Demo Report](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Demo-Report.PNG)
+![Demo Report](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Demo-Report.png)
 
-3. Connect to the Qlik Sense Desktop or Server via the "Log-in" button.
+3. Connect to Qlik Sense Desktop or Server via the Connection portion of the Sense Excel Ribbon.
 
- Once opened, go to the Qlik Sense toolbar >> Log in >> click on “Open Hub” >> click on the “Executive Dashboard” app.
+Go to the Sense Excel Ribbon >> Drop Down to Select Your Connection >> Press the Hub button (if necessary) >> Double Click on the “5_Executive_Dashboard_App".
 
- ![Open Hub Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Open-Hub-Dialogue.png)
+![Open Hub Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Open-Hub-Dialogue.png)
 
 Now that the Excel report is connected to the Qlik Sense app (.qvf-file) any changes made to the data in app in Qlik Sense will be automatically reflected in the corresponding data in your Excel report. 
 
-4. Use the Global Selector, choose some filters and see how it automatically updates the figures in the Excel report in the background. Close the Global Selector by clicking above the black background. 
+4. Use the Global Selector by pressing the "Selections tool" button and pressing the "Square with Arrow Inside Button" on the right side, use the search box the find particular dimensions or fields you would like to filter on or use the slider on the bottom of the screen to look thru all available, make some filter selections and see how it automatically updates the figures in the Excel report in the background. Close the Global Selector by clicking the black background. 
 
- ![Selection Tool Activate](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Activate.PNG)
+![Selection Tool Activate](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Activate.PNG)
 
 5. View the filters that were just set in the Sense Filter Toolbar and click to edit or remove them. 
 
