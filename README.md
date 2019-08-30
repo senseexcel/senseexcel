@@ -179,7 +179,7 @@ BEST PRACTICE:  Move the SE-Install-Updater.exe file from your Downloads folder 
 
 The Sense Excel Install-Updater is also available within a Sense-Excel-All-In-One Download package inside of the Sense Excel X.X folder.
 
-![SER Installer Download Folder](https://github.com/senseexcel/senseexcel/blob/master/docs/SE-Installer-Download-Folder.png)
+![SER Installer Download Folder](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Installer-Download-Folder.png)
 
 ### 5.2 Installer Program
 
@@ -191,7 +191,7 @@ The Sense Excel Install-Updater is also available within a Sense-Excel-All-In-On
 
 ![SER Installer Updating](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Installer-Updating.png)
 
-![SER Installer Expert Mode](https://github.com/senseexcel/senseexcel/blob/master/images/Installer-Expert-Mode.png)
+![SER Installer Expert Mode](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Installer-Expert-Mode.png)
 
 ![SER Installer Expert Mode Old Versions](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Installer-Expert-Mode-Old-Versions.png)
 
@@ -201,7 +201,7 @@ To get the most out of your Sense Excel experience, it is necessary to understan
 
 The picture below shows the “SENSE” Ribbon as well as the features that make up Sense Excel.
 
-![Toolbar](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar.PNG)
+![Toolbar](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar.png)
 
 ### 6.1 "Connection"
 
