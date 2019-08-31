@@ -618,19 +618,23 @@ Go to the Sense Excel Ribbon >> Drop Down to Select Your Connection >> Press the
 
 Now that the Excel report is connected to the Qlik Sense app (.qvf-file) any changes made to the data in app in Qlik Sense will be automatically reflected in the corresponding data in your Excel report. 
 
-4. Use the Global Selector by pressing the "Selections tool" button and pressing the "Square with Arrow Inside Button" on the right side, use the search box the find particular dimensions or fields you would like to filter on or use the slider on the bottom of the screen to look thru all available, make some filter selections and see how it automatically updates the figures in the Excel report in the background. Close the Global Selector by clicking the black background. 
+4. Use the Global Selector by pressing the "Selections tool" button and pressing the "Square with Arrow Inside Button" on the right side,
 
-![Selection Tool Activate](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Activate.PNG)
+![Selection Tool Activate](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Activate.png)
 
-5. View the filters that were just set in the Sense Filter Toolbar and click to edit or remove them. 
+5. Use the search box the find particular dimensions or fields you would like to filter on or use the slider on the bottom of the screen to look thru all available, make some filter selections and see how it automatically updates the figures in the Excel report in the background. 
 
-6. To see an example of Qlik syntax being used within and in conjunction with an Excel formula, click on any “ACTUAL” field within the Excel Demo report. There are four seperate functions being utilized in the formula in this example.  These are explained in further detail in Chapter 8. 
+6. View the filters that were just set in the Sense Filter Toolbar and click to edit or remove them. 
+
+![Selection Tool Filter Selection](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Filter-Selection.png)
+
+7. To see an example of Qlik syntax being used within and in conjunction with an Excel formula, click on any “ACTUAL” field within the Excel Demo report. There are four seperate functions being utilized in the formula in this example.  These are explained in further detail in Chapter 8. 
 
 ![Formula Only](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Formula-Only.png)
 
 ![Formula Expanded](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Formula-Expanded.PNG)
 
-7. This report also features the existing Bookmarks included in the Executive Dashboard app definition. When applied, these will globally update all cell values in your report the same way as it would in Qlik Sense. New Bookmarks can also be named and saved based upon any other filter selections made by the user and reused later. 
+8. This report also features the existing Bookmarks included in the Executive Dashboard app definition. When applied, these will globally update all cell values in your report the same way as it would in Qlik Sense. New Bookmarks can also be named and saved based upon any other filter selections made by the user and reused later. 
 
  ![Bookmarks Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Bookmarks-Dialogue.png)
 
@@ -677,14 +681,7 @@ Sorting Section
 3. The Default Sorting Setting is "Auto".  Slide the toggle switch left to enter the "Custom" Setting
 4. Check the boxes to sort Numerically or Alphabetically and use the Drop Down boxes to choose Ascending or Descinding.
 
-
-
-
-5. 
-
-
-
- When imported tables are too large (which is often the case), further filtering is necessary to reduce the amount of data returned to a manageable amount.  In this situation, the use of the Global Selector is advised. The Global Selector gives you access to all of the Dimensions and Fields in the app and their associated values and offers a search function to return relevant options for you to filter on. Upon clicking on any value using the Global Selector, it will be added to the “Current selections” toolbar as a filter. The Global Selector can be closed via a click above the dark grey area. Once closed, the filters persist in the Sense Filter Toolbar and, once there, additional selections can be made to adjust your result set(s). 
+When imported tables are too large (which is often the case), further filtering is necessary to reduce the amount of data returned to a manageable amount.  In this situation, the use of the Global Selector is advised. The Global Selector gives you access to all of the Dimensions and Fields in the app and their associated values and offers a search function to return relevant options for you to filter on. Upon clicking on any value using the Global Selector, it will be added to the “Current selections” toolbar as a filter. The Global Selector can be closed via a click above the dark grey area. Once closed, the filters persist in the Sense Filter Toolbar and, once there, additional selections can be made to adjust your result set(s). 
 
 ### 8.2 Fixed Cell Report Definition
 
