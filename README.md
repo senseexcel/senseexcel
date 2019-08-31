@@ -43,7 +43,7 @@
     - [6.10 "Settings"](#610-settings)
     - [6.11 "About"](#611-about)
     - [6.12 Sheet Loop](#612-sheet-loop)
-    - [6.13 Export Field/Dimension Values](#613-export-field/dimension-values)
+    - [6.13 Export Field/Dimension Values](#613-export-fielddimension-values)
   - [8. Create Your Own Reports](#8-create-your-own-reports)
     - [8.1 Using the “Table” import button](#81-using-the-table-import-button)
     - [8.2 Fixed Cell Report Definition](#82-fixed-cell-report-definition)
