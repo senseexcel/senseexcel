@@ -614,7 +614,9 @@ Use the drop-down box to choose the Field/Dimension you would like the loop appl
 ![Sheet Choose Dimension-1](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Sheetloop-Choose-Dimension-1.png) 
 
 You also need to specify whether or not you would like to export the root node and if you would like a dynamic name applied to the worksheets other than the dimension values themselves.
- 
+
+![Sheet Choose Dimension-2](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Sheetloop-Choose-Dimension-2.png)
+
 Export Root Node:
 
 If you were to specify a Sheet Loop for a field/dimension called "Year" which includes values "2017" "2018" and "2019", your output workbook would have the below worksheets included:
@@ -635,7 +637,6 @@ Worksheet2: 2019
 
 The default value of Export Root Node is Checked/true.
  
-![Sheet Choose Dimension-2](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Sheetloop-Choose-Dimension-2.png) 
 
 Sheet Name:
 
@@ -665,11 +666,47 @@ would create and name a worksheet for each possible value of [Fiscal Year] conca
 
 ### 6.13 Export Field/Dimension Values
 
+Sense Excel gives you the ability to quickly export the values within a field or dimension to a list in Excel.  This can be very useful and reduce developement time considerably especially when used in conjunction with SenseEV formulas utilizing Set Analysis parameters populated with relative Excel formulas references.
+
+Acces the list box mode by either clicking on an existing filter box in the Sense Selection tool or alternatively using the Global selector to choose from all available Dimensions and Fields 
+
 ![Feature Export Field Values](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Export-Field-Values.png) 
+
+Press the select data button to copy the values in Field or Dimnnsion of the displayed List Box.
 
 ![Feature Export Field Values Export Data](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Export-Field-Values-Export-Data.png)
 
-![Feature Export Field Values Export Data Transpose](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Export-Field-Values-Export-Data-Transpose.png) 
+Example:  You have a list box with 5 values.  Value 1, Value 2, Value 3, Value 4, Value 5.  If you have no values selected, pressing "Export data" and pasting in Excel will give you the following in a list oriented vertically:
+
+Value 1
+
+Value 2
+
+Value 3
+
+Value 4
+
+Value 5
+
+If you have two values selected (green) Value 2 and Value 4 the list will look as follows with the selected values displaying at the top of the list 
+
+Value 2
+
+Value 4
+
+Value 1
+
+Value 3
+
+Value 5
+
+Alternatively, you can use the "Add" button instead of "Export data" to copy and paste the values to Excel in a Transposed (oriented horizontally) Fashion as below:
+
+![Feature Export Field Values Export Data Transpose](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Export-Field-Values-Export-Data-Transpose.png)
+
+No values Selected (green)Value 1, Value 2, Value 3, Value 4, Value 5  
+
+Value 2 and Value 4 selected (green): Value 2, Value 4, Value 1, Value 3, Value 5
 
 This concludes the introduction of the Sense Excel User Interface. If there are any questions that have not been answered or should be described in more detail, please feel free to contact us with your feedback.
 
