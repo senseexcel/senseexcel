@@ -663,7 +663,7 @@ would create and name a worksheet for each possible value of [Fiscal Year] conca
  
 ![Sheet Choose Dimension-2](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Sheetloop-Choose-Dimension-2.png) 
 
-### 6.12 Export Field/Dimension Values
+### 6.13 Export Field/Dimension Values
 
 
 
