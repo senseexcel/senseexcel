@@ -676,7 +676,9 @@ Press the select data button to copy the values in Field or Dimnnsion of the dis
 
 ![Feature Export Field Values Export Data](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Export-Field-Values-Export-Data.png)
 
-Example:  You have a list box with 5 values.  Value 1, Value 2, Value 3, Value 4, Value 5.  If you have no values selected, pressing "Export data" and pasting in Excel will give you the following in a list oriented vertically:
+Example:  You have a list box with 5 values.  Value 1, Value 2, Value 3, Value 4, Value 5.  
+
+With No values selected, pressing "Export data" will copy the list of values to the clipboard with a vertical orientation.  Pasting in Excel will give you the following:
 
 Value 1
 
@@ -688,7 +690,7 @@ Value 4
 
 Value 5
 
-If you have two values selected (green) Value 2 and Value 4 the list will look as follows with the selected values displaying at the top of the list 
+If you have values Selected (green): Value 2 and Value 4, Pressing the "Export data" button pasting the list into Excel will do so, again with a vertical orientation and the selected values displaying at the top of the list 
 
 Value 2
 
@@ -704,9 +706,9 @@ Alternatively, you can use the "Add" button instead of "Export data" to copy and
 
 ![Feature Export Field Values Export Data Transpose](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Export-Field-Values-Export-Data-Transpose.png)
 
-No values Selected (green)Value 1, Value 2, Value 3, Value 4, Value 5  
+No values Selected (green): Value 1, Value 2, Value 3, Value 4, Value 5  
 
-Value 2 and Value 4 selected (green): Value 2, Value 4, Value 1, Value 3, Value 5
+Value 2 and Value 4 Selected (green): Value 2, Value 4, Value 1, Value 3, Value 5
 
 This concludes the introduction of the Sense Excel User Interface. If there are any questions that have not been answered or should be described in more detail, please feel free to contact us with your feedback.
 
