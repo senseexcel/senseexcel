@@ -635,8 +635,8 @@ Worksheet2: 2019
 
 The default value of Export Root Node is Checked/true.
  
-![Sheet Choose Dimension-1](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Sheetloop-Choose-Dimension-1.png) 
- 
+![Sheet Choose Dimension-2](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Sheetloop-Choose-Dimension-2.png) 
+
 Sheet Name:
 
 The default setting is to name the individual worksheets with the values of the field/dimension specified in the Sheet Loop.  
@@ -661,12 +661,15 @@ would create and name a worksheet for each possible value of [Fiscal Year] conca
  
  2019|Report
  
-![Sheet Choose Dimension-2](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Sheetloop-Choose-Dimension-2.png) 
+
 
 ### 6.13 Export Field/Dimension Values
 
+![Feature Export Field Values](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Export-Field-Values.png) 
 
+![Feature Export Field Values Export Data](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Export-Field-Values-Export-Data.png)
 
+![Feature Export Field Values Export Data Transpose](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Feature-Export-Field-Values-Export-Data-Transpose.png) 
 
 This concludes the introduction of the Sense Excel User Interface. If there are any questions that have not been answered or should be described in more detail, please feel free to contact us with your feedback.
 
