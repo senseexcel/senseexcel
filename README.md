@@ -67,13 +67,12 @@
       - [Americas:](#americas)
       - [Rest of the World:](#rest-of-the-world)
       - [Address:](#address)
-  - [Appendix 1 - Older Version Installation Instructions](#appendix-1-older-version-installation-instructions)
+  - [Appendix 1 - Older Version Installation Instructions](l#appendix-1---older-version-installation-instructions)
     - [Appendix 1.1 Extract Download Package](#appendix-11-extract-download-package)
     - [Appendix 1.2 New Sense Excel Installation](#appendix-12-new-sense-excel-installation)
     - [Appendix 1.3 Alternate Installation Technique](#appendix-13-alternate-installation-technique)
     - [Appendix 1.4 Upgrade Your Sense Excel Installation](#appendix-14-upgrade-your-sense-excel-installation)
-
-
+  - [Appendix 2 - Sense EV Example Formulas](#appendix-2---sense-ev-example-formulas)
 ## 1. Disclaimer 
 
 This document will cover how to get Sense Excel up and running on your system, what to expect and ways the product can be used. This document is written to provide quick answers and will be continuously updated. Not all options or possibilities of Sense Excel are covered within the scope of this document but will be complimented by best practices and use cases documented elsewhere in this repository. 
@@ -989,77 +988,95 @@ To upgrade an existing version of Sense Excel please perform the following steps
 
 10. Confirm that the "SENSE" entry appears in the Excel Menu Bar.
 
+
 ## Appendix 2 - Sense EV Example Formulas
 
 1. Simple Sum with One Measure:
 
 =SenseEV("Sum([Amount])")
 
+
 2. Sum with Single Set Analysis Parameter.  Excel Formula set to allow filling down.
 
 =SenseEV("Sum({<[Quarter]={'"&$B4&"'}>} [Amount])")
+
 
 3. Sum with Single Set Analysis Parameter.  Excel Formula set to allow filling down. 2nd Parameter, GUID to Pull from different App.
 
 =SenseEV("Sum({<[Quarter]={'"&$B4&"'}>} [Amount])","eba546df-658a-4b6d-bee5-42d3f9fa55e2")
 
+
 4. Sum of Revenue measure created from 2 fields. 2 Set Analysis parameters. First parameter set to populate from Excel cell values and fill down.  Second paramter uses Excel "Substitute" formula to extract value from header cell, C5, and able to fill across.
 
 =SenseEV("Sum({<[Product Group Desc]={'"&$B7&"'}, [Fiscal Quarter] = {'"&SUBSTITUTE(C$5,"Q","")&"'}>} [Sales Quantity]*[Sales Price])")
+
 
 5. Sum of Revenue measure calulated on the fly from 2 fields. First parameter set to populate from Excel cell values and fill down. Second set parameter set to only calculate Revenue for the most recent year in the data.
  
 =SenseEV("Sum({<[Product Group Desc]={'"&$B7&"'}, [Fiscal Year] = {'<$(=max([Fiscal Year]))'}>} [Sales Quantity]*[Sales Price])")
 
+
 6. Adds a function to triple the value of the entire calculation.
 
 =SenseEV("Sum({<[Fiscal Year] = {$(=max([Fiscal Year]))}>} [Sales Quantity]\*[Sales Price])")*3
+
 
 7. Only calculates for "Last Year"
 
 =SenseEV("Sum({<[Fiscal Year] = {$(=max([Fiscal Year])-1)}>} [Sales Quantity]\*[Sales Price])")
 
+
 8. Dynamic Title to show the text "PRODUCT SALES VOLUME" along with each selected value of Region delimited by a "/" for the most recent year.
 
 =SenseEV("'PRODUCT SALES VOLUME '&Upper(Concat(distinct [Region],' / ')) &' '& max([Fiscal Year])")
+
 
 9. Dynamic Title to show each selected value of Region delimited by a "/".
 
 =SenseEV("Upper(Concat(distinct [Region],' / '))")
 
+
 10. Formula to quickly populate an array.  Measure created on the fly with two set parameters both referencing Excel cell values.  First set value allows filling down, second set value allows for filling across. 
+
 =SenseEV("Count({<[Case Owner Group]={'"&$A4&"'}, [Priority] = {'"&B$3&"'}>} [%CaseId])")
+
 
 11. 3 Set Values set to dynamically filter data based on column header values from Excel cells.  1st and 2nd levels are fixed. 3rd level allows filling down. 4th and 5th levels filter for only Income Statement and Actual values. 
 
 =SenseEV("Sum({<[1st Level]={'"&$B$12&"'},[2nd Level]={'"&$B$14&"'},[3rd Level]={'"&$C15&"'},Statement={'Income Statement'},DataCategory={'Actual'}>} [Amount])")
 
+
 12. Same as above additionally filtered for only most recent year's data.
 
 =SenseEV("Sum({<[1st Level]={'"&$B$12&"'},[2nd Level]={'"&$C13&"'},[Year] = {$(=Max([Year])-1)},Statement={'Income Statement'},DataCategory={'Actual'}>} [Amount])")
+
 
 13. Filters for only the data from 1 year prior to the most recent values of date in the data.
 
 =SenseEV("Sum({<[1st Level]={'"&$B$12&"'},[2nd Level]={'"&$C13&"'},[AsOfMonth]=,[DateCounter] = {$(=Max([DateCounter])-12)},Statement={'Balance Sheet'},DataCategory={'Actual'}>} [Amount])")
 
+
 14. 2 levels of Set parameters to filter based on Excel cell values.  Additionally populates set parameters to filter for dates derived from an Excel cell value.  Allows for filling across.
 
-15. =SenseEV("Sum({<[1st Level]={'"&$B$12&"'},[2nd Level]={'"&$C13&"'},Year = {$(=Year('"&E$10&"'))},[Month] = {$(=Month('"&E$10&"'))},Statement={'Income Statement'},DataCategory={'Actual'}>} [Amount])")
+=SenseEV("Sum({<[1st Level]={'"&$B$12&"'},[2nd Level]={'"&$C13&"'},Year = {$(=Year('"&E$10&"'))},[Month] = {$(=Month('"&E$10&"'))},Statement={'Income Statement'},DataCategory={'Actual'}>} [Amount])")
 
-16. 3 levels of Set parameters to filter based on Excel cell values.  Additionally populates set parameters to filter for dates derived from an Excel cell value.  Allows for filling across.
+
+15. 3 levels of Set parameters to filter based on Excel cell values.  Additionally populates set parameters to filter for dates derived from an Excel cell value.  Allows for filling across.
 
 =SenseEV("Sum({<[1st Level]={'"&$B$12&"'},[2nd Level]={'"&$B$14&"'},[3rd Level]={'"&$C15&"'},Year = {$(=Year('"&E$10&"'))},[Month] = {$(=Month('"&E$10&"'))},Statement={'Income Statement'},DataCategory={'Actual'}>} [Amount])")
 
-17.  Calculation for a snapshot in time, Balance Sheet, using AsOfMonth as the filter.
+
+16.  Calculation for a snapshot in time, Balance Sheet, using AsOfMonth as the filter.
 
 =SenseEV("Sum({<[1st Level]={'"&$B$12&"'},[2nd Level]={'"&$C14&"'},[AsOfMonth] ={'"&E$9&"'} ,Statement={'Balance Sheet'},DataCategory={'Actual'}>} [Amount])")
 
-18. 3 set parameters.  1st level is fixed.  Second level allows filling down.  3rd level is fixed.
+
+17. 3 set parameters.  1st level is fixed.  Second level allows filling down.  3rd level is fixed.
 
 =SenseEV("Sum({<[1st Level]={'"&$B$11&"'},[2nd Level]={'"&$C12&"'},[CompanyID]={'"&E$9&"'},Statement={'Income Statement'},DataCategory={'Actual'}>} [Amount])")
 
 
-19. 3 set parameters.  1st and 2nd levels are fixed.  3rd level allow filling down.
+18. 3 set parameters.  1st and 2nd levels are fixed.  3rd level allow filling down.
 
 =SenseEV("Sum({<[1st Level]={'"&$B$11&"'},[2nd Level]={'"&$B$13&"'},[3rd Level]={'"&$C14&"'},[CompanyID]={'"&E$9&"'},Statement={'Income Statement'},DataCategory={'Actual'}>} [Amount])")
 
