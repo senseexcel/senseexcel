@@ -324,7 +324,7 @@ There are 4 different Connection types available:
 
 a. "Qlik Sense Desktop".  This setting is included in the default Sense Excel installation and points to the local machine using 127.0.0.1 as the IP address.
 
-If do not require use of Qlik Sense Desktop as a data source, this connection can be deleted.  It can be re-created if needed by creating a new connection using the following parameters:  Type: Qlik Sense Desktop and Url: ws://127.0.0.1:4848.
+If do not require use of Qlik Sense Desktop as a data source, this connection can be deleted.  It can be re-created if needed by creating a new connection using the following parameters:  Type: Qlik Sense Desktop and Url: ws: //127.0.0.1:4848.
 
 b. "Sense Server - Current Windows User"
 
@@ -340,11 +340,11 @@ This technique will open a new, embedded browser window, prompt for credentials 
 
 5. Url 
 
-Enter the Url of your target server. https://your.qlikserver.com.  This can be easily copied from the address bar of a browser connected to your Qlik Sense environment. Do not include /hub in this address.
+Enter the Url of your target server. https: //your.qlikserver.com.  This can be easily copied from the address bar of a browser connected to your Qlik Sense environment. Do not include /hub in this address.
 
 6. 3rd Party Sigle Sign On
 
-If using OKTA or similar, choose "Sense Server - Custom authentication (via embedded Browser)" as your "Type" and append your Url as follows:  https://your.qlikserver.com/okta
+If using OKTA or similar, choose "Sense Server - Custom authentication (via embedded Browser)" as your "Type" and append your Url as follows:  https:// your.qlikserver.com/okta
 
 7. "Session cookie header name" - Alternate Proxy Server
 
@@ -352,7 +352,7 @@ Sense Excel supports defining connections that point to different virtual proxy 
 
 A virtual proxy name that begins with X-Qlik-Session can be used by appending the name of the virtual proxy directly to the Url as follows: 
 
-https://your.qlikserver.com/development
+https:// your.qlikserver.com/development
 
 If your virtual proxy has a header name that begins with anything other than "X-Qlik-Session" enter it in the "Session cookie header name" field as follows: "Otherheadername"
 
@@ -379,7 +379,7 @@ BEST PRACTICE: Choose a Connection name that will clearly identify the underlyin
 
 2. Enter Url.  Type this entry in manually or copy it from the address bar of a browser connected to Qlik Sense.
 
-https://qlik.yourcompany.com
+https:// qlik.yourcompany.com
     
   ![Connection Edit New Connection Property Panel Wizard Step 2 Connection Url](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Connection-New-Connection-Property-Panel-Wizard-Step-2-Connection-Url.png)
   
