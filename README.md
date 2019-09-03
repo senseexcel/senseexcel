@@ -220,7 +220,7 @@ Once installed, the "license.txt" in the "senseexcel" Content library is used to
 
 2. Copy the contents of the "URL path" and paste it immediately after your Qlik Sense Server Url in a new browser tab/window like the below example
 
-https://your.qlikserver.com/content/sensexcel/license.txt
+e.g. https:// your.qlikserver.com/content/sensexcel/license.txt
 
 ![SE Check Existing License](https://github.com/senseexcel/senseexcel/blob/master/images/SE-License-Check-Existing-License.png)
 
