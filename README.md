@@ -448,20 +448,36 @@ In order to use the "Data Load Editor" and the “Load Data” options, you need
 
 This button will activate the Table Property Panel which allows you to import an existing Table from your app Qlik Sense app directly into an Excel table or create a new one.
 
+Use the Dropdown to Select an exisiting Table Object from Qlik Sense you would like to import.  
+
+#### Select Table Object to Import:
+
 ![Import Table](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table-Property-Panel-Import-Table.png)
 
+Once a Table Object to import is selected, all Columns within that table will be placed into the Data section of the Sense Excel Table Property Panel.
+
+This feature allows ense Excel access to Custom Formulas a Qlik Sense App developer may have only used to define Columns within a  Table Object but have not added as data model Fields or defined as Master Items.
 
 ![Import Table With Formulas](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table-Property-Panel-Import-Table-With-Formulas.PNG)
+
+#### Pivot Tables
+
+Swithching "On" the Pivot Table setting will allow you to either define a new pivot table or Import and existing Pivot Table Object into Excel.
 
 
 ![Import Pivot Table](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table-Property-Panel-Import-Pivot-Table.png)
 
+
+Sense Excel allows you to utilze multiple Row objects but is limited to a single Column object.  You can not define a Pivot Table or import a Pivot Table Object with more than one Column. 
+
+
 ![Pivot Table](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table-Property-Panel-Pivot-Table.png)
  
+ #### Table Definition Interface
  
 ![Column Edit](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table-Property-Panel-Column-Edit.png)
 
-table by selecting Dimensions, Measures, or Formulas along with the ability to apply sorting and add-on properties.
+Once Table Columns are defined utilizing the  "Select Table Object to Import", "Add Column" or "Fast Add" functions the user can then reorder, delete or change their properties prior to Loading or Reloading the Table.
 
 For more on this topic, see section 8.3 below.
 
