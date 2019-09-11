@@ -510,7 +510,7 @@ Once inside of this interface, you can also use the Search function to reduce th
   
 ### 6.7 Sense Filter Toolbar Navigation
 
-![Selection Tool Activate](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Activate.png)
+![Selections Tool Toolbar Navigation](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selections-Tool-Toolbar-Navigation.png)
 
 
 The buttons here allow you to manipulate your selections e.g. “Step back”, “Step forward” and “Clear all selections. Furthermore, when a filter is set, you can change the values of your selection by clicking on it and using the Check and X buttons to select and deselect filter values respectively.
