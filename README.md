@@ -473,11 +473,14 @@ Sense Excel allows you to utilze multiple Row objects but is limited to a single
 
 ![Pivot Table](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table-Property-Panel-Pivot-Table.png)
  
- #### Table Definition Interface
- 
-![Column Edit](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table-Property-Panel-Column-Edit.png)
 
-Once Table Columns are defined utilizing the  "Select Table Object to Import", "Add Column" or "Fast Add" functions the user can then reorder, delete or change their properties prior to Loading or Reloading the Table.
+#### Table Definition Interface
+ 
+Once Table Columns are chosen utilizing "Select Table Object to Import", "Add Column" or "Fast Add", a user can then reorder, delete or change properties prior to Loading or Reloading the Table.  The user can also define Custom sorting or additional parameters like Null Supporession and Alternate States.
+
+See the example below showing the use of a Formula to define a Dynamic Background Color.
+
+![Column Edit](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table-Property-Panel-Column-Edit.png)
 
 For more on this topic, see section 8.3 below.
 
