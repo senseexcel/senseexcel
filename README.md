@@ -2,77 +2,6 @@
 
 ![SE Cover](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Cover.PNG)
 
-
-**[Table of Contents]
-
-- [Sense Excel Detailed User Guide](#sense-excel-detailed-user-guide)
-  - [1. Disclaimer](#1-disclaimer)
-  - [2. Introduction](#2-introduction)
-    - [2.1 Who We Are](#21-who-we-are)
-    - [2.2 Why We Do What We Do](#22-why-we-do-what-we-do)
-  - [3. What You Can Expect from Sense Excel](#3-what-you-can-expect-from-sense-excel)
-    - [Sense Excel can/does not...](#sense-excel-candoes-not)
-    - [Sense Excel can/does.....](#sense-excel-candoes)
-  - [4.  Prerequisites and System Setup](#4-prerequisites-and-system-setup)
-    - [4.1 System Requirements](#41-system-requirements)
-    - [4.2  Qlik Sense Server Configuration - NOT REQUIRED FOR USE WITH QLIK SENSE DESKTOP ONLY](#42-qlik-sense-server-configuration-not-required-for-use-with-qlik-sense-desktop-only)
-      - [4.2.1 Add a Security rule to your Qlik Sense Server.](#421-add-a-security-rule-to-your-qlik-sense-server)
-      - [IDENTIFICATION](#identification)
-      - [BASIC](#basic)
-      - [ADVANCED](#advanced)
-      - [4.2.2  Create a Content Library on the Qlik Sense Server.](#422-create-a-content-library-on-the-qlik-sense-server)
-      - [4.2.3 Create and Upload "license.txt" File.](#423-create-and-upload-licensetxt-file)
-      - [4.2.4  View / Update an Existing "license.txt" File.](#424-view-update-an-existing-licensetxt-file)
-  - [5. Installation Guide](#5-installation-guide)
-    - [5.1 Download Software](#51-download-software)
-    - [5.2 Installer Program](#52-installer-program)
-  - [6.  Explaining the User Interface](#6-explaining-the-user-interface)
-    - [6.1 "Connection"](#61-connection)
-      - [6.1.1 Manual Connection Creation](#611-manual-connection-creation)
-      - [6.1.2 Create a Connection Using a Wizard](#612-create-a-connection-using-a-wizard)
-      - [6.1.1 Edit An Existing Connection](#611-edit-an-existing-connection)
-    - [6.2 "Hub"](#62-hub)
-    - [6.3 “Load data” and “Data Load Editor”](#63-load-data-and-data-load-editor)
-    - [6.4 “Table”](#64-table)
-    - [6.5 "Bookmarks"](#65-bookmarks)
-      - [6.5.1 "Default Bookmark"](#651-default-bookmark)
-    - [6.6 “Selections tool”](#66-selections-tool)
-    - [6.7 Sense Filter Toolbar Navigation](#66-sense-filter-toolbar-navigation)
-    - [6.8 Altered States](#68-altered-states)
-    - [6.9 "Report Preview"](#69-report-preview)
-    - [6.10 "Settings"](#610-settings)
-    - [6.11 "About"](#611-about)
-    - [6.12 Sheet Loop](#612-sheet-loop)
-    - [6.13 Export Field/Dimension Values](#613-export-fielddimension-values)
-  - [8. Create Your Own Reports](#8-create-your-own-reports)
-    - [8.1 Using the “Table” import button](#81-using-the-table-import-button)
-    - [8.2 Fixed Cell Report Definition](#82-fixed-cell-report-definition)
-    - [8.3 Sense Excel Formulas and Syntax](#83-sense-excel-formulas-and-syntax)
-      - [8.3.1 SenseConnected](#831-senseconnected)
-      - [8.3.2 SenseFilter](#832-sensefilter)
-      - [8.3.3 SenseVariable](#833-sensevariable)
-      - [8.3.4 SenseEV](#834-senseev)
-  - [9. Seven Steps to Your First Report in Sense Excel](#9-seven-steps-to-your-first-report-in-sense-excel)
-    - [Step 1: Connect to Qlik Sense & select an App](#step-1-connect-to-qlik-sense-select-an-app)
-    - [Step 2: Press the "Table" button](#step-2-press-the-table-button)
-    - [Step 3: Press the Check button to create the table in your Excel workbook.](#step-3-press-the-check-button-to-create-the-table-in-your-excel-workbook)
-    - [Step 4. Edit Table Definition](#step-4-edit-table-definition)
-    - [Step 5: Open the Selections tool](#step-5-open-the-selections-tool)
-    - [Step 6: Select a Bookmark](#step-6-select-a-bookmark)
-    - [Step 7: Create an Interactive Chart or Pivot table](#step-7-create-an-interactive-chart-or-pivot-table)
-  - [10. Contact Information](#10-contact-information)
-    - [Contact Support:](#contact-support)
-    - [Contact Sales](#contact-sales)
-      - [Europe/German Speaking Countries:](#europegerman-speaking-countries)
-      - [Americas:](#americas)
-      - [Rest of the World:](#rest-of-the-world)
-      - [Address:](#address)
-  - [Appendix 1 - Older Version Installation Instructions](l#appendix-1---older-version-installation-instructions)
-    - [Appendix 1.1 Extract Download Package](#appendix-11-extract-download-package)
-    - [Appendix 1.2 New Sense Excel Installation](#appendix-12-new-sense-excel-installation)
-    - [Appendix 1.3 Alternate Installation Technique](#appendix-13-alternate-installation-technique)
-    - [Appendix 1.4 Upgrade Your Sense Excel Installation](#appendix-14-upgrade-your-sense-excel-installation)
-  - [Appendix 2 - Sense EV Example Formulas](#appendix-2---sense-ev-example-formulas)
 ## 1. Disclaimer 
 
 This document will cover how to get Sense Excel up and running on your system, what to expect and ways the product can be used. This document is written to provide quick answers and will be continuously updated. Not all options or possibilities of Sense Excel are covered within the scope of this document but will be complimented by best practices and use cases documented elsewhere in this repository. 
@@ -86,7 +15,9 @@ NOTICE: THE SOFTWARE CONTAINS FUNCTIONALITY INTENDED TO LIMIT THE DURATION OF IT
 
 You can review the rest of this disclaimer by pressing the "About" button on the "SENSE" Ribbon. 
 
+
 ## 2. Introduction 
+
 
 ### 2.1 Who We Are
 
@@ -102,6 +33,7 @@ We believe that all stakeholders should have easy access to business critical in
 
 In this chapter we will explain what you can and can't expect from Sense Excel. 
  
+
 ### Sense Excel can/does not... 
 
 • …import a complete Qlik Sense Dashboard into Excel
@@ -109,6 +41,7 @@ In this chapter we will explain what you can and can't expect from Sense Excel.
 • …import visualization objects from Qlik Sense into Excel
 
 • …change Excel in any way other than extending its reporting capabilities 
+
 
 ### Sense Excel can/does.....
 
@@ -134,7 +67,9 @@ In this chapter we will explain what you can and can't expect from Sense Excel.
 
 To summarize, with Sense Excel you get the full power and flexibility of Microsoft Excel combined with all of the speed, governance and navigation capabilities of Qlik Sense. We are confident that Sense Excel will enhance both your Qlik Sense and Excel experience and provide you with consistent, reliable, real-time data for your reporting efforts.
 
+
 ## 4.  Prerequisites and System Setup
+
 
 ### 4.1 System Requirements 
 
@@ -147,6 +82,7 @@ To summarize, with Sense Excel you get the full power and flexibility of Microso
 To find out which Microsoft Office edition you are running within Excel, go to FILE >> ACCOUNT >> "About Excel".  Behind the MSO number, it will display 32-Bit or 64-Bit.
 
 ![Excel Version](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Excel-Version.PNG)
+
 
 ### 4.2 Qlik Sense Server Configuration - NOT REQUIRED FOR USE WITH QLIK SENSE DESKTOP ONLY
 
@@ -190,10 +126,12 @@ Validate Rule > Add Rule
 
 ![SER License Security Rule](https://github.com/senseexcel/senseexcel-reporting/blob/master/docs/Security-Rule-SER-License.PNG)
 
+
 #### 4.2.2  Create a Content Library on the Qlik Sense Server. 
 
 1. Go to QMC >> Content libraries >> Create New >> Enter the EXACT name “senseexcel” >> Apply.
 2. When prompted to create an associated Security Rule select "User" is "Like" * to make Sense Excel available to all licensed Qlik Sense users upon assignment of a Sense Excel license as shown below.
+
 
 #### 4.2.3 Create and Upload "license.txt" File. 
 
@@ -237,6 +175,7 @@ Version 4.0 includes a new Install-Updater program.
 
 If you have Sense Excel software but no active Internet connection or have any reason to need access to older Sense Excel versions and installation workflows, follow the manual installation steps described in Appendix 1 at the end of this document.
 
+
 ### 5.1 Download Software
 
 You can acquire the Sense Excel Install-Updater program from the link below:
@@ -250,6 +189,7 @@ BEST PRACTICE:  Move the SE-Install-Updater.exe file from your Downloads folder 
 The Sense Excel Install-Updater is also available within a Sense-Excel-All-In-One Download package inside of the Sense Excel X.X folder.
 
 ![SER Installer Download Folder](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Installer-Download-Folder.png)
+
 
 ### 5.2 Installer Program
 
@@ -278,6 +218,7 @@ To access older versions type "old' in the Room ID field and use the "Online Ver
 
 ![SER Installer Expert Mode Old Versions](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Installer-Expert-Mode-Old-Versions.png)
 
+
 ## 6.  Explaining the User Interface 
 
 To get the most out of your Sense Excel experience, it is necessary to understand the Sense Excel UI (User Interface). 
@@ -285,6 +226,7 @@ To get the most out of your Sense Excel experience, it is necessary to understan
 The picture below shows the “SENSE” Ribbon as well as the features that make up Sense Excel.
 
 ![Toolbar](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar.png)
+
 
 ### 6.1 "Connection"
 
@@ -297,6 +239,7 @@ a. Sign-In : Pressing the sign in button will attempt to connect to the Connecti
 b. Sign-Out: This will end your active connection to the server. 
 
 There are two different Connection creation techniques available, a manual process as well as a step-by-step Installation Wizard:
+
 
 #### 6.1.1 Manual Connection Creation
 
@@ -398,7 +341,7 @@ If you complete all steps of the Wizard and your Connection attempt is unsuccess
 To exit the Sense Excel Property Panel press the grey "X" at the top right of the window.
 
 
-#### 6.1.1 Edit Existing Connection
+#### 6.1.3 Edit Existing Connection
 
 Once you have created Connections using either technique you can edit or delete them by doing the following:
 
@@ -410,6 +353,7 @@ Once you have created Connections using either technique you can edit or delete 
 6. Press the Grey "X" to exit the Sense Excel property panel.
 
 
+
 ### 6.2 "Hub"
 
 ![Open Hub](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Open-Hub.png)
@@ -419,6 +363,7 @@ This button allows you to select a Qlik Sense App and access the Dimensions, Mea
 It is possible to cause specific data elements to not respond to filters/bookmark selections. Utilizing an Altered State (see Section 6.7), Table column definition or SenseEV() (see section 8.3) formula you can specify a different behavior or source App.
 
 ![Open Hub Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Open-Hub-Dialogue.png)
+
 
 ### 6.3 “Load data” and “Data Load Editor”
 
@@ -442,6 +387,7 @@ In order to use the "Data Load Editor" and the “Load Data” options, you need
 
 ![Data load editor](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Data-load-editor.png)
 
+
 ### 6.4 “Table” 
 
 ![Table](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table.png)
@@ -449,6 +395,7 @@ In order to use the "Data Load Editor" and the “Load Data” options, you need
 This button will activate the Table Property Panel which allows you to import an existing Table from your app Qlik Sense app directly into an Excel table or create a new one.
 
 Use the Dropdown to Select an exisiting Table Object from Qlik Sense you would like to import.  
+
 
 #### Select Table Object to Import:
 
@@ -460,6 +407,7 @@ This feature allows ense Excel access to Custom Formulas a Qlik Sense App develo
 
 ![Import Table With Formulas](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table-Property-Panel-Import-Table-With-Formulas.PNG)
 
+
 #### Pivot Tables
 
 Swithching "On" the Pivot Table setting will allow you to either define a new pivot table or Import and existing Pivot Table Object into Excel.
@@ -467,9 +415,9 @@ Swithching "On" the Pivot Table setting will allow you to either define a new pi
 
 ![Import Pivot Table](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table-Property-Panel-Import-Pivot-Table.png)
 
+Sense Excel Pivot Table definitions require use of one Measure object and allows the use of multiple Row objects. There is a limit of a single Column object.  
 
-Sense Excel allows you to utilze multiple Row objects but is limited to a single Column object.  You can not define a Pivot Table or import a Pivot Table Object with more than one Column. 
-
+If you require a Pivot Table utilizing multiple Column objects, you can import a regular Sense Excel Table and utilize the native Excel Pivot Table functionality.
 
 ![Pivot Table](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Table-Property-Panel-Pivot-Table.png)
  
@@ -1135,13 +1083,3 @@ To upgrade an existing version of Sense Excel please perform the following steps
 18. 3 set parameters.  1st and 2nd levels are fixed.  3rd level allow filling down.
 
 =SenseEV("Sum({<[1st Level]={'"&$B$11&"'},[2nd Level]={'"&$B$13&"'},[3rd Level]={'"&$C14&"'},[CompanyID]={'"&E$9&"'},Statement={'Income Statement'},DataCategory={'Actual'}>} [Amount])")
-
-
-
-
-
-
-
-
-
-
