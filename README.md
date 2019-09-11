@@ -512,6 +512,7 @@ Once inside of this interface, you can also use the Search function to reduce th
 
 ![Selection Tool Activate](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Activate.png)
 
+
 The buttons here allow you to manipulate your selections e.g. “Step back”, “Step forward” and “Clear all selections. Furthermore, when a filter is set, you can change the values of your selection by clicking on it and using the Check and X buttons to select and deselect filter values respectively.
 
 ### 6.8 Alternate States
@@ -555,9 +556,12 @@ Once an Alternate State is applied to a table definition, the filters and filter
 
 ![Toolbar Report Preview Button](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Report-Preview.PNG)
 
+
 The "Report Preview" button will only be enabled if Sense Excel Reporting is installed and running in your Qlik Sense deployment.
 
+
 ![Toolbar Report Preview Show Dialogue](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Report-Preview-Show-Dialogue.png)
+
 
 ![Toolbar Report Preview Property Panel](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Report-Preview-Property-Panel.png)
 
@@ -568,29 +572,39 @@ Executing the "Report Preview" button prompts the Sense Excel Reporting engine t
 
 ![Toolbar Settings](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings.png).
 
-Pressing the "Wheel" icon will take you directly to the Sense Excel Property Panel Settings Menu.
+Pressing the "Wheel" icon will take you directly to the Sense Excel Property Panel Settings Menu.  Press the Triangle Icon to expand the menu.
 
-Press the Triangle Icon to expand the menu.
+
+#### Language:
 
 "Language" allows you to choose your preferred language. 
 
 ![Toolbar Settings Language](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Language.png)
  
+
 If your preferred language is not available, please send an email to support@qlik2go.net to request including it in the product.
  
- ![Toolbar Settings Language Expanded](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Language-Expanded.png)
+
+![Toolbar Settings Language Expanded](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Language-Expanded.png)
+
+
+#### Open Info Tab:
 
 "Open Info Tab" will activate the Sense Excel Property Panel (Info Tab) and display all active processes.
 
 ![Toolbar Settings Open Info Tab](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Info-Tab-Property-Panel.png)
 
+
+#### Settings:
+
 ![Toolbar Settings Settings](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Settings.png)
 
 Chosing "Settings" from this menu will activate the Sense Excel Settings Panel.  This interface allows a number of behaviors to be enabled or disabled as well as parameters values set on a local or global (your Sense Excel installation) basis.
 
-![Toolbar Settings Settings](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Settings.png)
-
 ![Toolbar Settings Property Panel](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Property-Panel.png)
+
+
+#### Support:
 
 The “Support” option will open your default e-mail client and create a message with an attached log file addressed to our support-team.  Sometimes this process might be hidden behind other active windows. Minimize your active window to find the dialogue box seen below.  
 
@@ -599,8 +613,17 @@ The “Support” option will open your default e-mail client and create a messa
 Press the "Allow" button to allow Sense Excel to open your default email client and automatically generate a message to Sense Excel support with the information needed to identify you and your configuration.
  
 ![Toolbar Settings Support Email Message](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Support-Email-Message.png)
+
+#### Versions:
+
+![Toolbar Settings Versions](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Versions.png)
  
 
+Selecting "Versions" will activate the Versions window in the Sense Excel Property Panel (Info Tab)
+
+![Toolbar Settings Versions Property Panel](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Versions-Property-Panel.png)
+
+Once in this interface, available versions can be selected and installed.  Entering a code in the "RoomID" box will allow you to access additional versions made available by the Development Team for preview or testing purposes.
 
 
 ### 6.11 "About" 
