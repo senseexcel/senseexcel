@@ -514,41 +514,41 @@ Once inside of this interface, you can also use the Search function to reduce th
 
 The buttons here allow you to manipulate your selections e.g. “Step back”, “Step forward” and “Clear all selections. Furthermore, when a filter is set, you can change the values of your selection by clicking on it and using the Check and X buttons to select and deselect filter values respectively.
 
-### 6.8 Altered States
+### 6.8 Alternate States
 
-Sense Excel can support the creation and use of the Altered States functionality in Qlik Sense.  Altered States can be applied to Sense Excel tables causing them to respond only to the filters and filter selections within an Altered State definition an not to changes in filter selections or bookmark application
+Sense Excel can support the creation and use of the Alternate States functionality in Qlik Sense.  Alternate States can be applied to Sense Excel tables causing them to respond only to the filters and filter selections within an Alternate State definition an not to changes in filter selections or bookmark application
 
-To Apply an Existing Altered State:
+To Apply an Existing Alternate State:
 
 1. Open the Sense Excel Selection tool by pressing the Selection Tool button in the "SENSE" Ribbon and pressing the Universal Selector button.
-2. Drop down the Altered States box on the top right of the screen.
-3. Select the existing Altered State you desire.  The filters and filter selections will be applied and displayed immediately.
+2. Drop down the Alternate States box on the top right of the screen.
+3. Select the existing Alternate State you desire.  The filters and filter selections will be applied and displayed immediately.
 
 ![Toolbar Selection Tool Altered States](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Altered-States-New.png)
 
-To Define a new Altered State:
+To Define a new Alternate State:
 
 1. Open the Sense Excel Selection tool by pressing the Selection Tool button in the Sense Excel Ribbon and pressing the Global Selector button (a Square icon with an arrow thru it on the right side of the Sense Excel Selection tool).
 2. Choose the Dimension and Field Values you want to filter and make your filter selections within them.
-3. Drop Down the Altered States box on the top right of the screen.
+3. Drop Down the Alternate States box on the top right of the screen.
 4. Press the "..." icon
-5. Give a name to your new Altered State
+5. Give a name to your new Alternate State
 6. Press the Green Check to save.
 7. Drop down and choose the Altered State you would like to apply.
 
-![Toolbar Selection Tool Altered States New](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Altered-States-New.png)
+![Toolbar Selection Tool Alternate States New](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Altered-States-New.png)
 
 An Altered State can be applied to any table defined or imported into Sense Excel.
 
-![Toolbar Selection Tool Altered States Table](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Altered-States-Table.png)
+![Toolbar Selection Tool Alternate States Table](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Selection-Tool-Altered-States-Table.png)
 
 1. Edit an existing table definition by selecting the table and pressing the "Table" button in the Sense Excel Ribbon or Right Mouse Click within the Table and select "Edit Table" to enter the Sense Excel Table Property Panel.
 2. If creating a new table, use Table Import, Add Column or Fast Add to place the desired Columns into the Sense Table Property Panel.
 3. Expand the "Appearance" section within the Sense Excel Property panel.
-4. Choose the Altered State you would like to apply.
+4. Choose the Alternate State you would like to apply.
 5. Press the Green Check to save your table definition and import your data.
 
-Once an Altered State is applied to a table definition, the specified filters and filter selections will apply to that table alone and the table will not respond to bookmarks or filter selections made with the Sense Selection tool or Global Selector. 
+Once an Alternate State is applied to a table definition, the filters and filter selections specified in the Alternate State will apply to that table alone. Bookmarks and/or filter selections made with the Sense Selection tool or Global Selector will be ignored. 
 
 
 ### 6.9 "Report Preview"
@@ -566,11 +566,31 @@ Executing the "Report Preview" button prompts the Sense Excel Reporting engine t
 
 ### 6.10 "Settings"
 
-![Toolbar Settings](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings.png)
+![Toolbar Settings](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings.png).
 
-Pressing the "Wheel" icon will activate the Sense Excel Property window on the right side of your screen.
+Pressing the "Wheel" icon will take you directly to the Sense Excel Property Panel Settings Menu.
 
-![Toolbar Settings Support](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Support.png)
+Press the Triangle Icon to expand the menu.
+
+"Language" allows you to choose your preferred language. 
+
+![Toolbar Settings Language](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Language.png)
+ 
+If your preferred language is not available, please send an email to support@qlik2go.net to request including it in the product.
+ 
+ ![Toolbar Settings Language Expanded](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Language-Expanded.png)
+
+"Open Info Tab" will activate the Sense Excel Property Panel (Info Tab) and display all active processes.
+
+![Toolbar Settings Open Info Tab](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Info-Tab-Property-Panel.png)
+
+![Toolbar Settings Settings](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Settings.png)
+
+Chosing "Settings" from this menu will activate the Sense Excel Settings Panel.  This interface allows a number of behaviors to be enabled or disabled as well as parameters values set on a local or global (your Sense Excel installation) basis.
+
+![Toolbar Settings Settings](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Settings.png)
+
+![Toolbar Settings Property Panel](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Property-Panel.png)
 
 The “Support” option will open your default e-mail client and create a message with an attached log file addressed to our support-team.  Sometimes this process might be hidden behind other active windows. Minimize your active window to find the dialogue box seen below.  
 
@@ -580,13 +600,7 @@ Press the "Allow" button to allow Sense Excel to open your default email client 
  
 ![Toolbar Settings Support Email Message](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Support-Email-Message.png)
  
-"Language" allows you to choose your preferred language. 
 
-![Toolbar Settings Language](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Language.png)
- 
-If your preferred language is not available, please send an email to support@qlik2go.net to request including it in the product.
- 
- ![Toolbar Settings Language Expanded](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Language-Expanded.png)
 
 
 ### 6.11 "About" 
