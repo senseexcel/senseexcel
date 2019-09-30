@@ -649,6 +649,87 @@ Chosing "Settings" from this menu will activate the Sense Excel Settings Panel. 
 
 ![Toolbar Settings Property Panel](https://github.com/senseexcel/senseexcel/blob/master/images/SE-Toolbar-Settings-Property-Panel.png)
 
+###### Apply selections while selections tool is open	
+While the selections tool is open, changing a selection has no effect to Tables/SenseEV's. After the selections tool is closed, all changes will be applied in one step. So the selections tool is faster.	
+
+default: true
+	
+###### Apply selections while a listbox is open 	
+While a listbox of a selectionitem is open, changing a selection has no effect to Tables/SenseEV's.After the listbox is closed, all changes will be applied in one step. So the listbox is faster.	
+
+default: true
+	
+###### Open app in a shared session	
+If you open an app in your Sense Server/Desktop which is also opend in Senseexcel, then all selections made in Senseexcel will be applied in Senseserver/Desktop and vice versa.	
+
+default: true
+	
+###### Show UserInfo's when Senseexcel is busy	
+…	
+default: true
+ 
+###### Show UserInfo for SenseEV Calculations
+While calculating SenseEV Formulas a Panel with the progress is opened.	
+
+default: true
+	
+###### Show Enigma Logging	
+Enigma logs Qlik Server communication.  This results in a larger logfile.  In normal cases this is not nessecary.	
+
+default: false
+	
+###### Keep Qlik session alive while Excel is open
+"The Qlik Session times out after a certain amount of time.
+In order to continue working with Qlik, this will require a reconnect. When this Option is enabled, Senseexcel periodically sends messages to Qlik to kep the session in use and alive."	
+
+default: true
+	
+###### Show UserInfo's in english (Support Only)
+…	
+
+default: false
+	
+###### Check for remainig excelprocess	
+Check if after closing excel a 'ghost' process remains and close it.	
+
+default: true
+	
+###### Open the Hub after a successful connect	true
+…	
+
+default: true
+
+###### Show Warnmessage when Tabledata is getting truncated	
+…	
+
+default: false
+	
+###### Time in ms after a app-open proccess is canceled	
+If an open app proccess has not been finished in this time it will be canceled. Adjusting this Time is usefull on slow machines or slow network connection	
+
+default: 5000
+	
+###### Time in ms after a connection-open proccess is canceled	
+If an open connection process has not been finished in this time it will be canceled. Adjusting this Time is usefull on slow machines or slow network connection	
+
+default: 5000
+	
+###### Timeout for detecting that a Qlik session is expired	
+…	
+
+default: 3000
+	
+###### Max Number of parallel SenseEV Calculations	
+"Recommended is 200. 
+A higher value leads to faster SenseEV-calculation but can cause problems on Servers because of to many Requests fired in a short amount of time."	
+
+default: 200
+	
+###### Time in milliseconds after check for a 'ghost' process is started 	
+Check if after closing excel a 'ghost' process remains and close it.	
+
+default: 5000
+
 
 #### Support:
 
