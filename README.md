@@ -66,7 +66,12 @@
     + [Step 5: Open the Selections tool](#step-5--open-the-selections-tool)
     + [Step 6: Select a Bookmark](#step-6--select-a-bookmark)
     + [Step 7: Create an Interactive Chart or Pivot table](#step-7--create-an-interactive-chart-or-pivot-table)
-  * [10. Contact Information](#10-contact-information)
+  * [10. Terminal Server installtion](#10-how-to-install-on-a-terminal-server)
+    + [Check: Access to the add-in](#check-access-to-the-add-in)
+    + [Check: The Office Version](#check-officeversions)
+    + [Important NOTE](#important-note)
+    + [Update a version](#update-a-version)
+  * [11. Contact Information](#11-contact-information)
     + [Contact Support:](#contact-support-)
     + [Contact Sales](#contact-sales)
       - [Europe/German Speaking Countries:](#europe-german-speaking-countries-)
@@ -1047,8 +1052,51 @@ Use the Bookmark button to use any of the existing bookmarks in your app or use 
 ### Step 7: Create an Interactive Chart or Pivot table 
 Once your table is created, you can use the Insert Chart or Insert Pivot table commands from the Insert tab of Excel and your first report is done. 
 
+## 10. How to install on a terminal server
 
-## 10. Contact Information 
+### Check: Access to the add-in
+To set up the add-in, the user must have access to the add-in (xll file).
+### Check: Registry settings  
+Furthermore, a registry entry must be set in "HKEY_CURRENT_USER".
+The following key contains the path to the add-in: "HKEY_CURRENT_USER\Software\Microsoft\Office\<OfficeVersion>\Excel\Options\"
+There is or can be one or more "OPEN" keys OPENx= / R "<path_to_.xll>" see example:
+"OPENx" in the above key may have one or more "OPEN" key values. One for each add-in. The following count applies:
+
+e.g.:
+
+OPEN = Path to add-in 1
+OPEN1 = Path to add-in 2
+OPEN2 = Path to add-in 3
+
+You can put the add-in in a diffrent place that every user has access to, then every user has to set the registry entry in which this path is referenced.
+
+<Path_to_add-in.xlll>
+-	Is the .xll file in the path „C:\Users\%USERNAME%\AppData\Roaming\Microsoft\AddIns“ -  then an indication without a path is enough.
+
+/R "akquinet-sense-excel-4.0.4-64.xll"
+ 
+-	If the add-in is on a different path, it must be specified as well (for example, C:\AddIn\)
+
+/R "C:\AddIn\akquinet-sense-excel-4.0.4-64.xll"
+
+### Check: Officeversions
+Office 2003 -> “15.0” (HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Excel\Options\)
+Office 2016 and newer -> “16.0” (HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Excel\Options\)
+
+### Important NOTE:
+If no add-in is registered yet, the value (string) "OPEN" must be created.
+If one or more add-ins already exist, a value (string) "OPEN1 ... etc. OPENx" must be created.
+Where x is the next number to use (for example, "OPEN4" if Sense Excel is the 4th add-in)
+
+
+### Update a version:
+Our add-in carries the version number in its name. This can be unfavorable for you, if you want to provide the users with a new version, you always have to adjust the registry.
+Therefore, the version number part of the file name and the registry entry can be removed, ie without a version number: for example: "akquinet-sense-excel.xll"
+This has the consequence that the registry entry only needs to be set once, and to update the add-ins only the xll must be overwritten. Via "Copy and Paste".
+
+
+
+## 11. Contact Information 
 
 ### Contact Support: 
 
